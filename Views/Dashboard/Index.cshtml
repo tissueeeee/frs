@@ -1,0 +1,665 @@
+@model List<FR_HKVision.Models.Faculty>
+@{
+    ViewData["Title"] = "Faculty Dashboard";
+    var dashboardData = ViewBag.DashboardData as Dictionary<string, object>;
+}
+
+<!-- Add Chart.js -->
+<script src="https://cdn.jsdelivr.net/npm/chart.js"></script>
+<script src="https://cdn.jsdelivr.net/npm/chartjs-adapter-date-fns"></script>
+
+<div class="container-fluid">
+    <!-- Overview Stats -->
+    <div class="row mb-4">
+        <div class="col-12">
+            <div class="card bg-primary text-white shadow">
+                <div class="card-body">
+                <h1 class="display-4 text-center">Faculty Dashboard</h1>
+                    <p class="lead text-center mb-0">Attendance and Payment Analytics</p>
+                </div>
+            </div>
+        </div>
+    </div>
+    
+    <!-- Statistics Cards -->
+    @if (dashboardData != null)
+    {
+        <div class="row mb-4">
+            <div class="col-md-3">
+                <div class="card shadow-sm">
+                    <div class="card-body text-center">
+                        <h3 class="card-title">Total Students</h3>
+                        <h2 class="display-4 text-primary">@dashboardData["totalStudents"]</h2>
+                    </div>
+                </div>
+            </div>
+            <div class="col-md-3">
+                <div class="card shadow-sm">
+                    <div class="card-body text-center">
+                        <h3 class="card-title">Debtors</h3>
+                        <h2 class="display-4 text-warning">@dashboardData["totalDebtors"]</h2>
+                    </div>
+                </div>
+            </div>
+            <div class="col-md-3">
+                <div class="card shadow-sm">
+                    <div class="card-body text-center">
+                        <h3 class="card-title">Attending</h3>
+                        <h2 class="display-4 text-success">@dashboardData["totalAttending"]</h2>
+                    </div>
+                </div>
+            </div>
+            <div class="col-md-3">
+                <div class="card shadow-sm">
+                    <div class="card-body text-center">
+                        <h3 class="card-title">Debtors Attending</h3>
+                        <h2 class="display-4 text-danger">@dashboardData["totalDebtorsAttending"]</h2>
+                    </div>
+                </div>
+            </div>
+        </div>
+
+        <!-- Charts Row -->
+        <div class="row mb-4">
+            <!-- Attendance Overview Chart -->
+            <div class="col-md-6">
+                <div class="card shadow-sm">
+                    <div class="card-header">
+                        <h5 class="card-title mb-0">Attendance Overview</h5>
+                    </div>
+                    <div class="card-body">
+                        <canvas id="attendanceChart"></canvas>
+                    </div>
+                </div>
+            </div>
+            <!-- Payment Status Chart -->
+            <div class="col-md-6">
+                <div class="card shadow-sm">
+                    <div class="card-header">
+                        <h5 class="card-title mb-0">Payment Status</h5>
+                    </div>
+                    <div class="card-body">
+                        <canvas id="paymentChart"></canvas>
+                    </div>
+                </div>
+            </div>
+        </div>
+
+        <!-- Course-specific Data -->
+        <div class="row mb-4">
+            <div class="col-12">
+                <div class="card shadow-sm">
+                    <div class="card-header">
+                        <h5 class="card-title mb-0">Course-wise Attendance</h5>
+                    </div>
+                    <div class="card-body">
+                        <canvas id="courseChart"></canvas>
+                    </div>
+                </div>
+            </div>
+        </div>
+    }
+
+    <!-- Faculty Selection -->
+    <div class="row mb-4">
+        <div class="col-md-6">
+            <div class="card shadow-sm">
+                <div class="card-header">
+                    <h5 class="card-title mb-0"><i class="fas fa-university me-2"></i>Select Faculty</h5>
+                </div>
+                <div class="card-body">
+                    <select id="facultySelect" class="form-select">
+                            <option value="">-- Select Faculty --</option>
+                            @foreach (var faculty in Model)
+                            {
+                                <option value="@faculty.FacultyCode">@faculty.FacultyCode</option>
+                            }
+                        </select>
+                </div>
+            </div>
+        </div>
+        <div class="col-md-6">
+            <div class="card shadow-sm" id="searchCard" style="display: none;">
+                <div class="card-header">
+                    <h5 class="card-title mb-0"><i class="fas fa-search me-2"></i>Search Courses</h5>
+                </div>
+                <div class="card-body">
+                        <input type="text" id="courseSearch" class="form-control" placeholder="Search courses...">
+                </div>
+            </div>
+        </div>
+    </div>
+    
+    <!-- Courses List -->
+    <div class="row">
+        <div class="col-12">
+            <div class="card shadow-sm" id="coursesCard" style="display: none;">
+                <div class="card-header d-flex justify-content-between align-items-center">
+                    <h5 class="card-title mb-0">
+                        <i class="fas fa-book me-2"></i>Courses for Faculty:
+                        <span id="selectedFaculty" class="badge bg-primary"></span>
+                    </h5>
+                    <span class="badge bg-info" id="courseCount">0 courses</span>
+                </div>
+                <div class="card-body">
+                    <div class="table-responsive">
+                        <table class="table table-hover" id="coursesTable">
+                            <thead>
+                                <tr>
+                                    <th>Course Code</th>
+                                    <th>Course Name</th>
+                                    <th>Total Students</th>
+                                    <th>Debtors</th>
+                                    <th>Attendance Rate</th>
+                                    <th class="text-center">Actions</th>
+                                </tr>
+                            </thead>
+                            <tbody id="coursesList"></tbody>
+                        </table>
+                    </div>
+                </div>
+            </div>
+        </div>
+                    </div>
+                    
+    <!-- Course Details Modal -->
+    <div class="modal fade" id="courseDetailsModal" tabindex="-1" aria-labelledby="courseDetailsModalLabel" aria-hidden="true">
+        <div class="modal-dialog modal-lg">
+            <div class="modal-content">
+                <div class="modal-header bg-primary text-white">
+                    <h5 class="modal-title" id="courseDetailsModalLabel">
+                        <i class="fas fa-info-circle me-2"></i>Course Details
+                    </h5>
+                    <button type="button" class="btn-close btn-close-white" data-bs-dismiss="modal" aria-label="Close"></button>
+                </div>
+                <div class="modal-body">
+                    <div class="row mb-4">
+                        <div class="col-md-6">
+                            <div class="card">
+                                <div class="card-body">
+                                    <h6 class="card-subtitle mb-2 text-muted">Course Information</h6>
+                                    <p class="mb-1"><strong>Course Code:</strong> <span id="modalCourseCode"></span></p>
+                                    <p class="mb-1"><strong>Course Name:</strong> <span id="modalCourseName"></span></p>
+                                    <p class="mb-1"><strong>Total Students:</strong> <span id="modalTotalStudents"></span></p>
+                                    <p class="mb-1"><strong>Debtors:</strong> <span id="modalDebtors"></span></p>
+                                    <p class="mb-0"><strong>Attendance Rate:</strong> <span id="modalAttendanceRate"></span></p>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="col-md-6">
+                            <div class="card">
+                                <div class="card-body">
+                                    <h6 class="card-subtitle mb-2 text-muted">Debtor Statistics</h6>
+                                    <div style="height: 300px; position: relative;">
+                                        <canvas id="attendanceChart"></canvas>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="row">
+                        <div class="col-12">
+                            <div class="card">
+                                <div class="card-body">
+                                    <h6 class="card-subtitle mb-3 text-muted">Student List</h6>
+                                    <div class="table-responsive">
+                                        <table class="table table-hover" id="modalStudentTable">
+                                            <thead>
+                                                <tr>
+                                                    <th>Student Number</th>
+                                                    <th>Name</th>
+                                                    <th>Status</th>
+                                                    <th>Attendance</th>
+                                                    <th>Last Attended</th>
+                                                </tr>
+                                            </thead>
+                                            <tbody id="studentList"></tbody>
+                                        </table>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <div class="modal-footer">
+                    <button type="button" class="btn btn-secondary" data-bs-dismiss="modal">Close</button>
+                </div>
+            </div>
+        </div>
+    </div>
+</div>
+
+@section Scripts {
+    <script>
+        $(document).ready(function() {
+            // Initialize chart variable at the top level
+            let attendanceChart = null;
+
+            // Initialize charts if dashboard data exists
+            @if (dashboardData != null)
+            {
+                <text>
+                // Attendance Overview Chart
+                new Chart(document.getElementById('attendanceChart'), {
+                    type: 'doughnut',
+                    data: {
+                        labels: ['Present', 'Absent'],
+                        datasets: [{
+                            data: [@dashboardData["totalAttending"], @dashboardData["totalAbsent"]],
+                            backgroundColor: ['#2ecc71', '#e74c3c']
+                        }]
+                    },
+                    options: {
+                        responsive: true,
+                        plugins: {
+                            legend: {
+                                position: 'bottom'
+                            },
+                            title: {
+                                display: true,
+                                text: 'Overall Attendance Distribution'
+                            }
+                        }
+                    }
+                });
+
+                // Payment Status Chart
+                new Chart(document.getElementById('paymentChart'), {
+                    type: 'doughnut',
+                    data: {
+                        labels: ['Paid', 'Debtors'],
+                        datasets: [{
+                            data: [@dashboardData["totalNonDebtors"], @dashboardData["totalDebtors"]],
+                            backgroundColor: ['#3498db', '#f1c40f']
+                        }]
+                    },
+                    options: {
+                        responsive: true,
+                        plugins: {
+                            legend: {
+                                position: 'bottom'
+                            },
+                            title: {
+                                display: true,
+                                text: 'Payment Status Distribution'
+                            }
+                        }
+                    }
+                });
+
+                // Course-wise Chart
+                const courseData = @Html.Raw(Json.Serialize(dashboardData["courseData"]));
+                new Chart(document.getElementById('courseChart'), {
+                    type: 'bar',
+                    data: {
+                        labels: courseData.map(c => c.courseCode),
+                        datasets: [
+                            {
+                                label: 'Total Students',
+                                data: courseData.map(c => c.studentCount),
+                                backgroundColor: '#3498db'
+                            },
+                            {
+                                label: 'Debtors',
+                                data: courseData.map(c => c.debtorCount),
+                                backgroundColor: '#f1c40f'
+                            },
+                            {
+                                label: 'Attending',
+                                data: courseData.map(c => c.attendingCount),
+                                backgroundColor: '#2ecc71'
+                            },
+                            {
+                                label: 'Debtors Attending',
+                                data: courseData.map(c => c.debtorsAttendingCount),
+                                backgroundColor: '#e74c3c'
+                            }
+                        ]
+                    },
+                    options: {
+                        responsive: true,
+                        scales: {
+                            y: {
+                                beginAtZero: true
+                            }
+                        },
+                        plugins: {
+                            legend: {
+                                position: 'bottom'
+                            },
+                            title: {
+                                display: true,
+                                text: 'Course-wise Statistics'
+                            }
+                        }
+                    }
+                });
+                </text>
+            }
+
+            // Handle faculty selection
+            $('#facultySelect').change(function() {
+                var facultyCode = $(this).val();
+                console.log('Faculty selected:', facultyCode);
+                
+                if (facultyCode) {
+                    $('#searchCard, #coursesCard').fadeIn();
+                    $('#selectedFaculty').text(facultyCode);
+                    loadCourses(facultyCode);
+                } else {
+                    $('#searchCard, #coursesCard').fadeOut();
+                }
+            });
+
+            // Course search functionality
+            $('#courseSearch').on('input', function() {
+                var searchText = $(this).val().toLowerCase();
+                $('#coursesList tr').each(function() {
+                    var code = $(this).find('td:first').text().toLowerCase();
+                    var name = $(this).find('td:eq(1)').text().toLowerCase();
+                    $(this).toggle(code.includes(searchText) || name.includes(searchText));
+                });
+            });
+
+            function loadCourses(facultyCode) {
+                console.log('Loading courses for faculty:', facultyCode);
+                    $('#coursesList').empty();
+                $('#coursesList').append('<tr><td colspan="6" class="text-center">Loading courses...</td></tr>');
+                
+                $.get('@Url.Action("GetCoursesByFaculty", "Dashboard")', { facultyCode: facultyCode })
+                    .done(function(data) {
+                        console.log('Received data:', data);
+                            if (data.error) {
+                            console.error('Error from server:', data.error);
+                            $('#coursesList').empty().append(
+                                '<tr><td colspan="6" class="text-center text-danger">' + 
+                                '<i class="fas fa-exclamation-circle me-2"></i>' + data.error + 
+                                '</td></tr>'
+                            );
+                                return;
+                            }
+                            
+                            $('#courseCount').text(data.length + ' courses');
+                            var coursesList = $('#coursesList');
+                            coursesList.empty();
+
+                        if (!Array.isArray(data)) {
+                            console.error('Data is not an array:', data);
+                            coursesList.append(
+                                '<tr><td colspan="6" class="text-center text-danger">' +
+                                '<i class="fas fa-exclamation-circle me-2"></i>Invalid data format received' +
+                                '</td></tr>'
+                            );
+                            return;
+                        }
+                            
+                            if (data.length === 0) {
+                            console.log('No courses found for faculty:', facultyCode);
+                            coursesList.append(
+                                '<tr><td colspan="6" class="text-center text-muted">' +
+                                '<i class="fas fa-info-circle me-2"></i>No courses found for this faculty' +
+                                '</td></tr>'
+                            );
+                            } else {
+                            console.log('Processing', data.length, 'courses');
+                            data.forEach(function(course) {
+                                var courseCode = course.COURSECODE || course.coursecode || "Unknown";
+                                var courseName = course.COURSENAME || course.coursename || "No Name";
+                                console.log('Processing course:', courseCode, '-', courseName);
+                                
+                                        var row = $('<tr>');
+                                        row.append($('<td>').text(courseCode));
+                                        row.append($('<td>').text(courseName));
+                                row.append($('<td>').html('<i class="fas fa-spinner fa-spin"></i>')); // Loading indicator
+                                row.append($('<td>').html('<i class="fas fa-spinner fa-spin"></i>')); // Loading indicator
+                                row.append($('<td>').html('<i class="fas fa-spinner fa-spin"></i>')); // Loading indicator
+                                row.append($('<td class="text-center">').html(
+                                    '<button class="btn btn-sm btn-primary view-details" data-course="' + courseCode + '">' +
+                                    '<i class="fas fa-chart-bar me-2"></i>View Details</button>'
+                                ));
+                                        coursesList.append(row);
+                                        
+                                // Fetch statistics for this course
+                                $.get('@Url.Action("GetCourseStatistics", "Dashboard")', { courseCode: courseCode })
+                                    .done(function(stats) {
+                                        console.log('Received stats for', courseCode, ':', stats);
+                                        if (stats.error) {
+                                            console.error('Error loading stats for', courseCode, ':', stats.error);
+                                            row.find('td:eq(2)').html('<span class="text-danger">Error</span>');
+                                            row.find('td:eq(3)').html('<span class="text-danger">Error</span>');
+                                            row.find('td:eq(4)').html('<span class="text-danger">Error</span>');
+                                            return;
+                                        }
+
+                                        // Update the row with statistics
+                                        row.find('td:eq(2)').text(stats.totalStudents);
+                                        row.find('td:eq(3)').text(stats.debtors);
+                                        row.find('td:eq(4)').text(stats.attendanceRate + '%');
+
+                                        // Add color coding based on statistics
+                                        if (stats.debtors > 0) {
+                                            row.find('td:eq(3)').addClass('text-warning');
+                                        }
+                                        if (stats.attendanceRate < 50) {
+                                            row.find('td:eq(4)').addClass('text-danger');
+                                        } else if (stats.attendanceRate >= 80) {
+                                            row.find('td:eq(4)').addClass('text-success');
+                                        }
+                                    })
+                                    .fail(function(jqXHR, textStatus, errorThrown) {
+                                        console.error('Error loading stats for', courseCode, ':', textStatus, errorThrown);
+                                        row.find('td:eq(2)').html('<span class="text-danger">Error</span>');
+                                        row.find('td:eq(3)').html('<span class="text-danger">Error</span>');
+                                        row.find('td:eq(4)').html('<span class="text-danger">Error</span>');
+                                    });
+                            });
+                        }
+                    })
+                    .fail(function(jqXHR, textStatus, errorThrown) {
+                        console.error('AJAX Error:', {
+                            status: jqXHR.status,
+                            statusText: jqXHR.statusText,
+                            responseText: jqXHR.responseText,
+                            textStatus: textStatus,
+                            errorThrown: errorThrown
+                        });
+                        $('#coursesList').empty().append(
+                            '<tr><td colspan="6" class="text-center text-danger">' +
+                            '<i class="fas fa-exclamation-circle me-2"></i>Error loading courses. Please try again.' +
+                            '</td></tr>'
+                        );
+                    });
+            }
+
+            function calculateCourseStats(studentDetails) {
+                var total = studentDetails.length;
+                var debtors = studentDetails.filter(s => s.isDebtor).length;
+                var attending = studentDetails.filter(s => s.isAttending).length;
+                return {
+                    total: total,
+                    debtors: debtors,
+                    attendanceRate: total > 0 ? (attending / total * 100).toFixed(1) : 0
+                };
+            }
+
+            function appendCourseRow(courseCode, courseName, stats) {
+                var row = $('<tr>');
+                row.append($('<td>').text(courseCode));
+                row.append($('<td>').text(courseName));
+                row.append($('<td>').text(stats.total));
+                row.append($('<td>').text(stats.debtors));
+                row.append($('<td>').text(stats.attendanceRate + '%'));
+                row.append($('<td class="text-center">').html(
+                    '<button class="btn btn-sm btn-primary view-details" data-course="' + courseCode + '">' +
+                    '<i class="fas fa-chart-bar me-1"></i>View Details</button>'
+                ));
+                $('#coursesList').append(row);
+            }
+
+            // Handle view details button click
+            $(document).on('click', '.view-details', function() {
+                var courseCode = $(this).data('course');
+                var courseName = $(this).closest('tr').find('td:eq(1)').text();
+                var totalStudents = $(this).closest('tr').find('td:eq(2)').text();
+                var debtors = $(this).closest('tr').find('td:eq(3)').text();
+                var attendanceRate = $(this).closest('tr').find('td:eq(4)').text();
+
+                // Update modal basic info
+                $('#modalCourseCode').text(courseCode);
+                $('#modalCourseName').text(courseName);
+                $('#modalTotalStudents').text(totalStudents);
+                $('#modalDebtors').text(debtors);
+                $('#modalAttendanceRate').text(attendanceRate);
+
+                // Show loading state
+                $('#studentList').html('<tr><td colspan="5" class="text-center"><i class="fas fa-spinner fa-spin me-2"></i>Loading student details...</td></tr>');
+                $('#attendanceChart').hide();
+                $('#attendanceChart').parent().append('<div class="text-center">Loading chart...</div>');
+
+                // Fetch detailed course data
+                loadCourseDetails(courseCode);
+            });
+
+            function loadCourseDetails(courseCode) {
+                console.log('Loading course details for:', courseCode);
+                $('#courseDetailsModal').modal('show');
+                $('#courseDetailsModal .modal-title').text('Loading...');
+                $('#studentList').html('<tr><td colspan="5" class="text-center">Loading data...</td></tr>');
+                $('#attendanceChart').hide();
+                $('#attendanceChart').parent().find('.text-center').remove();
+                $('#attendanceChart').parent().append('<div class="text-center">Loading chart...</div>');
+
+                $.ajax({
+                    url: '@Url.Action("GetCourseDetails", "Dashboard")',
+                    type: 'GET',
+                    data: { courseCode: courseCode },
+                    success: function(response) {
+                        console.log('Received response:', response);
+                        if (response.success) {
+                            $('#courseDetailsModal .modal-title').text('Course Details - ' + courseCode);
+                            
+                            // Update student list
+                            if (response.students && response.students.length > 0) {
+                                var html = '';
+                                response.students.forEach(function(student) {
+                                    html += `
+                                        <tr>
+                                            <td>${student.studentNumber}</td>
+                                            <td>${student.studentName}</td>
+                                            <td>${student.status}</td>
+                                            <td>${student.attendanceRate}%</td>
+                                            <td>${student.lastAttended || 'Never'}</td>
+                                        </tr>
+                                    `;
+                                });
+                                $('#studentList').html(html);
+                            } else {
+                                $('#studentList').html('<tr><td colspan="5" class="text-center">No students found</td></tr>');
+                            }
+
+                            // Update debtor chart
+                            if (response.debtorData && response.debtorData.labels && response.debtorData.values) {
+                                console.log('Debtor data:', response.debtorData);
+                                $('#attendanceChart').show();
+                                $('#attendanceChart').parent().find('.text-center').remove();
+                                
+                                var ctx = document.getElementById('attendanceChart');
+                                if (!ctx) {
+                                    console.error('Chart canvas not found');
+                                    return;
+                                }
+                                
+                                // Destroy existing chart if it exists
+                                if (attendanceChart) {
+                                    attendanceChart.destroy();
+                                }
+                                
+                                try {
+                                    attendanceChart = new Chart(ctx, {
+                                        type: 'bar',
+                                        data: {
+                                            labels: response.debtorData.labels,
+                                            datasets: [{
+                                                label: 'Number of Debtors',
+                                                data: response.debtorData.values,
+                                                backgroundColor: 'rgba(255, 99, 132, 0.5)',
+                                                borderColor: 'rgb(255, 99, 132)',
+                                                borderWidth: 1,
+                                                barThickness: 30
+                                            }]
+                                        },
+                                        options: {
+                                            responsive: true,
+                                            maintainAspectRatio: false,
+                                            scales: {
+                                                y: {
+                                                    beginAtZero: true,
+                                                    min: 0,
+                                                    suggestedMax: 10,
+                                                    ticks: {
+                                                        stepSize: 1
+                                                    },
+                                                    title: {
+                                                        display: true,
+                                                        text: 'Number of Debtors'
+                                                    }
+                                                },
+                                                x: {
+                                                    title: {
+                                                        display: true,
+                                                        text: 'Date'
+                                                    }
+                                                }
+                                            },
+                                            plugins: {
+                                                title: {
+                                                    display: true,
+                                                    text: 'Debtor Statistics Over Time'
+                                                },
+                                                tooltip: {
+                                                    callbacks: {
+                                                        label: function(context) {
+                                                            return `Debtors: ${context.parsed.y}`;
+                                                        }
+                                                    }
+                                                }
+                                            }
+                                        }
+                                    });
+                                    console.log('Chart data:', {
+                                        labels: response.debtorData.labels,
+                                        values: response.debtorData.values
+                                    });
+                                } catch (error) {
+                                    console.error('Error creating chart:', error);
+                                    $('#attendanceChart').hide();
+                                    $('#attendanceChart').parent().append('<div class="text-center text-danger">Error creating chart</div>');
+                                }
+                            } else {
+                                console.log('No debtor data available');
+                                $('#attendanceChart').hide();
+                                $('#attendanceChart').parent().find('.text-center').remove();
+                                $('#attendanceChart').parent().append('<div class="text-center">No debtor data available</div>');
+                            }
+                        } else {
+                            showError('Failed to load course details: ' + (response.error || 'Unknown error'));
+                        }
+                    },
+                    error: function(xhr, status, error) {
+                        console.error('AJAX error:', error);
+                        showError('Failed to load course details. Please try again.');
+                    }
+                });
+            }
+
+            function showError(message) {
+                console.error('Showing error:', message);
+                $('#courseDetailsModal .modal-title').text('Error');
+                $('#studentList').html(`<tr><td colspan="5" class="text-center text-danger">${message}</td></tr>`);
+                $('#attendanceChart').hide();
+                $('#attendanceChart').parent().find('.text-center').remove();
+                $('#attendanceChart').parent().append(`<div class="text-center text-danger">${message}</div>`);
+            }
+        });
+    </script>
+} 

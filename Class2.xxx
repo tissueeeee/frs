@@ -1,0 +1,124 @@
+﻿using System;
+
+using System.Net.Http;
+
+using System.Security.Cryptography;
+
+using System.Text;
+
+using System.Threading.Tasks;
+
+ 
+
+public class Class2
+
+{
+
+    //private static readonly string baseUrl = "https://artemis.hikvision.com";
+	private static readonly string baseUrl = "https://127.0.0.1:4433/artemis";
+
+    private static readonly string appKey = "28985468"; // Replace with your actual App Key
+
+    private static readonly string appSecret = "8sIDkEThGIg65RgMzUj6"; // Replace with your actual App Secret
+
+ 
+
+    public static string MainTest()
+
+    {
+
+        //string urlPath = "/api/resource/getResources"; // Example API endpoint
+        string urlPath = "/api/common/v1/version"; // Example API endpoint
+
+        string method = "POST"; // Change to GET/POST as required
+
+ 
+
+        string authorization = GenerateAuthorization(urlPath, method);
+
+        //MakeApiRequest(urlPath, method, authorization);
+
+        string result = MakeApiRequest(urlPath, method, authorization);
+        Console.WriteLine(result);
+        return result;
+
+    }
+
+ 
+
+    private static string GenerateAuthorization(string urlPath, string method)
+
+    {
+
+        string nonce = Guid.NewGuid().ToString("N");
+
+        string timestamp = DateTimeOffset.UtcNow.ToUnixTimeMilliseconds().ToString();
+
+        string stringToSign = method + "\n" + nonce + "\n" + timestamp + "\n" + urlPath;
+
+ 
+
+        using (HMACSHA256 hmac = new HMACSHA256(Encoding.UTF8.GetBytes(appSecret)))
+
+        {
+
+            byte[] hash = hmac.ComputeHash(Encoding.UTF8.GetBytes(stringToSign));
+
+            string signature = Convert.ToBase64String(hash);
+
+            return $"appKey={appKey}, nonce={nonce}, timestamp={timestamp}, signature={signature}";
+
+        }
+
+    }
+
+ 
+
+    private static string MakeApiRequest(string urlPath, string method, string authorization)
+
+    {
+
+        using (HttpClient client = new HttpClient())
+
+        {
+
+            client.BaseAddress = new Uri(baseUrl);
+
+            client.DefaultRequestHeaders.Add("Authorization", authorization);
+
+            client.DefaultRequestHeaders.Add("Content-Type", "application/json");
+
+ 
+
+            HttpResponseMessage response;
+
+            if (method.ToUpper() == "GET")
+
+            {
+
+                response = client.GetAsync(urlPath).GetAwaiter().GetResult();
+
+            }
+
+            else
+
+            {
+
+                var content = new StringContent("{}", Encoding.UTF8, "application/json");
+
+                response = client.PostAsync(urlPath, content).GetAwaiter().GetResult();
+
+            }
+
+ 
+
+            string result = response.Content.ReadAsStringAsync().GetAwaiter().GetResult();
+
+            Console.WriteLine($"Response: {result}");
+            return result;
+
+        }
+
+    }
+
+}

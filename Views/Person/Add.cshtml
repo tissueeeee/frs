@@ -1,0 +1,342 @@
+﻿@model PersonViewModel
+@{
+    ViewData["Title"] = "Add Person";
+}
+
+<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+<link rel="stylesheet" href="https://cdn.datatables.net/1.11.5/css/dataTables.bootstrap5.min.css">
+<link rel="stylesheet" href="https://cdn.datatables.net/responsive/2.2.9/css/responsive.bootstrap5.min.css">
+
+<style>
+    :root {
+        --primary-color: #4a90e2;
+        --success-color: #2ecc71;
+        --warning-color: #f1c40f;
+        --danger-color: #e74c3c;
+        --text-color: #2c3e50;
+        --border-radius: 12px;
+    }
+
+    .main-container {
+        max-width: 1400px;
+        margin: 0 auto;
+        padding: 2rem;
+        background-color: #f8f9fa;
+        min-height: calc(100vh - 4rem);
+    }
+    
+    .page-header {
+        text-align: center;
+        margin-bottom: 2rem;
+        padding: 2.5rem;
+        background: linear-gradient(135deg, #fff, #f8f9fa);
+        border-radius: var(--border-radius);
+        box-shadow: 0 4px 6px rgba(0, 0, 0, 0.05);
+        position: relative;
+        overflow: hidden;
+    }
+    
+    .page-header::before {
+        content: '';
+        position: absolute;
+        top: 0;
+        left: 0;
+        right: 0;
+        height: 4px;
+        background: linear-gradient(90deg, var(--primary-color), var(--success-color));
+    }
+    
+    .page-header h3 {
+        color: var(--text-color);
+        margin-bottom: 0.75rem;
+        font-weight: 600;
+        font-size: 2rem;
+    }
+    
+    .page-header p {
+        color: #6c757d;
+        font-size: 1.1rem;
+    }
+
+    .stats-container {
+        display: grid;
+        grid-template-columns: repeat(auto-fit, minmax(200px, 1fr));
+        gap: 1.5rem;
+        margin-bottom: 2rem;
+    }
+
+    .stat-card {
+        background: white;
+        padding: 1.5rem;
+        border-radius: var(--border-radius);
+        box-shadow: 0 2px 4px rgba(0, 0, 0, 0.05);
+        text-align: center;
+        transition: transform 0.2s;
+    }
+
+    .stat-card:hover {
+        transform: translateY(-2px);
+    }
+
+    .stat-number {
+        font-size: 2rem;
+        font-weight: 600;
+        color: var(--primary-color);
+        margin-bottom: 0.5rem;
+    }
+
+    .stat-label {
+        color: #6c757d;
+        font-size: 0.9rem;
+        text-transform: uppercase;
+        letter-spacing: 0.5px;
+    }
+    
+    .table-container {
+        background-color: white;
+        border-radius: var(--border-radius);
+        box-shadow: 0 4px 6px rgba(0, 0, 0, 0.05);
+        overflow: hidden;
+        padding: 1rem;
+    }
+    
+    .table {
+        margin-bottom: 0;
+        width: 100%;
+    }
+    
+    .table thead th {
+        background-color: #f8f9fa;
+        color: var(--text-color);
+        font-weight: 600;
+        padding: 1.25rem 1rem;
+        border-bottom: 2px solid #e9ecef;
+        white-space: nowrap;
+    }
+    
+    .table tbody td {
+        padding: 1.25rem 1rem;
+        vertical-align: middle;
+        color: #495057;
+    }
+
+    .table tbody tr {
+        transition: background-color 0.2s;
+    }
+
+    .table tbody tr:hover {
+        background-color: #f8f9fa;
+    }
+    
+    .status-badge {
+        padding: 0.5em 1em;
+        font-size: 0.75em;
+        font-weight: 600;
+        border-radius: 50rem;
+        display: inline-flex;
+        align-items: center;
+        gap: 0.5em;
+        transition: all 0.2s;
+    }
+    
+    .status-success {
+        background-color: #d4edda;
+        color: #155724;
+    }
+    
+    .status-danger {
+        background-color: #f8d7da;
+        color: #721c24;
+    }
+    
+    .status-warning {
+        background-color: #fff3cd;
+        color: #856404;
+    }
+
+    .status-badge i {
+        font-size: 0.875em;
+    }
+
+    .photo-cell {
+        max-width: 150px;
+        word-break: break-all;
+        font-family: monospace;
+        font-size: 0.875em;
+        color: #6c757d;
+    }
+    
+    .message-cell {
+        max-width: 200px;
+        word-break: break-all;
+    }
+
+    /* DataTables Custom Styling */
+    .dataTables_wrapper .dataTables_filter input {
+        border: 1px solid #dee2e6;
+        border-radius: var(--border-radius);
+        padding: 0.5rem 1rem;
+        margin-left: 0.5rem;
+    }
+
+    .dataTables_wrapper .dataTables_length select {
+        border: 1px solid #dee2e6;
+        border-radius: var(--border-radius);
+        padding: 0.5rem;
+    }
+
+    .dataTables_wrapper .dataTables_paginate .paginate_button {
+        border-radius: var(--border-radius);
+        padding: 0.5rem 1rem;
+        margin: 0 0.25rem;
+    }
+
+    .dataTables_wrapper .dataTables_paginate .paginate_button.current {
+        background: var(--primary-color);
+        border-color: var(--primary-color);
+        color: white !important;
+    }
+
+    /* Alert Styling */
+    .alert {
+        border-radius: var(--border-radius);
+        margin-bottom: 2rem;
+        padding: 1rem 1.5rem;
+        display: flex;
+        align-items: center;
+        gap: 1rem;
+        animation: slideIn 0.3s ease-out;
+    }
+    
+    @@keyframes slideIn {
+        from {
+            transform: translateY(-10px);
+            opacity: 0;
+        }
+        to {
+            transform: translateY(0);
+            opacity: 1;
+        }
+    }
+</style>
+
+<div class="main-container">
+    @if (TempData["ErrorMessage"] != null)
+    {
+        <div class="alert alert-danger">
+            <i class="fas fa-exclamation-circle fa-lg"></i>
+            <div>
+                <strong>Error!</strong>
+                <p class="mb-0">@TempData["ErrorMessage"]</p>
+            </div>
+        </div>
+    }
+
+    @if (TempData["InfoMessage"] != null)
+    {
+        <div class="alert alert-info">
+            <i class="fas fa-info-circle fa-lg"></i>
+            <div>
+                <strong>Information</strong>
+                <p class="mb-0">@TempData["InfoMessage"]</p>
+            </div>
+        </div>
+    }
+
+    <div class="page-header">
+        <h3><i class="fas fa-user-plus me-2"></i>Student List</h3>
+        <p class="text-muted mb-0">View and manage student profiles</p>
+    </div>
+
+    <div class="stats-container">
+        <div class="stat-card">
+            <div class="stat-number">@Model.Persons.Count(x => x.ProfileStatus == "1")</div>
+            <div class="stat-label">Active Profiles</div>
+        </div>
+        <div class="stat-card">
+            <div class="stat-number">@Model.Persons.Count(x => x.ProfileStatus == "0")</div>
+            <div class="stat-label">Inactive Profiles</div>
+        </div>
+        <div class="stat-card">
+            <div class="stat-number">@Model.Persons.Count</div>
+            <div class="stat-label">Total Students</div>
+        </div>
+    </div>
+
+    <div class="table-container">
+        <div class="table-responsive">
+            <table id="student" class="table table-bordered">
+                <thead>
+                    <tr>
+                        <th><i class="fas fa-hashtag me-2"></i>No</th>
+                        <th><i class="fas fa-id-card me-2"></i>Student Number</th>
+                        <th><i class="fas fa-user me-2"></i>Student Name</th>
+                        <th><i class="fas fa-image me-2"></i>Student Photo</th>
+                        <th><i class="fas fa-code me-2"></i>Program Code</th>
+                        <th><i class="fas fa-graduation-cap me-2"></i>Program Name</th>
+                        <th><i class="fas fa-check-circle me-2"></i>Profile Status</th>
+                        <th><i class="fas fa-clock me-2"></i>Attendance Time</th>
+                        <th><i class="fas fa-comment me-2"></i>Profile Added Message</th>
+                    </tr>
+                </thead>
+                <tbody>
+                    @foreach (var emp in Model.Persons)
+                    {
+                        <tr>
+                            <td>@emp.StudentSeq</td>
+                            <td><strong>@emp.StudentNumber</strong></td>
+                            <td>@emp.StudentName</td>
+                            <td class="photo-cell">@emp.StudentPhoto</td>
+                            <td>@emp.ProgrammeCode</td>
+                            <td>@emp.ProgrammeName</td>
+                            <td>
+                                <span class="status-badge @((emp.ProfileStatus == "1") ? "status-success" : (emp.ProfileStatus == "0") ? "status-danger" : "status-warning")">
+                                    <i class="fas @((emp.ProfileStatus == "1") ? "fa-check-circle" : (emp.ProfileStatus == "0") ? "fa-times-circle" : "fa-clock")"></i>
+                                    @((emp.ProfileStatus == "1") ? "Active" : (emp.ProfileStatus == "0") ? "Inactive" : "Pending")
+                                </span>
+                            </td>
+                            <td>@emp.AttendanceTime</td>
+                            <td class="message-cell">@emp.StudentMessage</td>
+                        </tr>
+                    }
+                </tbody>
+            </table>
+        </div>
+    </div>
+</div>
+
+<script src="https://cdn.datatables.net/1.11.5/js/jquery.dataTables.min.js"></script>
+<script src="https://cdn.datatables.net/1.11.5/js/dataTables.bootstrap5.min.js"></script>
+<script src="https://cdn.datatables.net/responsive/2.2.9/js/dataTables.responsive.min.js"></script>
+<script src="https://cdn.datatables.net/responsive/2.2.9/js/responsive.bootstrap5.min.js"></script>
+
+<script>
+    $(document).ready(function() {
+        $('#student').DataTable({
+            responsive: true,
+            pageLength: 10,
+            language: {
+                search: "<i class='fas fa-search'></i>",
+                searchPlaceholder: "Search records...",
+                lengthMenu: "Show _MENU_ entries per page",
+                info: "Showing _START_ to _END_ of _TOTAL_ students",
+                paginate: {
+                    first: '<i class="fas fa-angle-double-left"></i>',
+                    last: '<i class="fas fa-angle-double-right"></i>',
+                    next: '<i class="fas fa-angle-right"></i>',
+                    previous: '<i class="fas fa-angle-left"></i>'
+                }
+            },
+            dom: '<"row"<"col-sm-12 col-md-6"l><"col-sm-12 col-md-6"f>>' +
+                 '<"row"<"col-sm-12"tr>>' +
+                 '<"row"<"col-sm-12 col-md-5"i><"col-sm-12 col-md-7"p>>',
+            initComplete: function() {
+                $('.dataTables_filter input').addClass('form-control');
+                $('.dataTables_length select').addClass('form-select');
+            }
+        });
+    });
+</script>
+
+
+

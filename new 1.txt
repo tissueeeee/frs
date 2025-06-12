@@ -1,0 +1,7 @@
+<script>
+   
+    //document.getElementById("MessageVersion").textContent = JSON.stringify(JSON.parse(@Html.Raw(System.Text.Json.JsonSerializer.Serialize(@Model.Message[0]MessageVersion))), null, 2);
+    //document.getElementById("MessageCamera").textContent = JSON.stringify(JSON.parse(@Html.Raw(System.Text.Json.JsonSerializer.Serialize(@Model.Message[0]MessageCamera))), null, 2);
+    //document.getElementById("MessagePerson").textContent = JSON.stringify(JSON.parse(@Html.Raw(System.Text.Json.JsonSerializer.Serialize(@Model.Message[0]MessagePerson))), null, 2);
+    //document.getElementById("MessageFaceMatchRecord").textContent = JSON.stringify(JSON.parse(@Html.Raw(System.Text.Json.JsonSerializer.Serialize(@Model.Message[0]MessageFaceMatchRecord))), null, 2);
+</script>

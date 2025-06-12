@@ -1,0 +1,765 @@
+C:\Users\41800\Desktop\FR_HKVision_Export\FR_HKVision\FR_HKVision\bin\Debug\net8.0\appsettings.Development.json
+C:\Users\41800\Desktop\FR_HKVision_Export\FR_HKVision\FR_HKVision\bin\Debug\net8.0\appsettings.json
+C:\Users\41800\Desktop\FR_HKVision_Export\FR_HKVision\FR_HKVision\bin\Debug\net8.0\FR_HKVision.staticwebassets.runtime.json
+C:\Users\41800\Desktop\FR_HKVision_Export\FR_HKVision\FR_HKVision\bin\Debug\net8.0\FR_HKVision.staticwebassets.endpoints.json
+C:\Users\41800\Desktop\FR_HKVision_Export\FR_HKVision\FR_HKVision\bin\Debug\net8.0\FR_HKVision.exe
+C:\Users\41800\Desktop\FR_HKVision_Export\FR_HKVision\FR_HKVision\bin\Debug\net8.0\FR_HKVision.deps.json
+C:\Users\41800\Desktop\FR_HKVision_Export\FR_HKVision\FR_HKVision\bin\Debug\net8.0\FR_HKVision.runtimeconfig.json
+C:\Users\41800\Desktop\FR_HKVision_Export\FR_HKVision\FR_HKVision\bin\Debug\net8.0\FR_HKVision.dll
+C:\Users\41800\Desktop\FR_HKVision_Export\FR_HKVision\FR_HKVision\bin\Debug\net8.0\FR_HKVision.pdb
+C:\Users\41800\Desktop\FR_HKVision_Export\FR_HKVision\FR_HKVision\bin\Debug\net8.0\Azure.Core.dll
+C:\Users\41800\Desktop\FR_HKVision_Export\FR_HKVision\FR_HKVision\bin\Debug\net8.0\Azure.Identity.dll
+C:\Users\41800\Desktop\FR_HKVision_Export\FR_HKVision\FR_HKVision\bin\Debug\net8.0\Dahomey.Json.dll
+C:\Users\41800\Desktop\FR_HKVision_Export\FR_HKVision\FR_HKVision\bin\Debug\net8.0\Dahomey.Json.Attributes.dll
+C:\Users\41800\Desktop\FR_HKVision_Export\FR_HKVision\FR_HKVision\bin\Debug\net8.0\EmbedIO.dll
+C:\Users\41800\Desktop\FR_HKVision_Export\FR_HKVision\FR_HKVision\bin\Debug\net8.0\HikVision.dll
+C:\Users\41800\Desktop\FR_HKVision_Export\FR_HKVision\FR_HKVision\bin\Debug\net8.0\Hikvision Artemis Api.dll
+C:\Users\41800\Desktop\FR_HKVision_Export\FR_HKVision\FR_HKVision\bin\Debug\net8.0\Microsoft.AspNetCore.JsonPatch.dll
+C:\Users\41800\Desktop\FR_HKVision_Export\FR_HKVision\FR_HKVision\bin\Debug\net8.0\Microsoft.AspNetCore.Mvc.NewtonsoftJson.dll
+C:\Users\41800\Desktop\FR_HKVision_Export\FR_HKVision\FR_HKVision\bin\Debug\net8.0\Microsoft.Bcl.AsyncInterfaces.dll
+C:\Users\41800\Desktop\FR_HKVision_Export\FR_HKVision\FR_HKVision\bin\Debug\net8.0\Microsoft.Bcl.Cryptography.dll
+C:\Users\41800\Desktop\FR_HKVision_Export\FR_HKVision\FR_HKVision\bin\Debug\net8.0\Microsoft.Data.SqlClient.dll
+C:\Users\41800\Desktop\FR_HKVision_Export\FR_HKVision\FR_HKVision\bin\Debug\net8.0\Microsoft.Extensions.Caching.Memory.dll
+C:\Users\41800\Desktop\FR_HKVision_Export\FR_HKVision\FR_HKVision\bin\Debug\net8.0\Microsoft.Extensions.DependencyInjection.Abstractions.dll
+C:\Users\41800\Desktop\FR_HKVision_Export\FR_HKVision\FR_HKVision\bin\Debug\net8.0\Microsoft.Extensions.Logging.Abstractions.dll
+C:\Users\41800\Desktop\FR_HKVision_Export\FR_HKVision\FR_HKVision\bin\Debug\net8.0\Microsoft.Extensions.Options.dll
+C:\Users\41800\Desktop\FR_HKVision_Export\FR_HKVision\FR_HKVision\bin\Debug\net8.0\Microsoft.Identity.Client.dll
+C:\Users\41800\Desktop\FR_HKVision_Export\FR_HKVision\FR_HKVision\bin\Debug\net8.0\Microsoft.Identity.Client.Extensions.Msal.dll
+C:\Users\41800\Desktop\FR_HKVision_Export\FR_HKVision\FR_HKVision\bin\Debug\net8.0\Microsoft.IdentityModel.Abstractions.dll
+C:\Users\41800\Desktop\FR_HKVision_Export\FR_HKVision\FR_HKVision\bin\Debug\net8.0\Microsoft.IdentityModel.JsonWebTokens.dll
+C:\Users\41800\Desktop\FR_HKVision_Export\FR_HKVision\FR_HKVision\bin\Debug\net8.0\Microsoft.IdentityModel.Logging.dll
+C:\Users\41800\Desktop\FR_HKVision_Export\FR_HKVision\FR_HKVision\bin\Debug\net8.0\Microsoft.IdentityModel.Protocols.dll
+C:\Users\41800\Desktop\FR_HKVision_Export\FR_HKVision\FR_HKVision\bin\Debug\net8.0\Microsoft.IdentityModel.Protocols.OpenIdConnect.dll
+C:\Users\41800\Desktop\FR_HKVision_Export\FR_HKVision\FR_HKVision\bin\Debug\net8.0\Microsoft.IdentityModel.Tokens.dll
+C:\Users\41800\Desktop\FR_HKVision_Export\FR_HKVision\FR_HKVision\bin\Debug\net8.0\Microsoft.SqlServer.Server.dll
+C:\Users\41800\Desktop\FR_HKVision_Export\FR_HKVision\FR_HKVision\bin\Debug\net8.0\Newtonsoft.Json.dll
+C:\Users\41800\Desktop\FR_HKVision_Export\FR_HKVision\FR_HKVision\bin\Debug\net8.0\Newtonsoft.Json.Bson.dll
+C:\Users\41800\Desktop\FR_HKVision_Export\FR_HKVision\FR_HKVision\bin\Debug\net8.0\Oracle.ManagedDataAccess.dll
+C:\Users\41800\Desktop\FR_HKVision_Export\FR_HKVision\FR_HKVision\bin\Debug\net8.0\QuickNV.HikvisionNetSDK.dll
+C:\Users\41800\Desktop\FR_HKVision_Export\FR_HKVision\FR_HKVision\bin\Debug\net8.0\System.ClientModel.dll
+C:\Users\41800\Desktop\FR_HKVision_Export\FR_HKVision\FR_HKVision\bin\Debug\net8.0\System.Configuration.ConfigurationManager.dll
+C:\Users\41800\Desktop\FR_HKVision_Export\FR_HKVision\FR_HKVision\bin\Debug\net8.0\System.Data.SqlClient.dll
+C:\Users\41800\Desktop\FR_HKVision_Export\FR_HKVision\FR_HKVision\bin\Debug\net8.0\System.Diagnostics.EventLog.dll
+C:\Users\41800\Desktop\FR_HKVision_Export\FR_HKVision\FR_HKVision\bin\Debug\net8.0\System.Diagnostics.PerformanceCounter.dll
+C:\Users\41800\Desktop\FR_HKVision_Export\FR_HKVision\FR_HKVision\bin\Debug\net8.0\System.DirectoryServices.dll
+C:\Users\41800\Desktop\FR_HKVision_Export\FR_HKVision\FR_HKVision\bin\Debug\net8.0\System.DirectoryServices.Protocols.dll
+C:\Users\41800\Desktop\FR_HKVision_Export\FR_HKVision\FR_HKVision\bin\Debug\net8.0\System.IdentityModel.Tokens.Jwt.dll
+C:\Users\41800\Desktop\FR_HKVision_Export\FR_HKVision\FR_HKVision\bin\Debug\net8.0\System.Memory.Data.dll
+C:\Users\41800\Desktop\FR_HKVision_Export\FR_HKVision\FR_HKVision\bin\Debug\net8.0\System.Security.Cryptography.Pkcs.dll
+C:\Users\41800\Desktop\FR_HKVision_Export\FR_HKVision\FR_HKVision\bin\Debug\net8.0\System.Security.Cryptography.ProtectedData.dll
+C:\Users\41800\Desktop\FR_HKVision_Export\FR_HKVision\FR_HKVision\bin\Debug\net8.0\System.Security.Permissions.dll
+C:\Users\41800\Desktop\FR_HKVision_Export\FR_HKVision\FR_HKVision\bin\Debug\net8.0\System.Windows.Extensions.dll
+C:\Users\41800\Desktop\FR_HKVision_Export\FR_HKVision\FR_HKVision\bin\Debug\net8.0\Swan.Lite.dll
+C:\Users\41800\Desktop\FR_HKVision_Export\FR_HKVision\FR_HKVision\bin\Debug\net8.0\cs\Microsoft.Data.SqlClient.resources.dll
+C:\Users\41800\Desktop\FR_HKVision_Export\FR_HKVision\FR_HKVision\bin\Debug\net8.0\de\Microsoft.Data.SqlClient.resources.dll
+C:\Users\41800\Desktop\FR_HKVision_Export\FR_HKVision\FR_HKVision\bin\Debug\net8.0\es\Microsoft.Data.SqlClient.resources.dll
+C:\Users\41800\Desktop\FR_HKVision_Export\FR_HKVision\FR_HKVision\bin\Debug\net8.0\fr\Microsoft.Data.SqlClient.resources.dll
+C:\Users\41800\Desktop\FR_HKVision_Export\FR_HKVision\FR_HKVision\bin\Debug\net8.0\it\Microsoft.Data.SqlClient.resources.dll
+C:\Users\41800\Desktop\FR_HKVision_Export\FR_HKVision\FR_HKVision\bin\Debug\net8.0\ja\Microsoft.Data.SqlClient.resources.dll
+C:\Users\41800\Desktop\FR_HKVision_Export\FR_HKVision\FR_HKVision\bin\Debug\net8.0\ko\Microsoft.Data.SqlClient.resources.dll
+C:\Users\41800\Desktop\FR_HKVision_Export\FR_HKVision\FR_HKVision\bin\Debug\net8.0\pl\Microsoft.Data.SqlClient.resources.dll
+C:\Users\41800\Desktop\FR_HKVision_Export\FR_HKVision\FR_HKVision\bin\Debug\net8.0\pt-BR\Microsoft.Data.SqlClient.resources.dll
+C:\Users\41800\Desktop\FR_HKVision_Export\FR_HKVision\FR_HKVision\bin\Debug\net8.0\ru\Microsoft.Data.SqlClient.resources.dll
+C:\Users\41800\Desktop\FR_HKVision_Export\FR_HKVision\FR_HKVision\bin\Debug\net8.0\tr\Microsoft.Data.SqlClient.resources.dll
+C:\Users\41800\Desktop\FR_HKVision_Export\FR_HKVision\FR_HKVision\bin\Debug\net8.0\zh-Hans\Microsoft.Data.SqlClient.resources.dll
+C:\Users\41800\Desktop\FR_HKVision_Export\FR_HKVision\FR_HKVision\bin\Debug\net8.0\zh-Hant\Microsoft.Data.SqlClient.resources.dll
+C:\Users\41800\Desktop\FR_HKVision_Export\FR_HKVision\FR_HKVision\bin\Debug\net8.0\runtimes\unix\lib\net8.0\Microsoft.Data.SqlClient.dll
+C:\Users\41800\Desktop\FR_HKVision_Export\FR_HKVision\FR_HKVision\bin\Debug\net8.0\runtimes\win\lib\net8.0\Microsoft.Data.SqlClient.dll
+C:\Users\41800\Desktop\FR_HKVision_Export\FR_HKVision\FR_HKVision\bin\Debug\net8.0\runtimes\win-arm64\native\Microsoft.Data.SqlClient.SNI.dll
+C:\Users\41800\Desktop\FR_HKVision_Export\FR_HKVision\FR_HKVision\bin\Debug\net8.0\runtimes\win-x64\native\Microsoft.Data.SqlClient.SNI.dll
+C:\Users\41800\Desktop\FR_HKVision_Export\FR_HKVision\FR_HKVision\bin\Debug\net8.0\runtimes\win-x86\native\Microsoft.Data.SqlClient.SNI.dll
+C:\Users\41800\Desktop\FR_HKVision_Export\FR_HKVision\FR_HKVision\bin\Debug\net8.0\runtimes\linux-arm64\native\HCNetSDKCom\libAudioIntercom.so
+C:\Users\41800\Desktop\FR_HKVision_Export\FR_HKVision\FR_HKVision\bin\Debug\net8.0\runtimes\linux-arm64\native\HCNetSDKCom\libHCAlarm.so
+C:\Users\41800\Desktop\FR_HKVision_Export\FR_HKVision\FR_HKVision\bin\Debug\net8.0\runtimes\linux-arm64\native\HCNetSDKCom\libHCCoreDevCfg.so
+C:\Users\41800\Desktop\FR_HKVision_Export\FR_HKVision\FR_HKVision\bin\Debug\net8.0\runtimes\linux-arm64\native\HCNetSDKCom\libHCDisplay.so
+C:\Users\41800\Desktop\FR_HKVision_Export\FR_HKVision\FR_HKVision\bin\Debug\net8.0\runtimes\linux-arm64\native\HCNetSDKCom\libHCGeneralCfgMgr.so
+C:\Users\41800\Desktop\FR_HKVision_Export\FR_HKVision\FR_HKVision\bin\Debug\net8.0\runtimes\linux-arm64\native\HCNetSDKCom\libHCIndustry.so
+C:\Users\41800\Desktop\FR_HKVision_Export\FR_HKVision\FR_HKVision\bin\Debug\net8.0\runtimes\linux-arm64\native\HCNetSDKCom\libHCPlayBack.so
+C:\Users\41800\Desktop\FR_HKVision_Export\FR_HKVision\FR_HKVision\bin\Debug\net8.0\runtimes\linux-arm64\native\HCNetSDKCom\libHCPreview.so
+C:\Users\41800\Desktop\FR_HKVision_Export\FR_HKVision\FR_HKVision\bin\Debug\net8.0\runtimes\linux-arm64\native\HCNetSDKCom\libHCVoiceTalk.so
+C:\Users\41800\Desktop\FR_HKVision_Export\FR_HKVision\FR_HKVision\bin\Debug\net8.0\runtimes\linux-arm64\native\HCNetSDKCom\libStreamTransClient.so
+C:\Users\41800\Desktop\FR_HKVision_Export\FR_HKVision\FR_HKVision\bin\Debug\net8.0\runtimes\linux-arm64\native\HCNetSDKCom\libSystemTransform.so
+C:\Users\41800\Desktop\FR_HKVision_Export\FR_HKVision\FR_HKVision\bin\Debug\net8.0\runtimes\linux-arm64\native\HCNetSDKCom\libanalyzedata.so
+C:\Users\41800\Desktop\FR_HKVision_Export\FR_HKVision\FR_HKVision\bin\Debug\net8.0\runtimes\linux-arm64\native\HCNetSDKCom\libiconv.so.2
+C:\Users\41800\Desktop\FR_HKVision_Export\FR_HKVision\FR_HKVision\bin\Debug\net8.0\runtimes\linux-arm64\native\HCNetSDK_Log_Switch.xml
+C:\Users\41800\Desktop\FR_HKVision_Export\FR_HKVision\FR_HKVision\bin\Debug\net8.0\runtimes\linux-arm64\native\libAudioRender.so
+C:\Users\41800\Desktop\FR_HKVision_Export\FR_HKVision\FR_HKVision\bin\Debug\net8.0\runtimes\linux-arm64\native\libHCCore.so
+C:\Users\41800\Desktop\FR_HKVision_Export\FR_HKVision\FR_HKVision\bin\Debug\net8.0\runtimes\linux-arm64\native\libPlayCtrl.so
+C:\Users\41800\Desktop\FR_HKVision_Export\FR_HKVision\FR_HKVision\bin\Debug\net8.0\runtimes\linux-arm64\native\libSuperRender.so
+C:\Users\41800\Desktop\FR_HKVision_Export\FR_HKVision\FR_HKVision\bin\Debug\net8.0\runtimes\linux-arm64\native\libcrypto.so
+C:\Users\41800\Desktop\FR_HKVision_Export\FR_HKVision\FR_HKVision\bin\Debug\net8.0\runtimes\linux-arm64\native\libcrypto.so.1.1
+C:\Users\41800\Desktop\FR_HKVision_Export\FR_HKVision\FR_HKVision\bin\Debug\net8.0\runtimes\linux-arm64\native\libhcnetsdk.so
+C:\Users\41800\Desktop\FR_HKVision_Export\FR_HKVision\FR_HKVision\bin\Debug\net8.0\runtimes\linux-arm64\native\libhpr.so
+C:\Users\41800\Desktop\FR_HKVision_Export\FR_HKVision\FR_HKVision\bin\Debug\net8.0\runtimes\linux-arm64\native\libssl.so
+C:\Users\41800\Desktop\FR_HKVision_Export\FR_HKVision\FR_HKVision\bin\Debug\net8.0\runtimes\linux-arm64\native\libssl.so.1.1
+C:\Users\41800\Desktop\FR_HKVision_Export\FR_HKVision\FR_HKVision\bin\Debug\net8.0\runtimes\linux-arm64\native\libz.so
+C:\Users\41800\Desktop\FR_HKVision_Export\FR_HKVision\FR_HKVision\bin\Debug\net8.0\runtimes\linux-x64\native\HCNetSDKCom\libAudioIntercom.so
+C:\Users\41800\Desktop\FR_HKVision_Export\FR_HKVision\FR_HKVision\bin\Debug\net8.0\runtimes\linux-x64\native\HCNetSDKCom\libHCAlarm.so
+C:\Users\41800\Desktop\FR_HKVision_Export\FR_HKVision\FR_HKVision\bin\Debug\net8.0\runtimes\linux-x64\native\HCNetSDKCom\libHCCoreDevCfg.so
+C:\Users\41800\Desktop\FR_HKVision_Export\FR_HKVision\FR_HKVision\bin\Debug\net8.0\runtimes\linux-x64\native\HCNetSDKCom\libHCDisplay.so
+C:\Users\41800\Desktop\FR_HKVision_Export\FR_HKVision\FR_HKVision\bin\Debug\net8.0\runtimes\linux-x64\native\HCNetSDKCom\libHCGeneralCfgMgr.so
+C:\Users\41800\Desktop\FR_HKVision_Export\FR_HKVision\FR_HKVision\bin\Debug\net8.0\runtimes\linux-x64\native\HCNetSDKCom\libHCIndustry.so
+C:\Users\41800\Desktop\FR_HKVision_Export\FR_HKVision\FR_HKVision\bin\Debug\net8.0\runtimes\linux-x64\native\HCNetSDKCom\libHCPlayBack.so
+C:\Users\41800\Desktop\FR_HKVision_Export\FR_HKVision\FR_HKVision\bin\Debug\net8.0\runtimes\linux-x64\native\HCNetSDKCom\libHCPreview.so
+C:\Users\41800\Desktop\FR_HKVision_Export\FR_HKVision\FR_HKVision\bin\Debug\net8.0\runtimes\linux-x64\native\HCNetSDKCom\libHCVoiceTalk.so
+C:\Users\41800\Desktop\FR_HKVision_Export\FR_HKVision\FR_HKVision\bin\Debug\net8.0\runtimes\linux-x64\native\HCNetSDKCom\libStreamTransClient.so
+C:\Users\41800\Desktop\FR_HKVision_Export\FR_HKVision\FR_HKVision\bin\Debug\net8.0\runtimes\linux-x64\native\HCNetSDKCom\libSystemTransform.so
+C:\Users\41800\Desktop\FR_HKVision_Export\FR_HKVision\FR_HKVision\bin\Debug\net8.0\runtimes\linux-x64\native\HCNetSDKCom\libanalyzedata.so
+C:\Users\41800\Desktop\FR_HKVision_Export\FR_HKVision\FR_HKVision\bin\Debug\net8.0\runtimes\linux-x64\native\HCNetSDKCom\libiconv2.so
+C:\Users\41800\Desktop\FR_HKVision_Export\FR_HKVision\FR_HKVision\bin\Debug\net8.0\runtimes\linux-x64\native\HCNetSDK_Log_Switch.xml
+C:\Users\41800\Desktop\FR_HKVision_Export\FR_HKVision\FR_HKVision\bin\Debug\net8.0\runtimes\linux-x64\native\libAudioRender.so
+C:\Users\41800\Desktop\FR_HKVision_Export\FR_HKVision\FR_HKVision\bin\Debug\net8.0\runtimes\linux-x64\native\libHCCore.so
+C:\Users\41800\Desktop\FR_HKVision_Export\FR_HKVision\FR_HKVision\bin\Debug\net8.0\runtimes\linux-x64\native\libNPQos.so
+C:\Users\41800\Desktop\FR_HKVision_Export\FR_HKVision\FR_HKVision\bin\Debug\net8.0\runtimes\linux-x64\native\libPlayCtrl.so
+C:\Users\41800\Desktop\FR_HKVision_Export\FR_HKVision\FR_HKVision\bin\Debug\net8.0\runtimes\linux-x64\native\libSuperRender.so
+C:\Users\41800\Desktop\FR_HKVision_Export\FR_HKVision\FR_HKVision\bin\Debug\net8.0\runtimes\linux-x64\native\libcrypto.so.1.1
+C:\Users\41800\Desktop\FR_HKVision_Export\FR_HKVision\FR_HKVision\bin\Debug\net8.0\runtimes\linux-x64\native\libhcnetsdk.so
+C:\Users\41800\Desktop\FR_HKVision_Export\FR_HKVision\FR_HKVision\bin\Debug\net8.0\runtimes\linux-x64\native\libhpr.so
+C:\Users\41800\Desktop\FR_HKVision_Export\FR_HKVision\FR_HKVision\bin\Debug\net8.0\runtimes\linux-x64\native\libopenal.so.1
+C:\Users\41800\Desktop\FR_HKVision_Export\FR_HKVision\FR_HKVision\bin\Debug\net8.0\runtimes\linux-x64\native\libssl.so.1.1
+C:\Users\41800\Desktop\FR_HKVision_Export\FR_HKVision\FR_HKVision\bin\Debug\net8.0\runtimes\linux-x64\native\libz.so
+C:\Users\41800\Desktop\FR_HKVision_Export\FR_HKVision\FR_HKVision\bin\Debug\net8.0\runtimes\win-x64\native\AudioRender.dll
+C:\Users\41800\Desktop\FR_HKVision_Export\FR_HKVision\FR_HKVision\bin\Debug\net8.0\runtimes\win-x64\native\GdiPlus.dll
+C:\Users\41800\Desktop\FR_HKVision_Export\FR_HKVision\FR_HKVision\bin\Debug\net8.0\runtimes\win-x64\native\HCCore.dll
+C:\Users\41800\Desktop\FR_HKVision_Export\FR_HKVision\FR_HKVision\bin\Debug\net8.0\runtimes\win-x64\native\HCNetSDK.dll
+C:\Users\41800\Desktop\FR_HKVision_Export\FR_HKVision\FR_HKVision\bin\Debug\net8.0\runtimes\win-x64\native\HCNetSDKCom\AnalyzeData.dll
+C:\Users\41800\Desktop\FR_HKVision_Export\FR_HKVision\FR_HKVision\bin\Debug\net8.0\runtimes\win-x64\native\HCNetSDKCom\AudioIntercom.dll
+C:\Users\41800\Desktop\FR_HKVision_Export\FR_HKVision\FR_HKVision\bin\Debug\net8.0\runtimes\win-x64\native\HCNetSDKCom\AudioRender.dll
+C:\Users\41800\Desktop\FR_HKVision_Export\FR_HKVision\FR_HKVision\bin\Debug\net8.0\runtimes\win-x64\native\HCNetSDKCom\HCAlarm.dll
+C:\Users\41800\Desktop\FR_HKVision_Export\FR_HKVision\FR_HKVision\bin\Debug\net8.0\runtimes\win-x64\native\HCNetSDKCom\HCCoreDevCfg.dll
+C:\Users\41800\Desktop\FR_HKVision_Export\FR_HKVision\FR_HKVision\bin\Debug\net8.0\runtimes\win-x64\native\HCNetSDKCom\HCDisplay.dll
+C:\Users\41800\Desktop\FR_HKVision_Export\FR_HKVision\FR_HKVision\bin\Debug\net8.0\runtimes\win-x64\native\HCNetSDKCom\HCGeneralCfgMgr.dll
+C:\Users\41800\Desktop\FR_HKVision_Export\FR_HKVision\FR_HKVision\bin\Debug\net8.0\runtimes\win-x64\native\HCNetSDKCom\HCIndustry.dll
+C:\Users\41800\Desktop\FR_HKVision_Export\FR_HKVision\FR_HKVision\bin\Debug\net8.0\runtimes\win-x64\native\HCNetSDKCom\HCPlayBack.dll
+C:\Users\41800\Desktop\FR_HKVision_Export\FR_HKVision\FR_HKVision\bin\Debug\net8.0\runtimes\win-x64\native\HCNetSDKCom\HCPreview.dll
+C:\Users\41800\Desktop\FR_HKVision_Export\FR_HKVision\FR_HKVision\bin\Debug\net8.0\runtimes\win-x64\native\HCNetSDKCom\HCVoiceTalk.dll
+C:\Users\41800\Desktop\FR_HKVision_Export\FR_HKVision\FR_HKVision\bin\Debug\net8.0\runtimes\win-x64\native\HCNetSDKCom\OpenAL32.dll
+C:\Users\41800\Desktop\FR_HKVision_Export\FR_HKVision\FR_HKVision\bin\Debug\net8.0\runtimes\win-x64\native\HCNetSDKCom\StreamTransClient.dll
+C:\Users\41800\Desktop\FR_HKVision_Export\FR_HKVision\FR_HKVision\bin\Debug\net8.0\runtimes\win-x64\native\HCNetSDKCom\SystemTransform.dll
+C:\Users\41800\Desktop\FR_HKVision_Export\FR_HKVision\FR_HKVision\bin\Debug\net8.0\runtimes\win-x64\native\HCNetSDKCom\libiconv2.dll
+C:\Users\41800\Desktop\FR_HKVision_Export\FR_HKVision\FR_HKVision\bin\Debug\net8.0\runtimes\win-x64\native\HXVA.dll
+C:\Users\41800\Desktop\FR_HKVision_Export\FR_HKVision\FR_HKVision\bin\Debug\net8.0\runtimes\win-x64\native\HmMerge.dll
+C:\Users\41800\Desktop\FR_HKVision_Export\FR_HKVision\FR_HKVision\bin\Debug\net8.0\runtimes\win-x64\native\LocalSensorAdd.dat
+C:\Users\41800\Desktop\FR_HKVision_Export\FR_HKVision\FR_HKVision\bin\Debug\net8.0\runtimes\win-x64\native\LocalXml.zip
+C:\Users\41800\Desktop\FR_HKVision_Export\FR_HKVision\FR_HKVision\bin\Debug\net8.0\runtimes\win-x64\native\MP_Render.dll
+C:\Users\41800\Desktop\FR_HKVision_Export\FR_HKVision\FR_HKVision\bin\Debug\net8.0\runtimes\win-x64\native\NPQos.dll
+C:\Users\41800\Desktop\FR_HKVision_Export\FR_HKVision\FR_HKVision\bin\Debug\net8.0\runtimes\win-x64\native\OpenAL32.dll
+C:\Users\41800\Desktop\FR_HKVision_Export\FR_HKVision\FR_HKVision\bin\Debug\net8.0\runtimes\win-x64\native\PlayCtrl.dll
+C:\Users\41800\Desktop\FR_HKVision_Export\FR_HKVision\FR_HKVision\bin\Debug\net8.0\runtimes\win-x64\native\SuperRender.dll
+C:\Users\41800\Desktop\FR_HKVision_Export\FR_HKVision\FR_HKVision\bin\Debug\net8.0\runtimes\win-x64\native\YUVProcess.dll
+C:\Users\41800\Desktop\FR_HKVision_Export\FR_HKVision\FR_HKVision\bin\Debug\net8.0\runtimes\win-x64\native\hlog.dll
+C:\Users\41800\Desktop\FR_HKVision_Export\FR_HKVision\FR_HKVision\bin\Debug\net8.0\runtimes\win-x64\native\hpr.dll
+C:\Users\41800\Desktop\FR_HKVision_Export\FR_HKVision\FR_HKVision\bin\Debug\net8.0\runtimes\win-x64\native\libcrypto-1_1-x64.dll
+C:\Users\41800\Desktop\FR_HKVision_Export\FR_HKVision\FR_HKVision\bin\Debug\net8.0\runtimes\win-x64\native\libmmd.dll
+C:\Users\41800\Desktop\FR_HKVision_Export\FR_HKVision\FR_HKVision\bin\Debug\net8.0\runtimes\win-x64\native\libssl-1_1-x64.dll
+C:\Users\41800\Desktop\FR_HKVision_Export\FR_HKVision\FR_HKVision\bin\Debug\net8.0\runtimes\win-x64\native\zlib1.dll
+C:\Users\41800\Desktop\FR_HKVision_Export\FR_HKVision\FR_HKVision\bin\Debug\net8.0\runtimes\win-arm64\native\sni.dll
+C:\Users\41800\Desktop\FR_HKVision_Export\FR_HKVision\FR_HKVision\bin\Debug\net8.0\runtimes\win-x64\native\sni.dll
+C:\Users\41800\Desktop\FR_HKVision_Export\FR_HKVision\FR_HKVision\bin\Debug\net8.0\runtimes\win-x86\native\sni.dll
+C:\Users\41800\Desktop\FR_HKVision_Export\FR_HKVision\FR_HKVision\bin\Debug\net8.0\runtimes\unix\lib\net8.0\System.Data.SqlClient.dll
+C:\Users\41800\Desktop\FR_HKVision_Export\FR_HKVision\FR_HKVision\bin\Debug\net8.0\runtimes\win\lib\net8.0\System.Data.SqlClient.dll
+C:\Users\41800\Desktop\FR_HKVision_Export\FR_HKVision\FR_HKVision\bin\Debug\net8.0\runtimes\win\lib\net8.0\System.Diagnostics.EventLog.dll
+C:\Users\41800\Desktop\FR_HKVision_Export\FR_HKVision\FR_HKVision\bin\Debug\net8.0\runtimes\win\lib\net8.0\System.Diagnostics.PerformanceCounter.dll
+C:\Users\41800\Desktop\FR_HKVision_Export\FR_HKVision\FR_HKVision\bin\Debug\net8.0\runtimes\win\lib\net8.0\System.DirectoryServices.dll
+C:\Users\41800\Desktop\FR_HKVision_Export\FR_HKVision\FR_HKVision\bin\Debug\net8.0\runtimes\linux\lib\net8.0\System.DirectoryServices.Protocols.dll
+C:\Users\41800\Desktop\FR_HKVision_Export\FR_HKVision\FR_HKVision\bin\Debug\net8.0\runtimes\osx\lib\net8.0\System.DirectoryServices.Protocols.dll
+C:\Users\41800\Desktop\FR_HKVision_Export\FR_HKVision\FR_HKVision\bin\Debug\net8.0\runtimes\win\lib\net8.0\System.DirectoryServices.Protocols.dll
+C:\Users\41800\Desktop\FR_HKVision_Export\FR_HKVision\FR_HKVision\bin\Debug\net8.0\runtimes\win\lib\net8.0\System.Security.Cryptography.Pkcs.dll
+C:\Users\41800\Desktop\FR_HKVision_Export\FR_HKVision\FR_HKVision\bin\Debug\net8.0\runtimes\win\lib\net8.0\System.Windows.Extensions.dll
+C:\Users\41800\Desktop\FR_HKVision_Export\FR_HKVision\FR_HKVision\obj\Debug\net8.0\FR_HKVision.csproj.AssemblyReference.cache
+C:\Users\41800\Desktop\FR_HKVision_Export\FR_HKVision\FR_HKVision\obj\Debug\net8.0\FR_HKVision.GeneratedMSBuildEditorConfig.editorconfig
+C:\Users\41800\Desktop\FR_HKVision_Export\FR_HKVision\FR_HKVision\obj\Debug\net8.0\FR_HKVision.AssemblyInfoInputs.cache
+C:\Users\41800\Desktop\FR_HKVision_Export\FR_HKVision\FR_HKVision\obj\Debug\net8.0\FR_HKVision.AssemblyInfo.cs
+C:\Users\41800\Desktop\FR_HKVision_Export\FR_HKVision\FR_HKVision\obj\Debug\net8.0\FR_HKVision.csproj.CoreCompileInputs.cache
+C:\Users\41800\Desktop\FR_HKVision_Export\FR_HKVision\FR_HKVision\obj\Debug\net8.0\FR_HKVision.MvcApplicationPartsAssemblyInfo.cache
+C:\Users\41800\Desktop\FR_HKVision_Export\FR_HKVision\FR_HKVision\obj\Debug\net8.0\FR_HKVision.RazorAssemblyInfo.cache
+C:\Users\41800\Desktop\FR_HKVision_Export\FR_HKVision\FR_HKVision\obj\Debug\net8.0\FR_HKVision.RazorAssemblyInfo.cs
+C:\Users\41800\Desktop\FR_HKVision_Export\FR_HKVision\FR_HKVision\obj\Debug\net8.0\scopedcss\Views\Shared\_Layout.cshtml.rz.scp.css
+C:\Users\41800\Desktop\FR_HKVision_Export\FR_HKVision\FR_HKVision\obj\Debug\net8.0\scopedcss\bundle\FR_HKVision.styles.css
+C:\Users\41800\Desktop\FR_HKVision_Export\FR_HKVision\FR_HKVision\obj\Debug\net8.0\scopedcss\projectbundle\FR_HKVision.bundle.scp.css
+C:\Users\41800\Desktop\FR_HKVision_Export\FR_HKVision\FR_HKVision\obj\Debug\net8.0\staticwebassets.build.json
+C:\Users\41800\Desktop\FR_HKVision_Export\FR_HKVision\FR_HKVision\obj\Debug\net8.0\staticwebassets.development.json
+C:\Users\41800\Desktop\FR_HKVision_Export\FR_HKVision\FR_HKVision\obj\Debug\net8.0\staticwebassets.build.endpoints.json
+C:\Users\41800\Desktop\FR_HKVision_Export\FR_HKVision\FR_HKVision\obj\Debug\net8.0\staticwebassets\msbuild.FR_HKVision.Microsoft.AspNetCore.StaticWebAssets.props
+C:\Users\41800\Desktop\FR_HKVision_Export\FR_HKVision\FR_HKVision\obj\Debug\net8.0\staticwebassets\msbuild.FR_HKVision.Microsoft.AspNetCore.StaticWebAssetEndpoints.props
+C:\Users\41800\Desktop\FR_HKVision_Export\FR_HKVision\FR_HKVision\obj\Debug\net8.0\staticwebassets\msbuild.build.FR_HKVision.props
+C:\Users\41800\Desktop\FR_HKVision_Export\FR_HKVision\FR_HKVision\obj\Debug\net8.0\staticwebassets\msbuild.buildMultiTargeting.FR_HKVision.props
+C:\Users\41800\Desktop\FR_HKVision_Export\FR_HKVision\FR_HKVision\obj\Debug\net8.0\staticwebassets\msbuild.buildTransitive.FR_HKVision.props
+C:\Users\41800\Desktop\FR_HKVision_Export\FR_HKVision\FR_HKVision\obj\Debug\net8.0\staticwebassets.pack.json
+C:\Users\41800\Desktop\FR_HKVision_Export\FR_HKVision\FR_HKVision\obj\Debug\net8.0\FR_HKVis.AC21A2B9.Up2Date
+C:\Users\41800\Desktop\FR_HKVision_Export\FR_HKVision\FR_HKVision\obj\Debug\net8.0\FR_HKVision.dll
+C:\Users\41800\Desktop\FR_HKVision_Export\FR_HKVision\FR_HKVision\obj\Debug\net8.0\refint\FR_HKVision.dll
+C:\Users\41800\Desktop\FR_HKVision_Export\FR_HKVision\FR_HKVision\obj\Debug\net8.0\FR_HKVision.pdb
+C:\Users\41800\Desktop\FR_HKVision_Export\FR_HKVision\FR_HKVision\obj\Debug\net8.0\FR_HKVision.genruntimeconfig.cache
+C:\Users\41800\Desktop\FR_HKVision_Export\FR_HKVision\FR_HKVision\obj\Debug\net8.0\ref\FR_HKVision.dll
+C:\Program Files (x86)\C#\FR_HKVision_Export\FR_HKVision\FR_HKVision\bin\Debug\net8.0\appsettings.Development.json
+C:\Program Files (x86)\C#\FR_HKVision_Export\FR_HKVision\FR_HKVision\bin\Debug\net8.0\appsettings.json
+C:\Program Files (x86)\C#\FR_HKVision_Export\FR_HKVision\FR_HKVision\bin\Debug\net8.0\FR_HKVision.staticwebassets.runtime.json
+C:\Program Files (x86)\C#\FR_HKVision_Export\FR_HKVision\FR_HKVision\bin\Debug\net8.0\FR_HKVision.exe
+C:\Program Files (x86)\C#\FR_HKVision_Export\FR_HKVision\FR_HKVision\bin\Debug\net8.0\FR_HKVision.deps.json
+C:\Program Files (x86)\C#\FR_HKVision_Export\FR_HKVision\FR_HKVision\bin\Debug\net8.0\FR_HKVision.runtimeconfig.json
+C:\Program Files (x86)\C#\FR_HKVision_Export\FR_HKVision\FR_HKVision\bin\Debug\net8.0\FR_HKVision.dll
+C:\Program Files (x86)\C#\FR_HKVision_Export\FR_HKVision\FR_HKVision\bin\Debug\net8.0\FR_HKVision.pdb
+C:\Program Files (x86)\C#\FR_HKVision_Export\FR_HKVision\FR_HKVision\bin\Debug\net8.0\Azure.Core.dll
+C:\Program Files (x86)\C#\FR_HKVision_Export\FR_HKVision\FR_HKVision\bin\Debug\net8.0\Azure.Identity.dll
+C:\Program Files (x86)\C#\FR_HKVision_Export\FR_HKVision\FR_HKVision\bin\Debug\net8.0\Dahomey.Json.dll
+C:\Program Files (x86)\C#\FR_HKVision_Export\FR_HKVision\FR_HKVision\bin\Debug\net8.0\Dahomey.Json.Attributes.dll
+C:\Program Files (x86)\C#\FR_HKVision_Export\FR_HKVision\FR_HKVision\bin\Debug\net8.0\EmbedIO.dll
+C:\Program Files (x86)\C#\FR_HKVision_Export\FR_HKVision\FR_HKVision\bin\Debug\net8.0\HikVision.dll
+C:\Program Files (x86)\C#\FR_HKVision_Export\FR_HKVision\FR_HKVision\bin\Debug\net8.0\Hikvision Artemis Api.dll
+C:\Program Files (x86)\C#\FR_HKVision_Export\FR_HKVision\FR_HKVision\bin\Debug\net8.0\Microsoft.AspNetCore.JsonPatch.dll
+C:\Program Files (x86)\C#\FR_HKVision_Export\FR_HKVision\FR_HKVision\bin\Debug\net8.0\Microsoft.AspNetCore.Mvc.NewtonsoftJson.dll
+C:\Program Files (x86)\C#\FR_HKVision_Export\FR_HKVision\FR_HKVision\bin\Debug\net8.0\Microsoft.Bcl.AsyncInterfaces.dll
+C:\Program Files (x86)\C#\FR_HKVision_Export\FR_HKVision\FR_HKVision\bin\Debug\net8.0\Microsoft.Bcl.Cryptography.dll
+C:\Program Files (x86)\C#\FR_HKVision_Export\FR_HKVision\FR_HKVision\bin\Debug\net8.0\Microsoft.Data.SqlClient.dll
+C:\Program Files (x86)\C#\FR_HKVision_Export\FR_HKVision\FR_HKVision\bin\Debug\net8.0\Microsoft.Extensions.Caching.Memory.dll
+C:\Program Files (x86)\C#\FR_HKVision_Export\FR_HKVision\FR_HKVision\bin\Debug\net8.0\Microsoft.Extensions.DependencyInjection.Abstractions.dll
+C:\Program Files (x86)\C#\FR_HKVision_Export\FR_HKVision\FR_HKVision\bin\Debug\net8.0\Microsoft.Extensions.Logging.Abstractions.dll
+C:\Program Files (x86)\C#\FR_HKVision_Export\FR_HKVision\FR_HKVision\bin\Debug\net8.0\Microsoft.Extensions.Options.dll
+C:\Program Files (x86)\C#\FR_HKVision_Export\FR_HKVision\FR_HKVision\bin\Debug\net8.0\Microsoft.Identity.Client.dll
+C:\Program Files (x86)\C#\FR_HKVision_Export\FR_HKVision\FR_HKVision\bin\Debug\net8.0\Microsoft.Identity.Client.Extensions.Msal.dll
+C:\Program Files (x86)\C#\FR_HKVision_Export\FR_HKVision\FR_HKVision\bin\Debug\net8.0\Microsoft.IdentityModel.Abstractions.dll
+C:\Program Files (x86)\C#\FR_HKVision_Export\FR_HKVision\FR_HKVision\bin\Debug\net8.0\Microsoft.IdentityModel.JsonWebTokens.dll
+C:\Program Files (x86)\C#\FR_HKVision_Export\FR_HKVision\FR_HKVision\bin\Debug\net8.0\Microsoft.IdentityModel.Logging.dll
+C:\Program Files (x86)\C#\FR_HKVision_Export\FR_HKVision\FR_HKVision\bin\Debug\net8.0\Microsoft.IdentityModel.Protocols.dll
+C:\Program Files (x86)\C#\FR_HKVision_Export\FR_HKVision\FR_HKVision\bin\Debug\net8.0\Microsoft.IdentityModel.Protocols.OpenIdConnect.dll
+C:\Program Files (x86)\C#\FR_HKVision_Export\FR_HKVision\FR_HKVision\bin\Debug\net8.0\Microsoft.IdentityModel.Tokens.dll
+C:\Program Files (x86)\C#\FR_HKVision_Export\FR_HKVision\FR_HKVision\bin\Debug\net8.0\Microsoft.SqlServer.Server.dll
+C:\Program Files (x86)\C#\FR_HKVision_Export\FR_HKVision\FR_HKVision\bin\Debug\net8.0\Newtonsoft.Json.dll
+C:\Program Files (x86)\C#\FR_HKVision_Export\FR_HKVision\FR_HKVision\bin\Debug\net8.0\Newtonsoft.Json.Bson.dll
+C:\Program Files (x86)\C#\FR_HKVision_Export\FR_HKVision\FR_HKVision\bin\Debug\net8.0\Oracle.ManagedDataAccess.dll
+C:\Program Files (x86)\C#\FR_HKVision_Export\FR_HKVision\FR_HKVision\bin\Debug\net8.0\QuickNV.HikvisionNetSDK.dll
+C:\Program Files (x86)\C#\FR_HKVision_Export\FR_HKVision\FR_HKVision\bin\Debug\net8.0\System.ClientModel.dll
+C:\Program Files (x86)\C#\FR_HKVision_Export\FR_HKVision\FR_HKVision\bin\Debug\net8.0\System.Configuration.ConfigurationManager.dll
+C:\Program Files (x86)\C#\FR_HKVision_Export\FR_HKVision\FR_HKVision\bin\Debug\net8.0\System.Data.SqlClient.dll
+C:\Program Files (x86)\C#\FR_HKVision_Export\FR_HKVision\FR_HKVision\bin\Debug\net8.0\System.Diagnostics.EventLog.dll
+C:\Program Files (x86)\C#\FR_HKVision_Export\FR_HKVision\FR_HKVision\bin\Debug\net8.0\System.Diagnostics.PerformanceCounter.dll
+C:\Program Files (x86)\C#\FR_HKVision_Export\FR_HKVision\FR_HKVision\bin\Debug\net8.0\System.DirectoryServices.dll
+C:\Program Files (x86)\C#\FR_HKVision_Export\FR_HKVision\FR_HKVision\bin\Debug\net8.0\System.DirectoryServices.Protocols.dll
+C:\Program Files (x86)\C#\FR_HKVision_Export\FR_HKVision\FR_HKVision\bin\Debug\net8.0\System.IdentityModel.Tokens.Jwt.dll
+C:\Program Files (x86)\C#\FR_HKVision_Export\FR_HKVision\FR_HKVision\bin\Debug\net8.0\System.Memory.Data.dll
+C:\Program Files (x86)\C#\FR_HKVision_Export\FR_HKVision\FR_HKVision\bin\Debug\net8.0\System.Security.Cryptography.Pkcs.dll
+C:\Program Files (x86)\C#\FR_HKVision_Export\FR_HKVision\FR_HKVision\bin\Debug\net8.0\System.Security.Cryptography.ProtectedData.dll
+C:\Program Files (x86)\C#\FR_HKVision_Export\FR_HKVision\FR_HKVision\bin\Debug\net8.0\System.Security.Permissions.dll
+C:\Program Files (x86)\C#\FR_HKVision_Export\FR_HKVision\FR_HKVision\bin\Debug\net8.0\System.Windows.Extensions.dll
+C:\Program Files (x86)\C#\FR_HKVision_Export\FR_HKVision\FR_HKVision\bin\Debug\net8.0\Swan.Lite.dll
+C:\Program Files (x86)\C#\FR_HKVision_Export\FR_HKVision\FR_HKVision\bin\Debug\net8.0\cs\Microsoft.Data.SqlClient.resources.dll
+C:\Program Files (x86)\C#\FR_HKVision_Export\FR_HKVision\FR_HKVision\bin\Debug\net8.0\de\Microsoft.Data.SqlClient.resources.dll
+C:\Program Files (x86)\C#\FR_HKVision_Export\FR_HKVision\FR_HKVision\bin\Debug\net8.0\es\Microsoft.Data.SqlClient.resources.dll
+C:\Program Files (x86)\C#\FR_HKVision_Export\FR_HKVision\FR_HKVision\bin\Debug\net8.0\fr\Microsoft.Data.SqlClient.resources.dll
+C:\Program Files (x86)\C#\FR_HKVision_Export\FR_HKVision\FR_HKVision\bin\Debug\net8.0\it\Microsoft.Data.SqlClient.resources.dll
+C:\Program Files (x86)\C#\FR_HKVision_Export\FR_HKVision\FR_HKVision\bin\Debug\net8.0\ja\Microsoft.Data.SqlClient.resources.dll
+C:\Program Files (x86)\C#\FR_HKVision_Export\FR_HKVision\FR_HKVision\bin\Debug\net8.0\ko\Microsoft.Data.SqlClient.resources.dll
+C:\Program Files (x86)\C#\FR_HKVision_Export\FR_HKVision\FR_HKVision\bin\Debug\net8.0\pl\Microsoft.Data.SqlClient.resources.dll
+C:\Program Files (x86)\C#\FR_HKVision_Export\FR_HKVision\FR_HKVision\bin\Debug\net8.0\pt-BR\Microsoft.Data.SqlClient.resources.dll
+C:\Program Files (x86)\C#\FR_HKVision_Export\FR_HKVision\FR_HKVision\bin\Debug\net8.0\ru\Microsoft.Data.SqlClient.resources.dll
+C:\Program Files (x86)\C#\FR_HKVision_Export\FR_HKVision\FR_HKVision\bin\Debug\net8.0\tr\Microsoft.Data.SqlClient.resources.dll
+C:\Program Files (x86)\C#\FR_HKVision_Export\FR_HKVision\FR_HKVision\bin\Debug\net8.0\zh-Hans\Microsoft.Data.SqlClient.resources.dll
+C:\Program Files (x86)\C#\FR_HKVision_Export\FR_HKVision\FR_HKVision\bin\Debug\net8.0\zh-Hant\Microsoft.Data.SqlClient.resources.dll
+C:\Program Files (x86)\C#\FR_HKVision_Export\FR_HKVision\FR_HKVision\bin\Debug\net8.0\runtimes\unix\lib\net8.0\Microsoft.Data.SqlClient.dll
+C:\Program Files (x86)\C#\FR_HKVision_Export\FR_HKVision\FR_HKVision\bin\Debug\net8.0\runtimes\win\lib\net8.0\Microsoft.Data.SqlClient.dll
+C:\Program Files (x86)\C#\FR_HKVision_Export\FR_HKVision\FR_HKVision\bin\Debug\net8.0\runtimes\win-arm64\native\Microsoft.Data.SqlClient.SNI.dll
+C:\Program Files (x86)\C#\FR_HKVision_Export\FR_HKVision\FR_HKVision\bin\Debug\net8.0\runtimes\win-x64\native\Microsoft.Data.SqlClient.SNI.dll
+C:\Program Files (x86)\C#\FR_HKVision_Export\FR_HKVision\FR_HKVision\bin\Debug\net8.0\runtimes\win-x86\native\Microsoft.Data.SqlClient.SNI.dll
+C:\Program Files (x86)\C#\FR_HKVision_Export\FR_HKVision\FR_HKVision\bin\Debug\net8.0\runtimes\linux-arm64\native\HCNetSDKCom\libAudioIntercom.so
+C:\Program Files (x86)\C#\FR_HKVision_Export\FR_HKVision\FR_HKVision\bin\Debug\net8.0\runtimes\linux-arm64\native\HCNetSDKCom\libHCAlarm.so
+C:\Program Files (x86)\C#\FR_HKVision_Export\FR_HKVision\FR_HKVision\bin\Debug\net8.0\runtimes\linux-arm64\native\HCNetSDKCom\libHCCoreDevCfg.so
+C:\Program Files (x86)\C#\FR_HKVision_Export\FR_HKVision\FR_HKVision\bin\Debug\net8.0\runtimes\linux-arm64\native\HCNetSDKCom\libHCDisplay.so
+C:\Program Files (x86)\C#\FR_HKVision_Export\FR_HKVision\FR_HKVision\bin\Debug\net8.0\runtimes\linux-arm64\native\HCNetSDKCom\libHCGeneralCfgMgr.so
+C:\Program Files (x86)\C#\FR_HKVision_Export\FR_HKVision\FR_HKVision\bin\Debug\net8.0\runtimes\linux-arm64\native\HCNetSDKCom\libHCIndustry.so
+C:\Program Files (x86)\C#\FR_HKVision_Export\FR_HKVision\FR_HKVision\bin\Debug\net8.0\runtimes\linux-arm64\native\HCNetSDKCom\libHCPlayBack.so
+C:\Program Files (x86)\C#\FR_HKVision_Export\FR_HKVision\FR_HKVision\bin\Debug\net8.0\runtimes\linux-arm64\native\HCNetSDKCom\libHCPreview.so
+C:\Program Files (x86)\C#\FR_HKVision_Export\FR_HKVision\FR_HKVision\bin\Debug\net8.0\runtimes\linux-arm64\native\HCNetSDKCom\libHCVoiceTalk.so
+C:\Program Files (x86)\C#\FR_HKVision_Export\FR_HKVision\FR_HKVision\bin\Debug\net8.0\runtimes\linux-arm64\native\HCNetSDKCom\libStreamTransClient.so
+C:\Program Files (x86)\C#\FR_HKVision_Export\FR_HKVision\FR_HKVision\bin\Debug\net8.0\runtimes\linux-arm64\native\HCNetSDKCom\libSystemTransform.so
+C:\Program Files (x86)\C#\FR_HKVision_Export\FR_HKVision\FR_HKVision\bin\Debug\net8.0\runtimes\linux-arm64\native\HCNetSDKCom\libanalyzedata.so
+C:\Program Files (x86)\C#\FR_HKVision_Export\FR_HKVision\FR_HKVision\bin\Debug\net8.0\runtimes\linux-arm64\native\HCNetSDKCom\libiconv.so.2
+C:\Program Files (x86)\C#\FR_HKVision_Export\FR_HKVision\FR_HKVision\bin\Debug\net8.0\runtimes\linux-arm64\native\HCNetSDK_Log_Switch.xml
+C:\Program Files (x86)\C#\FR_HKVision_Export\FR_HKVision\FR_HKVision\bin\Debug\net8.0\runtimes\linux-arm64\native\libAudioRender.so
+C:\Program Files (x86)\C#\FR_HKVision_Export\FR_HKVision\FR_HKVision\bin\Debug\net8.0\runtimes\linux-arm64\native\libHCCore.so
+C:\Program Files (x86)\C#\FR_HKVision_Export\FR_HKVision\FR_HKVision\bin\Debug\net8.0\runtimes\linux-arm64\native\libPlayCtrl.so
+C:\Program Files (x86)\C#\FR_HKVision_Export\FR_HKVision\FR_HKVision\bin\Debug\net8.0\runtimes\linux-arm64\native\libSuperRender.so
+C:\Program Files (x86)\C#\FR_HKVision_Export\FR_HKVision\FR_HKVision\bin\Debug\net8.0\runtimes\linux-arm64\native\libcrypto.so
+C:\Program Files (x86)\C#\FR_HKVision_Export\FR_HKVision\FR_HKVision\bin\Debug\net8.0\runtimes\linux-arm64\native\libcrypto.so.1.1
+C:\Program Files (x86)\C#\FR_HKVision_Export\FR_HKVision\FR_HKVision\bin\Debug\net8.0\runtimes\linux-arm64\native\libhcnetsdk.so
+C:\Program Files (x86)\C#\FR_HKVision_Export\FR_HKVision\FR_HKVision\bin\Debug\net8.0\runtimes\linux-arm64\native\libhpr.so
+C:\Program Files (x86)\C#\FR_HKVision_Export\FR_HKVision\FR_HKVision\bin\Debug\net8.0\runtimes\linux-arm64\native\libssl.so
+C:\Program Files (x86)\C#\FR_HKVision_Export\FR_HKVision\FR_HKVision\bin\Debug\net8.0\runtimes\linux-arm64\native\libssl.so.1.1
+C:\Program Files (x86)\C#\FR_HKVision_Export\FR_HKVision\FR_HKVision\bin\Debug\net8.0\runtimes\linux-arm64\native\libz.so
+C:\Program Files (x86)\C#\FR_HKVision_Export\FR_HKVision\FR_HKVision\bin\Debug\net8.0\runtimes\linux-x64\native\HCNetSDKCom\libAudioIntercom.so
+C:\Program Files (x86)\C#\FR_HKVision_Export\FR_HKVision\FR_HKVision\bin\Debug\net8.0\runtimes\linux-x64\native\HCNetSDKCom\libHCAlarm.so
+C:\Program Files (x86)\C#\FR_HKVision_Export\FR_HKVision\FR_HKVision\bin\Debug\net8.0\runtimes\linux-x64\native\HCNetSDKCom\libHCCoreDevCfg.so
+C:\Program Files (x86)\C#\FR_HKVision_Export\FR_HKVision\FR_HKVision\bin\Debug\net8.0\runtimes\linux-x64\native\HCNetSDKCom\libHCDisplay.so
+C:\Program Files (x86)\C#\FR_HKVision_Export\FR_HKVision\FR_HKVision\bin\Debug\net8.0\runtimes\linux-x64\native\HCNetSDKCom\libHCGeneralCfgMgr.so
+C:\Program Files (x86)\C#\FR_HKVision_Export\FR_HKVision\FR_HKVision\bin\Debug\net8.0\runtimes\linux-x64\native\HCNetSDKCom\libHCIndustry.so
+C:\Program Files (x86)\C#\FR_HKVision_Export\FR_HKVision\FR_HKVision\bin\Debug\net8.0\runtimes\linux-x64\native\HCNetSDKCom\libHCPlayBack.so
+C:\Program Files (x86)\C#\FR_HKVision_Export\FR_HKVision\FR_HKVision\bin\Debug\net8.0\runtimes\linux-x64\native\HCNetSDKCom\libHCPreview.so
+C:\Program Files (x86)\C#\FR_HKVision_Export\FR_HKVision\FR_HKVision\bin\Debug\net8.0\runtimes\linux-x64\native\HCNetSDKCom\libHCVoiceTalk.so
+C:\Program Files (x86)\C#\FR_HKVision_Export\FR_HKVision\FR_HKVision\bin\Debug\net8.0\runtimes\linux-x64\native\HCNetSDKCom\libStreamTransClient.so
+C:\Program Files (x86)\C#\FR_HKVision_Export\FR_HKVision\FR_HKVision\bin\Debug\net8.0\runtimes\linux-x64\native\HCNetSDKCom\libSystemTransform.so
+C:\Program Files (x86)\C#\FR_HKVision_Export\FR_HKVision\FR_HKVision\bin\Debug\net8.0\runtimes\linux-x64\native\HCNetSDKCom\libanalyzedata.so
+C:\Program Files (x86)\C#\FR_HKVision_Export\FR_HKVision\FR_HKVision\bin\Debug\net8.0\runtimes\linux-x64\native\HCNetSDKCom\libiconv2.so
+C:\Program Files (x86)\C#\FR_HKVision_Export\FR_HKVision\FR_HKVision\bin\Debug\net8.0\runtimes\linux-x64\native\HCNetSDK_Log_Switch.xml
+C:\Program Files (x86)\C#\FR_HKVision_Export\FR_HKVision\FR_HKVision\bin\Debug\net8.0\runtimes\linux-x64\native\libAudioRender.so
+C:\Program Files (x86)\C#\FR_HKVision_Export\FR_HKVision\FR_HKVision\bin\Debug\net8.0\runtimes\linux-x64\native\libHCCore.so
+C:\Program Files (x86)\C#\FR_HKVision_Export\FR_HKVision\FR_HKVision\bin\Debug\net8.0\runtimes\linux-x64\native\libNPQos.so
+C:\Program Files (x86)\C#\FR_HKVision_Export\FR_HKVision\FR_HKVision\bin\Debug\net8.0\runtimes\linux-x64\native\libPlayCtrl.so
+C:\Program Files (x86)\C#\FR_HKVision_Export\FR_HKVision\FR_HKVision\bin\Debug\net8.0\runtimes\linux-x64\native\libSuperRender.so
+C:\Program Files (x86)\C#\FR_HKVision_Export\FR_HKVision\FR_HKVision\bin\Debug\net8.0\runtimes\linux-x64\native\libcrypto.so.1.1
+C:\Program Files (x86)\C#\FR_HKVision_Export\FR_HKVision\FR_HKVision\bin\Debug\net8.0\runtimes\linux-x64\native\libhcnetsdk.so
+C:\Program Files (x86)\C#\FR_HKVision_Export\FR_HKVision\FR_HKVision\bin\Debug\net8.0\runtimes\linux-x64\native\libhpr.so
+C:\Program Files (x86)\C#\FR_HKVision_Export\FR_HKVision\FR_HKVision\bin\Debug\net8.0\runtimes\linux-x64\native\libopenal.so.1
+C:\Program Files (x86)\C#\FR_HKVision_Export\FR_HKVision\FR_HKVision\bin\Debug\net8.0\runtimes\linux-x64\native\libssl.so.1.1
+C:\Program Files (x86)\C#\FR_HKVision_Export\FR_HKVision\FR_HKVision\bin\Debug\net8.0\runtimes\linux-x64\native\libz.so
+C:\Program Files (x86)\C#\FR_HKVision_Export\FR_HKVision\FR_HKVision\bin\Debug\net8.0\runtimes\win-x64\native\AudioRender.dll
+C:\Program Files (x86)\C#\FR_HKVision_Export\FR_HKVision\FR_HKVision\bin\Debug\net8.0\runtimes\win-x64\native\GdiPlus.dll
+C:\Program Files (x86)\C#\FR_HKVision_Export\FR_HKVision\FR_HKVision\bin\Debug\net8.0\runtimes\win-x64\native\HCCore.dll
+C:\Program Files (x86)\C#\FR_HKVision_Export\FR_HKVision\FR_HKVision\bin\Debug\net8.0\runtimes\win-x64\native\HCNetSDK.dll
+C:\Program Files (x86)\C#\FR_HKVision_Export\FR_HKVision\FR_HKVision\bin\Debug\net8.0\runtimes\win-x64\native\HCNetSDKCom\AnalyzeData.dll
+C:\Program Files (x86)\C#\FR_HKVision_Export\FR_HKVision\FR_HKVision\bin\Debug\net8.0\runtimes\win-x64\native\HCNetSDKCom\AudioIntercom.dll
+C:\Program Files (x86)\C#\FR_HKVision_Export\FR_HKVision\FR_HKVision\bin\Debug\net8.0\runtimes\win-x64\native\HCNetSDKCom\AudioRender.dll
+C:\Program Files (x86)\C#\FR_HKVision_Export\FR_HKVision\FR_HKVision\bin\Debug\net8.0\runtimes\win-x64\native\HCNetSDKCom\HCAlarm.dll
+C:\Program Files (x86)\C#\FR_HKVision_Export\FR_HKVision\FR_HKVision\bin\Debug\net8.0\runtimes\win-x64\native\HCNetSDKCom\HCCoreDevCfg.dll
+C:\Program Files (x86)\C#\FR_HKVision_Export\FR_HKVision\FR_HKVision\bin\Debug\net8.0\runtimes\win-x64\native\HCNetSDKCom\HCDisplay.dll
+C:\Program Files (x86)\C#\FR_HKVision_Export\FR_HKVision\FR_HKVision\bin\Debug\net8.0\runtimes\win-x64\native\HCNetSDKCom\HCGeneralCfgMgr.dll
+C:\Program Files (x86)\C#\FR_HKVision_Export\FR_HKVision\FR_HKVision\bin\Debug\net8.0\runtimes\win-x64\native\HCNetSDKCom\HCIndustry.dll
+C:\Program Files (x86)\C#\FR_HKVision_Export\FR_HKVision\FR_HKVision\bin\Debug\net8.0\runtimes\win-x64\native\HCNetSDKCom\HCPlayBack.dll
+C:\Program Files (x86)\C#\FR_HKVision_Export\FR_HKVision\FR_HKVision\bin\Debug\net8.0\runtimes\win-x64\native\HCNetSDKCom\HCPreview.dll
+C:\Program Files (x86)\C#\FR_HKVision_Export\FR_HKVision\FR_HKVision\bin\Debug\net8.0\runtimes\win-x64\native\HCNetSDKCom\HCVoiceTalk.dll
+C:\Program Files (x86)\C#\FR_HKVision_Export\FR_HKVision\FR_HKVision\bin\Debug\net8.0\runtimes\win-x64\native\HCNetSDKCom\OpenAL32.dll
+C:\Program Files (x86)\C#\FR_HKVision_Export\FR_HKVision\FR_HKVision\bin\Debug\net8.0\runtimes\win-x64\native\HCNetSDKCom\StreamTransClient.dll
+C:\Program Files (x86)\C#\FR_HKVision_Export\FR_HKVision\FR_HKVision\bin\Debug\net8.0\runtimes\win-x64\native\HCNetSDKCom\SystemTransform.dll
+C:\Program Files (x86)\C#\FR_HKVision_Export\FR_HKVision\FR_HKVision\bin\Debug\net8.0\runtimes\win-x64\native\HCNetSDKCom\libiconv2.dll
+C:\Program Files (x86)\C#\FR_HKVision_Export\FR_HKVision\FR_HKVision\bin\Debug\net8.0\runtimes\win-x64\native\HXVA.dll
+C:\Program Files (x86)\C#\FR_HKVision_Export\FR_HKVision\FR_HKVision\bin\Debug\net8.0\runtimes\win-x64\native\HmMerge.dll
+C:\Program Files (x86)\C#\FR_HKVision_Export\FR_HKVision\FR_HKVision\bin\Debug\net8.0\runtimes\win-x64\native\LocalSensorAdd.dat
+C:\Program Files (x86)\C#\FR_HKVision_Export\FR_HKVision\FR_HKVision\bin\Debug\net8.0\runtimes\win-x64\native\LocalXml.zip
+C:\Program Files (x86)\C#\FR_HKVision_Export\FR_HKVision\FR_HKVision\bin\Debug\net8.0\runtimes\win-x64\native\MP_Render.dll
+C:\Program Files (x86)\C#\FR_HKVision_Export\FR_HKVision\FR_HKVision\bin\Debug\net8.0\runtimes\win-x64\native\NPQos.dll
+C:\Program Files (x86)\C#\FR_HKVision_Export\FR_HKVision\FR_HKVision\bin\Debug\net8.0\runtimes\win-x64\native\OpenAL32.dll
+C:\Program Files (x86)\C#\FR_HKVision_Export\FR_HKVision\FR_HKVision\bin\Debug\net8.0\runtimes\win-x64\native\PlayCtrl.dll
+C:\Program Files (x86)\C#\FR_HKVision_Export\FR_HKVision\FR_HKVision\bin\Debug\net8.0\runtimes\win-x64\native\SuperRender.dll
+C:\Program Files (x86)\C#\FR_HKVision_Export\FR_HKVision\FR_HKVision\bin\Debug\net8.0\runtimes\win-x64\native\YUVProcess.dll
+C:\Program Files (x86)\C#\FR_HKVision_Export\FR_HKVision\FR_HKVision\bin\Debug\net8.0\runtimes\win-x64\native\hlog.dll
+C:\Program Files (x86)\C#\FR_HKVision_Export\FR_HKVision\FR_HKVision\bin\Debug\net8.0\runtimes\win-x64\native\hpr.dll
+C:\Program Files (x86)\C#\FR_HKVision_Export\FR_HKVision\FR_HKVision\bin\Debug\net8.0\runtimes\win-x64\native\libcrypto-1_1-x64.dll
+C:\Program Files (x86)\C#\FR_HKVision_Export\FR_HKVision\FR_HKVision\bin\Debug\net8.0\runtimes\win-x64\native\libmmd.dll
+C:\Program Files (x86)\C#\FR_HKVision_Export\FR_HKVision\FR_HKVision\bin\Debug\net8.0\runtimes\win-x64\native\libssl-1_1-x64.dll
+C:\Program Files (x86)\C#\FR_HKVision_Export\FR_HKVision\FR_HKVision\bin\Debug\net8.0\runtimes\win-x64\native\zlib1.dll
+C:\Program Files (x86)\C#\FR_HKVision_Export\FR_HKVision\FR_HKVision\bin\Debug\net8.0\runtimes\win-arm64\native\sni.dll
+C:\Program Files (x86)\C#\FR_HKVision_Export\FR_HKVision\FR_HKVision\bin\Debug\net8.0\runtimes\win-x64\native\sni.dll
+C:\Program Files (x86)\C#\FR_HKVision_Export\FR_HKVision\FR_HKVision\bin\Debug\net8.0\runtimes\win-x86\native\sni.dll
+C:\Program Files (x86)\C#\FR_HKVision_Export\FR_HKVision\FR_HKVision\bin\Debug\net8.0\runtimes\unix\lib\net8.0\System.Data.SqlClient.dll
+C:\Program Files (x86)\C#\FR_HKVision_Export\FR_HKVision\FR_HKVision\bin\Debug\net8.0\runtimes\win\lib\net8.0\System.Data.SqlClient.dll
+C:\Program Files (x86)\C#\FR_HKVision_Export\FR_HKVision\FR_HKVision\bin\Debug\net8.0\runtimes\win\lib\net8.0\System.Diagnostics.EventLog.dll
+C:\Program Files (x86)\C#\FR_HKVision_Export\FR_HKVision\FR_HKVision\bin\Debug\net8.0\runtimes\win\lib\net8.0\System.Diagnostics.PerformanceCounter.dll
+C:\Program Files (x86)\C#\FR_HKVision_Export\FR_HKVision\FR_HKVision\bin\Debug\net8.0\runtimes\win\lib\net8.0\System.DirectoryServices.dll
+C:\Program Files (x86)\C#\FR_HKVision_Export\FR_HKVision\FR_HKVision\bin\Debug\net8.0\runtimes\linux\lib\net8.0\System.DirectoryServices.Protocols.dll
+C:\Program Files (x86)\C#\FR_HKVision_Export\FR_HKVision\FR_HKVision\bin\Debug\net8.0\runtimes\osx\lib\net8.0\System.DirectoryServices.Protocols.dll
+C:\Program Files (x86)\C#\FR_HKVision_Export\FR_HKVision\FR_HKVision\bin\Debug\net8.0\runtimes\win\lib\net8.0\System.DirectoryServices.Protocols.dll
+C:\Program Files (x86)\C#\FR_HKVision_Export\FR_HKVision\FR_HKVision\bin\Debug\net8.0\runtimes\win\lib\net8.0\System.Security.Cryptography.Pkcs.dll
+C:\Program Files (x86)\C#\FR_HKVision_Export\FR_HKVision\FR_HKVision\bin\Debug\net8.0\runtimes\win\lib\net8.0\System.Windows.Extensions.dll
+C:\Program Files (x86)\C#\FR_HKVision_Export\FR_HKVision\FR_HKVision\obj\Debug\net8.0\FR_HKVision.csproj.AssemblyReference.cache
+C:\Program Files (x86)\C#\FR_HKVision_Export\FR_HKVision\FR_HKVision\obj\Debug\net8.0\FR_HKVision.GeneratedMSBuildEditorConfig.editorconfig
+C:\Program Files (x86)\C#\FR_HKVision_Export\FR_HKVision\FR_HKVision\obj\Debug\net8.0\FR_HKVision.AssemblyInfoInputs.cache
+C:\Program Files (x86)\C#\FR_HKVision_Export\FR_HKVision\FR_HKVision\obj\Debug\net8.0\FR_HKVision.AssemblyInfo.cs
+C:\Program Files (x86)\C#\FR_HKVision_Export\FR_HKVision\FR_HKVision\obj\Debug\net8.0\FR_HKVision.csproj.CoreCompileInputs.cache
+C:\Program Files (x86)\C#\FR_HKVision_Export\FR_HKVision\FR_HKVision\obj\Debug\net8.0\FR_HKVision.MvcApplicationPartsAssemblyInfo.cache
+C:\Program Files (x86)\C#\FR_HKVision_Export\FR_HKVision\FR_HKVision\obj\Debug\net8.0\FR_HKVision.RazorAssemblyInfo.cache
+C:\Program Files (x86)\C#\FR_HKVision_Export\FR_HKVision\FR_HKVision\obj\Debug\net8.0\FR_HKVision.RazorAssemblyInfo.cs
+C:\Program Files (x86)\C#\FR_HKVision_Export\FR_HKVision\FR_HKVision\obj\Debug\net8.0\staticwebassets.build.json
+C:\Program Files (x86)\C#\FR_HKVision_Export\FR_HKVision\FR_HKVision\obj\Debug\net8.0\staticwebassets.development.json
+C:\Program Files (x86)\C#\FR_HKVision_Export\FR_HKVision\FR_HKVision\obj\Debug\net8.0\scopedcss\Views\Shared\_Layout.cshtml.rz.scp.css
+C:\Program Files (x86)\C#\FR_HKVision_Export\FR_HKVision\FR_HKVision\obj\Debug\net8.0\scopedcss\bundle\FR_HKVision.styles.css
+C:\Program Files (x86)\C#\FR_HKVision_Export\FR_HKVision\FR_HKVision\obj\Debug\net8.0\scopedcss\projectbundle\FR_HKVision.bundle.scp.css
+C:\Program Files (x86)\C#\FR_HKVision_Export\FR_HKVision\FR_HKVision\obj\Debug\net8.0\FR_HKVis.AC21A2B9.Up2Date
+C:\Program Files (x86)\C#\FR_HKVision_Export\FR_HKVision\FR_HKVision\obj\Debug\net8.0\FR_HKVision.dll
+C:\Program Files (x86)\C#\FR_HKVision_Export\FR_HKVision\FR_HKVision\obj\Debug\net8.0\refint\FR_HKVision.dll
+C:\Program Files (x86)\C#\FR_HKVision_Export\FR_HKVision\FR_HKVision\obj\Debug\net8.0\FR_HKVision.pdb
+C:\Program Files (x86)\C#\FR_HKVision_Export\FR_HKVision\FR_HKVision\obj\Debug\net8.0\FR_HKVision.genruntimeconfig.cache
+C:\Program Files (x86)\C#\FR_HKVision_Export\FR_HKVision\FR_HKVision\obj\Debug\net8.0\ref\FR_HKVision.dll
+C:\Program Files (x86)\C#\FR_HKVision_Export\FR_HKVision\FR_HKVision\bin\Debug\net8.0\FR_HKVision.staticwebassets.endpoints.json
+C:\Program Files (x86)\C#\FR_HKVision_Export\FR_HKVision\FR_HKVision\obj\Debug\net8.0\staticwebassets.build.json.cache
+C:\Program Files (x86)\C#\FR_HKVision_Export\FR_HKVision\FR_HKVision\obj\Debug\net8.0\staticwebassets.build.endpoints.json
+C:\Users\CSD\OneDrive - UCSI University\Desktop\FR_HKVision_Export\FR_HKVision\FR_HKVision\bin\Debug\net8.0\appsettings.Development.json
+C:\Users\CSD\OneDrive - UCSI University\Desktop\FR_HKVision_Export\FR_HKVision\FR_HKVision\bin\Debug\net8.0\appsettings.json
+C:\Users\CSD\OneDrive - UCSI University\Desktop\FR_HKVision_Export\FR_HKVision\FR_HKVision\bin\Debug\net8.0\FR_HKVision.staticwebassets.runtime.json
+C:\Users\CSD\OneDrive - UCSI University\Desktop\FR_HKVision_Export\FR_HKVision\FR_HKVision\bin\Debug\net8.0\FR_HKVision.staticwebassets.endpoints.json
+C:\Users\CSD\OneDrive - UCSI University\Desktop\FR_HKVision_Export\FR_HKVision\FR_HKVision\bin\Debug\net8.0\FR_HKVision.exe
+C:\Users\CSD\OneDrive - UCSI University\Desktop\FR_HKVision_Export\FR_HKVision\FR_HKVision\bin\Debug\net8.0\FR_HKVision.deps.json
+C:\Users\CSD\OneDrive - UCSI University\Desktop\FR_HKVision_Export\FR_HKVision\FR_HKVision\bin\Debug\net8.0\FR_HKVision.runtimeconfig.json
+C:\Users\CSD\OneDrive - UCSI University\Desktop\FR_HKVision_Export\FR_HKVision\FR_HKVision\bin\Debug\net8.0\FR_HKVision.dll
+C:\Users\CSD\OneDrive - UCSI University\Desktop\FR_HKVision_Export\FR_HKVision\FR_HKVision\bin\Debug\net8.0\FR_HKVision.pdb
+C:\Users\CSD\OneDrive - UCSI University\Desktop\FR_HKVision_Export\FR_HKVision\FR_HKVision\bin\Debug\net8.0\Azure.Core.dll
+C:\Users\CSD\OneDrive - UCSI University\Desktop\FR_HKVision_Export\FR_HKVision\FR_HKVision\bin\Debug\net8.0\Azure.Identity.dll
+C:\Users\CSD\OneDrive - UCSI University\Desktop\FR_HKVision_Export\FR_HKVision\FR_HKVision\bin\Debug\net8.0\Dahomey.Json.dll
+C:\Users\CSD\OneDrive - UCSI University\Desktop\FR_HKVision_Export\FR_HKVision\FR_HKVision\bin\Debug\net8.0\Dahomey.Json.Attributes.dll
+C:\Users\CSD\OneDrive - UCSI University\Desktop\FR_HKVision_Export\FR_HKVision\FR_HKVision\bin\Debug\net8.0\EmbedIO.dll
+C:\Users\CSD\OneDrive - UCSI University\Desktop\FR_HKVision_Export\FR_HKVision\FR_HKVision\bin\Debug\net8.0\HikVision.dll
+C:\Users\CSD\OneDrive - UCSI University\Desktop\FR_HKVision_Export\FR_HKVision\FR_HKVision\bin\Debug\net8.0\Hikvision Artemis Api.dll
+C:\Users\CSD\OneDrive - UCSI University\Desktop\FR_HKVision_Export\FR_HKVision\FR_HKVision\bin\Debug\net8.0\Microsoft.AspNetCore.JsonPatch.dll
+C:\Users\CSD\OneDrive - UCSI University\Desktop\FR_HKVision_Export\FR_HKVision\FR_HKVision\bin\Debug\net8.0\Microsoft.AspNetCore.Mvc.NewtonsoftJson.dll
+C:\Users\CSD\OneDrive - UCSI University\Desktop\FR_HKVision_Export\FR_HKVision\FR_HKVision\bin\Debug\net8.0\Microsoft.Bcl.AsyncInterfaces.dll
+C:\Users\CSD\OneDrive - UCSI University\Desktop\FR_HKVision_Export\FR_HKVision\FR_HKVision\bin\Debug\net8.0\Microsoft.Bcl.Cryptography.dll
+C:\Users\CSD\OneDrive - UCSI University\Desktop\FR_HKVision_Export\FR_HKVision\FR_HKVision\bin\Debug\net8.0\Microsoft.Data.SqlClient.dll
+C:\Users\CSD\OneDrive - UCSI University\Desktop\FR_HKVision_Export\FR_HKVision\FR_HKVision\bin\Debug\net8.0\Microsoft.Extensions.Caching.Memory.dll
+C:\Users\CSD\OneDrive - UCSI University\Desktop\FR_HKVision_Export\FR_HKVision\FR_HKVision\bin\Debug\net8.0\Microsoft.Extensions.DependencyInjection.Abstractions.dll
+C:\Users\CSD\OneDrive - UCSI University\Desktop\FR_HKVision_Export\FR_HKVision\FR_HKVision\bin\Debug\net8.0\Microsoft.Extensions.Logging.Abstractions.dll
+C:\Users\CSD\OneDrive - UCSI University\Desktop\FR_HKVision_Export\FR_HKVision\FR_HKVision\bin\Debug\net8.0\Microsoft.Extensions.Options.dll
+C:\Users\CSD\OneDrive - UCSI University\Desktop\FR_HKVision_Export\FR_HKVision\FR_HKVision\bin\Debug\net8.0\Microsoft.Identity.Client.dll
+C:\Users\CSD\OneDrive - UCSI University\Desktop\FR_HKVision_Export\FR_HKVision\FR_HKVision\bin\Debug\net8.0\Microsoft.Identity.Client.Extensions.Msal.dll
+C:\Users\CSD\OneDrive - UCSI University\Desktop\FR_HKVision_Export\FR_HKVision\FR_HKVision\bin\Debug\net8.0\Microsoft.IdentityModel.Abstractions.dll
+C:\Users\CSD\OneDrive - UCSI University\Desktop\FR_HKVision_Export\FR_HKVision\FR_HKVision\bin\Debug\net8.0\Microsoft.IdentityModel.JsonWebTokens.dll
+C:\Users\CSD\OneDrive - UCSI University\Desktop\FR_HKVision_Export\FR_HKVision\FR_HKVision\bin\Debug\net8.0\Microsoft.IdentityModel.Logging.dll
+C:\Users\CSD\OneDrive - UCSI University\Desktop\FR_HKVision_Export\FR_HKVision\FR_HKVision\bin\Debug\net8.0\Microsoft.IdentityModel.Protocols.dll
+C:\Users\CSD\OneDrive - UCSI University\Desktop\FR_HKVision_Export\FR_HKVision\FR_HKVision\bin\Debug\net8.0\Microsoft.IdentityModel.Protocols.OpenIdConnect.dll
+C:\Users\CSD\OneDrive - UCSI University\Desktop\FR_HKVision_Export\FR_HKVision\FR_HKVision\bin\Debug\net8.0\Microsoft.IdentityModel.Tokens.dll
+C:\Users\CSD\OneDrive - UCSI University\Desktop\FR_HKVision_Export\FR_HKVision\FR_HKVision\bin\Debug\net8.0\Microsoft.SqlServer.Server.dll
+C:\Users\CSD\OneDrive - UCSI University\Desktop\FR_HKVision_Export\FR_HKVision\FR_HKVision\bin\Debug\net8.0\Newtonsoft.Json.dll
+C:\Users\CSD\OneDrive - UCSI University\Desktop\FR_HKVision_Export\FR_HKVision\FR_HKVision\bin\Debug\net8.0\Newtonsoft.Json.Bson.dll
+C:\Users\CSD\OneDrive - UCSI University\Desktop\FR_HKVision_Export\FR_HKVision\FR_HKVision\bin\Debug\net8.0\Oracle.ManagedDataAccess.dll
+C:\Users\CSD\OneDrive - UCSI University\Desktop\FR_HKVision_Export\FR_HKVision\FR_HKVision\bin\Debug\net8.0\QuickNV.HikvisionNetSDK.dll
+C:\Users\CSD\OneDrive - UCSI University\Desktop\FR_HKVision_Export\FR_HKVision\FR_HKVision\bin\Debug\net8.0\System.ClientModel.dll
+C:\Users\CSD\OneDrive - UCSI University\Desktop\FR_HKVision_Export\FR_HKVision\FR_HKVision\bin\Debug\net8.0\System.Configuration.ConfigurationManager.dll
+C:\Users\CSD\OneDrive - UCSI University\Desktop\FR_HKVision_Export\FR_HKVision\FR_HKVision\bin\Debug\net8.0\System.Data.SqlClient.dll
+C:\Users\CSD\OneDrive - UCSI University\Desktop\FR_HKVision_Export\FR_HKVision\FR_HKVision\bin\Debug\net8.0\System.Diagnostics.EventLog.dll
+C:\Users\CSD\OneDrive - UCSI University\Desktop\FR_HKVision_Export\FR_HKVision\FR_HKVision\bin\Debug\net8.0\System.Diagnostics.PerformanceCounter.dll
+C:\Users\CSD\OneDrive - UCSI University\Desktop\FR_HKVision_Export\FR_HKVision\FR_HKVision\bin\Debug\net8.0\System.DirectoryServices.dll
+C:\Users\CSD\OneDrive - UCSI University\Desktop\FR_HKVision_Export\FR_HKVision\FR_HKVision\bin\Debug\net8.0\System.DirectoryServices.Protocols.dll
+C:\Users\CSD\OneDrive - UCSI University\Desktop\FR_HKVision_Export\FR_HKVision\FR_HKVision\bin\Debug\net8.0\System.IdentityModel.Tokens.Jwt.dll
+C:\Users\CSD\OneDrive - UCSI University\Desktop\FR_HKVision_Export\FR_HKVision\FR_HKVision\bin\Debug\net8.0\System.Memory.Data.dll
+C:\Users\CSD\OneDrive - UCSI University\Desktop\FR_HKVision_Export\FR_HKVision\FR_HKVision\bin\Debug\net8.0\System.Security.Cryptography.Pkcs.dll
+C:\Users\CSD\OneDrive - UCSI University\Desktop\FR_HKVision_Export\FR_HKVision\FR_HKVision\bin\Debug\net8.0\System.Security.Cryptography.ProtectedData.dll
+C:\Users\CSD\OneDrive - UCSI University\Desktop\FR_HKVision_Export\FR_HKVision\FR_HKVision\bin\Debug\net8.0\System.Security.Permissions.dll
+C:\Users\CSD\OneDrive - UCSI University\Desktop\FR_HKVision_Export\FR_HKVision\FR_HKVision\bin\Debug\net8.0\System.Windows.Extensions.dll
+C:\Users\CSD\OneDrive - UCSI University\Desktop\FR_HKVision_Export\FR_HKVision\FR_HKVision\bin\Debug\net8.0\Swan.Lite.dll
+C:\Users\CSD\OneDrive - UCSI University\Desktop\FR_HKVision_Export\FR_HKVision\FR_HKVision\bin\Debug\net8.0\cs\Microsoft.Data.SqlClient.resources.dll
+C:\Users\CSD\OneDrive - UCSI University\Desktop\FR_HKVision_Export\FR_HKVision\FR_HKVision\bin\Debug\net8.0\de\Microsoft.Data.SqlClient.resources.dll
+C:\Users\CSD\OneDrive - UCSI University\Desktop\FR_HKVision_Export\FR_HKVision\FR_HKVision\bin\Debug\net8.0\es\Microsoft.Data.SqlClient.resources.dll
+C:\Users\CSD\OneDrive - UCSI University\Desktop\FR_HKVision_Export\FR_HKVision\FR_HKVision\bin\Debug\net8.0\fr\Microsoft.Data.SqlClient.resources.dll
+C:\Users\CSD\OneDrive - UCSI University\Desktop\FR_HKVision_Export\FR_HKVision\FR_HKVision\bin\Debug\net8.0\it\Microsoft.Data.SqlClient.resources.dll
+C:\Users\CSD\OneDrive - UCSI University\Desktop\FR_HKVision_Export\FR_HKVision\FR_HKVision\bin\Debug\net8.0\ja\Microsoft.Data.SqlClient.resources.dll
+C:\Users\CSD\OneDrive - UCSI University\Desktop\FR_HKVision_Export\FR_HKVision\FR_HKVision\bin\Debug\net8.0\ko\Microsoft.Data.SqlClient.resources.dll
+C:\Users\CSD\OneDrive - UCSI University\Desktop\FR_HKVision_Export\FR_HKVision\FR_HKVision\bin\Debug\net8.0\pl\Microsoft.Data.SqlClient.resources.dll
+C:\Users\CSD\OneDrive - UCSI University\Desktop\FR_HKVision_Export\FR_HKVision\FR_HKVision\bin\Debug\net8.0\pt-BR\Microsoft.Data.SqlClient.resources.dll
+C:\Users\CSD\OneDrive - UCSI University\Desktop\FR_HKVision_Export\FR_HKVision\FR_HKVision\bin\Debug\net8.0\ru\Microsoft.Data.SqlClient.resources.dll
+C:\Users\CSD\OneDrive - UCSI University\Desktop\FR_HKVision_Export\FR_HKVision\FR_HKVision\bin\Debug\net8.0\tr\Microsoft.Data.SqlClient.resources.dll
+C:\Users\CSD\OneDrive - UCSI University\Desktop\FR_HKVision_Export\FR_HKVision\FR_HKVision\bin\Debug\net8.0\zh-Hans\Microsoft.Data.SqlClient.resources.dll
+C:\Users\CSD\OneDrive - UCSI University\Desktop\FR_HKVision_Export\FR_HKVision\FR_HKVision\bin\Debug\net8.0\zh-Hant\Microsoft.Data.SqlClient.resources.dll
+C:\Users\CSD\OneDrive - UCSI University\Desktop\FR_HKVision_Export\FR_HKVision\FR_HKVision\bin\Debug\net8.0\runtimes\unix\lib\net8.0\Microsoft.Data.SqlClient.dll
+C:\Users\CSD\OneDrive - UCSI University\Desktop\FR_HKVision_Export\FR_HKVision\FR_HKVision\bin\Debug\net8.0\runtimes\win\lib\net8.0\Microsoft.Data.SqlClient.dll
+C:\Users\CSD\OneDrive - UCSI University\Desktop\FR_HKVision_Export\FR_HKVision\FR_HKVision\bin\Debug\net8.0\runtimes\win-arm64\native\Microsoft.Data.SqlClient.SNI.dll
+C:\Users\CSD\OneDrive - UCSI University\Desktop\FR_HKVision_Export\FR_HKVision\FR_HKVision\bin\Debug\net8.0\runtimes\win-x64\native\Microsoft.Data.SqlClient.SNI.dll
+C:\Users\CSD\OneDrive - UCSI University\Desktop\FR_HKVision_Export\FR_HKVision\FR_HKVision\bin\Debug\net8.0\runtimes\win-x86\native\Microsoft.Data.SqlClient.SNI.dll
+C:\Users\CSD\OneDrive - UCSI University\Desktop\FR_HKVision_Export\FR_HKVision\FR_HKVision\bin\Debug\net8.0\runtimes\linux-arm64\native\HCNetSDKCom\libAudioIntercom.so
+C:\Users\CSD\OneDrive - UCSI University\Desktop\FR_HKVision_Export\FR_HKVision\FR_HKVision\bin\Debug\net8.0\runtimes\linux-arm64\native\HCNetSDKCom\libHCAlarm.so
+C:\Users\CSD\OneDrive - UCSI University\Desktop\FR_HKVision_Export\FR_HKVision\FR_HKVision\bin\Debug\net8.0\runtimes\linux-arm64\native\HCNetSDKCom\libHCCoreDevCfg.so
+C:\Users\CSD\OneDrive - UCSI University\Desktop\FR_HKVision_Export\FR_HKVision\FR_HKVision\bin\Debug\net8.0\runtimes\linux-arm64\native\HCNetSDKCom\libHCDisplay.so
+C:\Users\CSD\OneDrive - UCSI University\Desktop\FR_HKVision_Export\FR_HKVision\FR_HKVision\bin\Debug\net8.0\runtimes\linux-arm64\native\HCNetSDKCom\libHCGeneralCfgMgr.so
+C:\Users\CSD\OneDrive - UCSI University\Desktop\FR_HKVision_Export\FR_HKVision\FR_HKVision\bin\Debug\net8.0\runtimes\linux-arm64\native\HCNetSDKCom\libHCIndustry.so
+C:\Users\CSD\OneDrive - UCSI University\Desktop\FR_HKVision_Export\FR_HKVision\FR_HKVision\bin\Debug\net8.0\runtimes\linux-arm64\native\HCNetSDKCom\libHCPlayBack.so
+C:\Users\CSD\OneDrive - UCSI University\Desktop\FR_HKVision_Export\FR_HKVision\FR_HKVision\bin\Debug\net8.0\runtimes\linux-arm64\native\HCNetSDKCom\libHCPreview.so
+C:\Users\CSD\OneDrive - UCSI University\Desktop\FR_HKVision_Export\FR_HKVision\FR_HKVision\bin\Debug\net8.0\runtimes\linux-arm64\native\HCNetSDKCom\libHCVoiceTalk.so
+C:\Users\CSD\OneDrive - UCSI University\Desktop\FR_HKVision_Export\FR_HKVision\FR_HKVision\bin\Debug\net8.0\runtimes\linux-arm64\native\HCNetSDKCom\libStreamTransClient.so
+C:\Users\CSD\OneDrive - UCSI University\Desktop\FR_HKVision_Export\FR_HKVision\FR_HKVision\bin\Debug\net8.0\runtimes\linux-arm64\native\HCNetSDKCom\libSystemTransform.so
+C:\Users\CSD\OneDrive - UCSI University\Desktop\FR_HKVision_Export\FR_HKVision\FR_HKVision\bin\Debug\net8.0\runtimes\linux-arm64\native\HCNetSDKCom\libanalyzedata.so
+C:\Users\CSD\OneDrive - UCSI University\Desktop\FR_HKVision_Export\FR_HKVision\FR_HKVision\bin\Debug\net8.0\runtimes\linux-arm64\native\HCNetSDKCom\libiconv.so.2
+C:\Users\CSD\OneDrive - UCSI University\Desktop\FR_HKVision_Export\FR_HKVision\FR_HKVision\bin\Debug\net8.0\runtimes\linux-arm64\native\HCNetSDK_Log_Switch.xml
+C:\Users\CSD\OneDrive - UCSI University\Desktop\FR_HKVision_Export\FR_HKVision\FR_HKVision\bin\Debug\net8.0\runtimes\linux-arm64\native\libAudioRender.so
+C:\Users\CSD\OneDrive - UCSI University\Desktop\FR_HKVision_Export\FR_HKVision\FR_HKVision\bin\Debug\net8.0\runtimes\linux-arm64\native\libHCCore.so
+C:\Users\CSD\OneDrive - UCSI University\Desktop\FR_HKVision_Export\FR_HKVision\FR_HKVision\bin\Debug\net8.0\runtimes\linux-arm64\native\libPlayCtrl.so
+C:\Users\CSD\OneDrive - UCSI University\Desktop\FR_HKVision_Export\FR_HKVision\FR_HKVision\bin\Debug\net8.0\runtimes\linux-arm64\native\libSuperRender.so
+C:\Users\CSD\OneDrive - UCSI University\Desktop\FR_HKVision_Export\FR_HKVision\FR_HKVision\bin\Debug\net8.0\runtimes\linux-arm64\native\libcrypto.so
+C:\Users\CSD\OneDrive - UCSI University\Desktop\FR_HKVision_Export\FR_HKVision\FR_HKVision\bin\Debug\net8.0\runtimes\linux-arm64\native\libcrypto.so.1.1
+C:\Users\CSD\OneDrive - UCSI University\Desktop\FR_HKVision_Export\FR_HKVision\FR_HKVision\bin\Debug\net8.0\runtimes\linux-arm64\native\libhcnetsdk.so
+C:\Users\CSD\OneDrive - UCSI University\Desktop\FR_HKVision_Export\FR_HKVision\FR_HKVision\bin\Debug\net8.0\runtimes\linux-arm64\native\libhpr.so
+C:\Users\CSD\OneDrive - UCSI University\Desktop\FR_HKVision_Export\FR_HKVision\FR_HKVision\bin\Debug\net8.0\runtimes\linux-arm64\native\libssl.so
+C:\Users\CSD\OneDrive - UCSI University\Desktop\FR_HKVision_Export\FR_HKVision\FR_HKVision\bin\Debug\net8.0\runtimes\linux-arm64\native\libssl.so.1.1
+C:\Users\CSD\OneDrive - UCSI University\Desktop\FR_HKVision_Export\FR_HKVision\FR_HKVision\bin\Debug\net8.0\runtimes\linux-arm64\native\libz.so
+C:\Users\CSD\OneDrive - UCSI University\Desktop\FR_HKVision_Export\FR_HKVision\FR_HKVision\bin\Debug\net8.0\runtimes\linux-x64\native\HCNetSDKCom\libAudioIntercom.so
+C:\Users\CSD\OneDrive - UCSI University\Desktop\FR_HKVision_Export\FR_HKVision\FR_HKVision\bin\Debug\net8.0\runtimes\linux-x64\native\HCNetSDKCom\libHCAlarm.so
+C:\Users\CSD\OneDrive - UCSI University\Desktop\FR_HKVision_Export\FR_HKVision\FR_HKVision\bin\Debug\net8.0\runtimes\linux-x64\native\HCNetSDKCom\libHCCoreDevCfg.so
+C:\Users\CSD\OneDrive - UCSI University\Desktop\FR_HKVision_Export\FR_HKVision\FR_HKVision\bin\Debug\net8.0\runtimes\linux-x64\native\HCNetSDKCom\libHCDisplay.so
+C:\Users\CSD\OneDrive - UCSI University\Desktop\FR_HKVision_Export\FR_HKVision\FR_HKVision\bin\Debug\net8.0\runtimes\linux-x64\native\HCNetSDKCom\libHCGeneralCfgMgr.so
+C:\Users\CSD\OneDrive - UCSI University\Desktop\FR_HKVision_Export\FR_HKVision\FR_HKVision\bin\Debug\net8.0\runtimes\linux-x64\native\HCNetSDKCom\libHCIndustry.so
+C:\Users\CSD\OneDrive - UCSI University\Desktop\FR_HKVision_Export\FR_HKVision\FR_HKVision\bin\Debug\net8.0\runtimes\linux-x64\native\HCNetSDKCom\libHCPlayBack.so
+C:\Users\CSD\OneDrive - UCSI University\Desktop\FR_HKVision_Export\FR_HKVision\FR_HKVision\bin\Debug\net8.0\runtimes\linux-x64\native\HCNetSDKCom\libHCPreview.so
+C:\Users\CSD\OneDrive - UCSI University\Desktop\FR_HKVision_Export\FR_HKVision\FR_HKVision\bin\Debug\net8.0\runtimes\linux-x64\native\HCNetSDKCom\libHCVoiceTalk.so
+C:\Users\CSD\OneDrive - UCSI University\Desktop\FR_HKVision_Export\FR_HKVision\FR_HKVision\bin\Debug\net8.0\runtimes\linux-x64\native\HCNetSDKCom\libStreamTransClient.so
+C:\Users\CSD\OneDrive - UCSI University\Desktop\FR_HKVision_Export\FR_HKVision\FR_HKVision\bin\Debug\net8.0\runtimes\linux-x64\native\HCNetSDKCom\libSystemTransform.so
+C:\Users\CSD\OneDrive - UCSI University\Desktop\FR_HKVision_Export\FR_HKVision\FR_HKVision\bin\Debug\net8.0\runtimes\linux-x64\native\HCNetSDKCom\libanalyzedata.so
+C:\Users\CSD\OneDrive - UCSI University\Desktop\FR_HKVision_Export\FR_HKVision\FR_HKVision\bin\Debug\net8.0\runtimes\linux-x64\native\HCNetSDKCom\libiconv2.so
+C:\Users\CSD\OneDrive - UCSI University\Desktop\FR_HKVision_Export\FR_HKVision\FR_HKVision\bin\Debug\net8.0\runtimes\linux-x64\native\HCNetSDK_Log_Switch.xml
+C:\Users\CSD\OneDrive - UCSI University\Desktop\FR_HKVision_Export\FR_HKVision\FR_HKVision\bin\Debug\net8.0\runtimes\linux-x64\native\libAudioRender.so
+C:\Users\CSD\OneDrive - UCSI University\Desktop\FR_HKVision_Export\FR_HKVision\FR_HKVision\bin\Debug\net8.0\runtimes\linux-x64\native\libHCCore.so
+C:\Users\CSD\OneDrive - UCSI University\Desktop\FR_HKVision_Export\FR_HKVision\FR_HKVision\bin\Debug\net8.0\runtimes\linux-x64\native\libNPQos.so
+C:\Users\CSD\OneDrive - UCSI University\Desktop\FR_HKVision_Export\FR_HKVision\FR_HKVision\bin\Debug\net8.0\runtimes\linux-x64\native\libPlayCtrl.so
+C:\Users\CSD\OneDrive - UCSI University\Desktop\FR_HKVision_Export\FR_HKVision\FR_HKVision\bin\Debug\net8.0\runtimes\linux-x64\native\libSuperRender.so
+C:\Users\CSD\OneDrive - UCSI University\Desktop\FR_HKVision_Export\FR_HKVision\FR_HKVision\bin\Debug\net8.0\runtimes\linux-x64\native\libcrypto.so.1.1
+C:\Users\CSD\OneDrive - UCSI University\Desktop\FR_HKVision_Export\FR_HKVision\FR_HKVision\bin\Debug\net8.0\runtimes\linux-x64\native\libhcnetsdk.so
+C:\Users\CSD\OneDrive - UCSI University\Desktop\FR_HKVision_Export\FR_HKVision\FR_HKVision\bin\Debug\net8.0\runtimes\linux-x64\native\libhpr.so
+C:\Users\CSD\OneDrive - UCSI University\Desktop\FR_HKVision_Export\FR_HKVision\FR_HKVision\bin\Debug\net8.0\runtimes\linux-x64\native\libopenal.so.1
+C:\Users\CSD\OneDrive - UCSI University\Desktop\FR_HKVision_Export\FR_HKVision\FR_HKVision\bin\Debug\net8.0\runtimes\linux-x64\native\libssl.so.1.1
+C:\Users\CSD\OneDrive - UCSI University\Desktop\FR_HKVision_Export\FR_HKVision\FR_HKVision\bin\Debug\net8.0\runtimes\linux-x64\native\libz.so
+C:\Users\CSD\OneDrive - UCSI University\Desktop\FR_HKVision_Export\FR_HKVision\FR_HKVision\bin\Debug\net8.0\runtimes\win-x64\native\AudioRender.dll
+C:\Users\CSD\OneDrive - UCSI University\Desktop\FR_HKVision_Export\FR_HKVision\FR_HKVision\bin\Debug\net8.0\runtimes\win-x64\native\GdiPlus.dll
+C:\Users\CSD\OneDrive - UCSI University\Desktop\FR_HKVision_Export\FR_HKVision\FR_HKVision\bin\Debug\net8.0\runtimes\win-x64\native\HCCore.dll
+C:\Users\CSD\OneDrive - UCSI University\Desktop\FR_HKVision_Export\FR_HKVision\FR_HKVision\bin\Debug\net8.0\runtimes\win-x64\native\HCNetSDK.dll
+C:\Users\CSD\OneDrive - UCSI University\Desktop\FR_HKVision_Export\FR_HKVision\FR_HKVision\bin\Debug\net8.0\runtimes\win-x64\native\HCNetSDKCom\AnalyzeData.dll
+C:\Users\CSD\OneDrive - UCSI University\Desktop\FR_HKVision_Export\FR_HKVision\FR_HKVision\bin\Debug\net8.0\runtimes\win-x64\native\HCNetSDKCom\AudioIntercom.dll
+C:\Users\CSD\OneDrive - UCSI University\Desktop\FR_HKVision_Export\FR_HKVision\FR_HKVision\bin\Debug\net8.0\runtimes\win-x64\native\HCNetSDKCom\AudioRender.dll
+C:\Users\CSD\OneDrive - UCSI University\Desktop\FR_HKVision_Export\FR_HKVision\FR_HKVision\bin\Debug\net8.0\runtimes\win-x64\native\HCNetSDKCom\HCAlarm.dll
+C:\Users\CSD\OneDrive - UCSI University\Desktop\FR_HKVision_Export\FR_HKVision\FR_HKVision\bin\Debug\net8.0\runtimes\win-x64\native\HCNetSDKCom\HCCoreDevCfg.dll
+C:\Users\CSD\OneDrive - UCSI University\Desktop\FR_HKVision_Export\FR_HKVision\FR_HKVision\bin\Debug\net8.0\runtimes\win-x64\native\HCNetSDKCom\HCDisplay.dll
+C:\Users\CSD\OneDrive - UCSI University\Desktop\FR_HKVision_Export\FR_HKVision\FR_HKVision\bin\Debug\net8.0\runtimes\win-x64\native\HCNetSDKCom\HCGeneralCfgMgr.dll
+C:\Users\CSD\OneDrive - UCSI University\Desktop\FR_HKVision_Export\FR_HKVision\FR_HKVision\bin\Debug\net8.0\runtimes\win-x64\native\HCNetSDKCom\HCIndustry.dll
+C:\Users\CSD\OneDrive - UCSI University\Desktop\FR_HKVision_Export\FR_HKVision\FR_HKVision\bin\Debug\net8.0\runtimes\win-x64\native\HCNetSDKCom\HCPlayBack.dll
+C:\Users\CSD\OneDrive - UCSI University\Desktop\FR_HKVision_Export\FR_HKVision\FR_HKVision\bin\Debug\net8.0\runtimes\win-x64\native\HCNetSDKCom\HCPreview.dll
+C:\Users\CSD\OneDrive - UCSI University\Desktop\FR_HKVision_Export\FR_HKVision\FR_HKVision\bin\Debug\net8.0\runtimes\win-x64\native\HCNetSDKCom\HCVoiceTalk.dll
+C:\Users\CSD\OneDrive - UCSI University\Desktop\FR_HKVision_Export\FR_HKVision\FR_HKVision\bin\Debug\net8.0\runtimes\win-x64\native\HCNetSDKCom\OpenAL32.dll
+C:\Users\CSD\OneDrive - UCSI University\Desktop\FR_HKVision_Export\FR_HKVision\FR_HKVision\bin\Debug\net8.0\runtimes\win-x64\native\HCNetSDKCom\StreamTransClient.dll
+C:\Users\CSD\OneDrive - UCSI University\Desktop\FR_HKVision_Export\FR_HKVision\FR_HKVision\bin\Debug\net8.0\runtimes\win-x64\native\HCNetSDKCom\SystemTransform.dll
+C:\Users\CSD\OneDrive - UCSI University\Desktop\FR_HKVision_Export\FR_HKVision\FR_HKVision\bin\Debug\net8.0\runtimes\win-x64\native\HCNetSDKCom\libiconv2.dll
+C:\Users\CSD\OneDrive - UCSI University\Desktop\FR_HKVision_Export\FR_HKVision\FR_HKVision\bin\Debug\net8.0\runtimes\win-x64\native\HXVA.dll
+C:\Users\CSD\OneDrive - UCSI University\Desktop\FR_HKVision_Export\FR_HKVision\FR_HKVision\bin\Debug\net8.0\runtimes\win-x64\native\HmMerge.dll
+C:\Users\CSD\OneDrive - UCSI University\Desktop\FR_HKVision_Export\FR_HKVision\FR_HKVision\bin\Debug\net8.0\runtimes\win-x64\native\LocalSensorAdd.dat
+C:\Users\CSD\OneDrive - UCSI University\Desktop\FR_HKVision_Export\FR_HKVision\FR_HKVision\bin\Debug\net8.0\runtimes\win-x64\native\LocalXml.zip
+C:\Users\CSD\OneDrive - UCSI University\Desktop\FR_HKVision_Export\FR_HKVision\FR_HKVision\bin\Debug\net8.0\runtimes\win-x64\native\MP_Render.dll
+C:\Users\CSD\OneDrive - UCSI University\Desktop\FR_HKVision_Export\FR_HKVision\FR_HKVision\bin\Debug\net8.0\runtimes\win-x64\native\NPQos.dll
+C:\Users\CSD\OneDrive - UCSI University\Desktop\FR_HKVision_Export\FR_HKVision\FR_HKVision\bin\Debug\net8.0\runtimes\win-x64\native\OpenAL32.dll
+C:\Users\CSD\OneDrive - UCSI University\Desktop\FR_HKVision_Export\FR_HKVision\FR_HKVision\bin\Debug\net8.0\runtimes\win-x64\native\PlayCtrl.dll
+C:\Users\CSD\OneDrive - UCSI University\Desktop\FR_HKVision_Export\FR_HKVision\FR_HKVision\bin\Debug\net8.0\runtimes\win-x64\native\SuperRender.dll
+C:\Users\CSD\OneDrive - UCSI University\Desktop\FR_HKVision_Export\FR_HKVision\FR_HKVision\bin\Debug\net8.0\runtimes\win-x64\native\YUVProcess.dll
+C:\Users\CSD\OneDrive - UCSI University\Desktop\FR_HKVision_Export\FR_HKVision\FR_HKVision\bin\Debug\net8.0\runtimes\win-x64\native\hlog.dll
+C:\Users\CSD\OneDrive - UCSI University\Desktop\FR_HKVision_Export\FR_HKVision\FR_HKVision\bin\Debug\net8.0\runtimes\win-x64\native\hpr.dll
+C:\Users\CSD\OneDrive - UCSI University\Desktop\FR_HKVision_Export\FR_HKVision\FR_HKVision\bin\Debug\net8.0\runtimes\win-x64\native\libcrypto-1_1-x64.dll
+C:\Users\CSD\OneDrive - UCSI University\Desktop\FR_HKVision_Export\FR_HKVision\FR_HKVision\bin\Debug\net8.0\runtimes\win-x64\native\libmmd.dll
+C:\Users\CSD\OneDrive - UCSI University\Desktop\FR_HKVision_Export\FR_HKVision\FR_HKVision\bin\Debug\net8.0\runtimes\win-x64\native\libssl-1_1-x64.dll
+C:\Users\CSD\OneDrive - UCSI University\Desktop\FR_HKVision_Export\FR_HKVision\FR_HKVision\bin\Debug\net8.0\runtimes\win-x64\native\zlib1.dll
+C:\Users\CSD\OneDrive - UCSI University\Desktop\FR_HKVision_Export\FR_HKVision\FR_HKVision\bin\Debug\net8.0\runtimes\win-arm64\native\sni.dll
+C:\Users\CSD\OneDrive - UCSI University\Desktop\FR_HKVision_Export\FR_HKVision\FR_HKVision\bin\Debug\net8.0\runtimes\win-x64\native\sni.dll
+C:\Users\CSD\OneDrive - UCSI University\Desktop\FR_HKVision_Export\FR_HKVision\FR_HKVision\bin\Debug\net8.0\runtimes\win-x86\native\sni.dll
+C:\Users\CSD\OneDrive - UCSI University\Desktop\FR_HKVision_Export\FR_HKVision\FR_HKVision\bin\Debug\net8.0\runtimes\unix\lib\net8.0\System.Data.SqlClient.dll
+C:\Users\CSD\OneDrive - UCSI University\Desktop\FR_HKVision_Export\FR_HKVision\FR_HKVision\bin\Debug\net8.0\runtimes\win\lib\net8.0\System.Data.SqlClient.dll
+C:\Users\CSD\OneDrive - UCSI University\Desktop\FR_HKVision_Export\FR_HKVision\FR_HKVision\bin\Debug\net8.0\runtimes\win\lib\net8.0\System.Diagnostics.EventLog.dll
+C:\Users\CSD\OneDrive - UCSI University\Desktop\FR_HKVision_Export\FR_HKVision\FR_HKVision\bin\Debug\net8.0\runtimes\win\lib\net8.0\System.Diagnostics.PerformanceCounter.dll
+C:\Users\CSD\OneDrive - UCSI University\Desktop\FR_HKVision_Export\FR_HKVision\FR_HKVision\bin\Debug\net8.0\runtimes\win\lib\net8.0\System.DirectoryServices.dll
+C:\Users\CSD\OneDrive - UCSI University\Desktop\FR_HKVision_Export\FR_HKVision\FR_HKVision\bin\Debug\net8.0\runtimes\linux\lib\net8.0\System.DirectoryServices.Protocols.dll
+C:\Users\CSD\OneDrive - UCSI University\Desktop\FR_HKVision_Export\FR_HKVision\FR_HKVision\bin\Debug\net8.0\runtimes\osx\lib\net8.0\System.DirectoryServices.Protocols.dll
+C:\Users\CSD\OneDrive - UCSI University\Desktop\FR_HKVision_Export\FR_HKVision\FR_HKVision\bin\Debug\net8.0\runtimes\win\lib\net8.0\System.DirectoryServices.Protocols.dll
+C:\Users\CSD\OneDrive - UCSI University\Desktop\FR_HKVision_Export\FR_HKVision\FR_HKVision\bin\Debug\net8.0\runtimes\win\lib\net8.0\System.Security.Cryptography.Pkcs.dll
+C:\Users\CSD\OneDrive - UCSI University\Desktop\FR_HKVision_Export\FR_HKVision\FR_HKVision\bin\Debug\net8.0\runtimes\win\lib\net8.0\System.Windows.Extensions.dll
+C:\Users\CSD\OneDrive - UCSI University\Desktop\FR_HKVision_Export\FR_HKVision\FR_HKVision\obj\Debug\net8.0\FR_HKVision.csproj.AssemblyReference.cache
+C:\Users\CSD\OneDrive - UCSI University\Desktop\FR_HKVision_Export\FR_HKVision\FR_HKVision\obj\Debug\net8.0\FR_HKVision.GeneratedMSBuildEditorConfig.editorconfig
+C:\Users\CSD\OneDrive - UCSI University\Desktop\FR_HKVision_Export\FR_HKVision\FR_HKVision\obj\Debug\net8.0\FR_HKVision.AssemblyInfoInputs.cache
+C:\Users\CSD\OneDrive - UCSI University\Desktop\FR_HKVision_Export\FR_HKVision\FR_HKVision\obj\Debug\net8.0\FR_HKVision.AssemblyInfo.cs
+C:\Users\CSD\OneDrive - UCSI University\Desktop\FR_HKVision_Export\FR_HKVision\FR_HKVision\obj\Debug\net8.0\FR_HKVision.csproj.CoreCompileInputs.cache
+C:\Users\CSD\OneDrive - UCSI University\Desktop\FR_HKVision_Export\FR_HKVision\FR_HKVision\obj\Debug\net8.0\FR_HKVision.MvcApplicationPartsAssemblyInfo.cache
+C:\Users\CSD\OneDrive - UCSI University\Desktop\FR_HKVision_Export\FR_HKVision\FR_HKVision\obj\Debug\net8.0\FR_HKVision.RazorAssemblyInfo.cache
+C:\Users\CSD\OneDrive - UCSI University\Desktop\FR_HKVision_Export\FR_HKVision\FR_HKVision\obj\Debug\net8.0\FR_HKVision.RazorAssemblyInfo.cs
+C:\Users\CSD\OneDrive - UCSI University\Desktop\FR_HKVision_Export\FR_HKVision\FR_HKVision\obj\Debug\net8.0\scopedcss\Views\Shared\_Layout.cshtml.rz.scp.css
+C:\Users\CSD\OneDrive - UCSI University\Desktop\FR_HKVision_Export\FR_HKVision\FR_HKVision\obj\Debug\net8.0\scopedcss\bundle\FR_HKVision.styles.css
+C:\Users\CSD\OneDrive - UCSI University\Desktop\FR_HKVision_Export\FR_HKVision\FR_HKVision\obj\Debug\net8.0\scopedcss\projectbundle\FR_HKVision.bundle.scp.css
+C:\Users\CSD\OneDrive - UCSI University\Desktop\FR_HKVision_Export\FR_HKVision\FR_HKVision\obj\Debug\net8.0\staticwebassets.build.json
+C:\Users\CSD\OneDrive - UCSI University\Desktop\FR_HKVision_Export\FR_HKVision\FR_HKVision\obj\Debug\net8.0\staticwebassets.build.json.cache
+C:\Users\CSD\OneDrive - UCSI University\Desktop\FR_HKVision_Export\FR_HKVision\FR_HKVision\obj\Debug\net8.0\staticwebassets.development.json
+C:\Users\CSD\OneDrive - UCSI University\Desktop\FR_HKVision_Export\FR_HKVision\FR_HKVision\obj\Debug\net8.0\staticwebassets.build.endpoints.json
+C:\Users\CSD\OneDrive - UCSI University\Desktop\FR_HKVision_Export\FR_HKVision\FR_HKVision\obj\Debug\net8.0\FR_HKVis.AC21A2B9.Up2Date
+C:\Users\CSD\OneDrive - UCSI University\Desktop\FR_HKVision_Export\FR_HKVision\FR_HKVision\obj\Debug\net8.0\FR_HKVision.dll
+C:\Users\CSD\OneDrive - UCSI University\Desktop\FR_HKVision_Export\FR_HKVision\FR_HKVision\obj\Debug\net8.0\refint\FR_HKVision.dll
+C:\Users\CSD\OneDrive - UCSI University\Desktop\FR_HKVision_Export\FR_HKVision\FR_HKVision\obj\Debug\net8.0\FR_HKVision.pdb
+C:\Users\CSD\OneDrive - UCSI University\Desktop\FR_HKVision_Export\FR_HKVision\FR_HKVision\obj\Debug\net8.0\FR_HKVision.genruntimeconfig.cache
+C:\Users\CSD\OneDrive - UCSI University\Desktop\FR_HKVision_Export\FR_HKVision\FR_HKVision\obj\Debug\net8.0\ref\FR_HKVision.dll
+C:\Users\bryan\Documents\UCSI_PROJECT\FR_HKVision_Export\FR_HKVision_Export\FR_HKVision\FR_HKVision\bin\Debug\net8.0\appsettings.Development.json
+C:\Users\bryan\Documents\UCSI_PROJECT\FR_HKVision_Export\FR_HKVision_Export\FR_HKVision\FR_HKVision\bin\Debug\net8.0\appsettings.json
+C:\Users\bryan\Documents\UCSI_PROJECT\FR_HKVision_Export\FR_HKVision_Export\FR_HKVision\FR_HKVision\bin\Debug\net8.0\FR_HKVision.staticwebassets.runtime.json
+C:\Users\bryan\Documents\UCSI_PROJECT\FR_HKVision_Export\FR_HKVision_Export\FR_HKVision\FR_HKVision\bin\Debug\net8.0\FR_HKVision.staticwebassets.endpoints.json
+C:\Users\bryan\Documents\UCSI_PROJECT\FR_HKVision_Export\FR_HKVision_Export\FR_HKVision\FR_HKVision\bin\Debug\net8.0\FR_HKVision.exe
+C:\Users\bryan\Documents\UCSI_PROJECT\FR_HKVision_Export\FR_HKVision_Export\FR_HKVision\FR_HKVision\bin\Debug\net8.0\FR_HKVision.deps.json
+C:\Users\bryan\Documents\UCSI_PROJECT\FR_HKVision_Export\FR_HKVision_Export\FR_HKVision\FR_HKVision\bin\Debug\net8.0\FR_HKVision.runtimeconfig.json
+C:\Users\bryan\Documents\UCSI_PROJECT\FR_HKVision_Export\FR_HKVision_Export\FR_HKVision\FR_HKVision\bin\Debug\net8.0\FR_HKVision.dll
+C:\Users\bryan\Documents\UCSI_PROJECT\FR_HKVision_Export\FR_HKVision_Export\FR_HKVision\FR_HKVision\bin\Debug\net8.0\FR_HKVision.pdb
+C:\Users\bryan\Documents\UCSI_PROJECT\FR_HKVision_Export\FR_HKVision_Export\FR_HKVision\FR_HKVision\bin\Debug\net8.0\Azure.Core.dll
+C:\Users\bryan\Documents\UCSI_PROJECT\FR_HKVision_Export\FR_HKVision_Export\FR_HKVision\FR_HKVision\bin\Debug\net8.0\Azure.Identity.dll
+C:\Users\bryan\Documents\UCSI_PROJECT\FR_HKVision_Export\FR_HKVision_Export\FR_HKVision\FR_HKVision\bin\Debug\net8.0\Dahomey.Json.dll
+C:\Users\bryan\Documents\UCSI_PROJECT\FR_HKVision_Export\FR_HKVision_Export\FR_HKVision\FR_HKVision\bin\Debug\net8.0\Dahomey.Json.Attributes.dll
+C:\Users\bryan\Documents\UCSI_PROJECT\FR_HKVision_Export\FR_HKVision_Export\FR_HKVision\FR_HKVision\bin\Debug\net8.0\EmbedIO.dll
+C:\Users\bryan\Documents\UCSI_PROJECT\FR_HKVision_Export\FR_HKVision_Export\FR_HKVision\FR_HKVision\bin\Debug\net8.0\HikVision.dll
+C:\Users\bryan\Documents\UCSI_PROJECT\FR_HKVision_Export\FR_HKVision_Export\FR_HKVision\FR_HKVision\bin\Debug\net8.0\Hikvision Artemis Api.dll
+C:\Users\bryan\Documents\UCSI_PROJECT\FR_HKVision_Export\FR_HKVision_Export\FR_HKVision\FR_HKVision\bin\Debug\net8.0\Microsoft.AspNetCore.JsonPatch.dll
+C:\Users\bryan\Documents\UCSI_PROJECT\FR_HKVision_Export\FR_HKVision_Export\FR_HKVision\FR_HKVision\bin\Debug\net8.0\Microsoft.AspNetCore.Mvc.NewtonsoftJson.dll
+C:\Users\bryan\Documents\UCSI_PROJECT\FR_HKVision_Export\FR_HKVision_Export\FR_HKVision\FR_HKVision\bin\Debug\net8.0\Microsoft.Bcl.AsyncInterfaces.dll
+C:\Users\bryan\Documents\UCSI_PROJECT\FR_HKVision_Export\FR_HKVision_Export\FR_HKVision\FR_HKVision\bin\Debug\net8.0\Microsoft.Bcl.Cryptography.dll
+C:\Users\bryan\Documents\UCSI_PROJECT\FR_HKVision_Export\FR_HKVision_Export\FR_HKVision\FR_HKVision\bin\Debug\net8.0\Microsoft.Data.SqlClient.dll
+C:\Users\bryan\Documents\UCSI_PROJECT\FR_HKVision_Export\FR_HKVision_Export\FR_HKVision\FR_HKVision\bin\Debug\net8.0\Microsoft.Extensions.Caching.Memory.dll
+C:\Users\bryan\Documents\UCSI_PROJECT\FR_HKVision_Export\FR_HKVision_Export\FR_HKVision\FR_HKVision\bin\Debug\net8.0\Microsoft.Extensions.DependencyInjection.Abstractions.dll
+C:\Users\bryan\Documents\UCSI_PROJECT\FR_HKVision_Export\FR_HKVision_Export\FR_HKVision\FR_HKVision\bin\Debug\net8.0\Microsoft.Extensions.Logging.Abstractions.dll
+C:\Users\bryan\Documents\UCSI_PROJECT\FR_HKVision_Export\FR_HKVision_Export\FR_HKVision\FR_HKVision\bin\Debug\net8.0\Microsoft.Extensions.Options.dll
+C:\Users\bryan\Documents\UCSI_PROJECT\FR_HKVision_Export\FR_HKVision_Export\FR_HKVision\FR_HKVision\bin\Debug\net8.0\Microsoft.Identity.Client.dll
+C:\Users\bryan\Documents\UCSI_PROJECT\FR_HKVision_Export\FR_HKVision_Export\FR_HKVision\FR_HKVision\bin\Debug\net8.0\Microsoft.Identity.Client.Extensions.Msal.dll
+C:\Users\bryan\Documents\UCSI_PROJECT\FR_HKVision_Export\FR_HKVision_Export\FR_HKVision\FR_HKVision\bin\Debug\net8.0\Microsoft.IdentityModel.Abstractions.dll
+C:\Users\bryan\Documents\UCSI_PROJECT\FR_HKVision_Export\FR_HKVision_Export\FR_HKVision\FR_HKVision\bin\Debug\net8.0\Microsoft.IdentityModel.JsonWebTokens.dll
+C:\Users\bryan\Documents\UCSI_PROJECT\FR_HKVision_Export\FR_HKVision_Export\FR_HKVision\FR_HKVision\bin\Debug\net8.0\Microsoft.IdentityModel.Logging.dll
+C:\Users\bryan\Documents\UCSI_PROJECT\FR_HKVision_Export\FR_HKVision_Export\FR_HKVision\FR_HKVision\bin\Debug\net8.0\Microsoft.IdentityModel.Protocols.dll
+C:\Users\bryan\Documents\UCSI_PROJECT\FR_HKVision_Export\FR_HKVision_Export\FR_HKVision\FR_HKVision\bin\Debug\net8.0\Microsoft.IdentityModel.Protocols.OpenIdConnect.dll
+C:\Users\bryan\Documents\UCSI_PROJECT\FR_HKVision_Export\FR_HKVision_Export\FR_HKVision\FR_HKVision\bin\Debug\net8.0\Microsoft.IdentityModel.Tokens.dll
+C:\Users\bryan\Documents\UCSI_PROJECT\FR_HKVision_Export\FR_HKVision_Export\FR_HKVision\FR_HKVision\bin\Debug\net8.0\Microsoft.SqlServer.Server.dll
+C:\Users\bryan\Documents\UCSI_PROJECT\FR_HKVision_Export\FR_HKVision_Export\FR_HKVision\FR_HKVision\bin\Debug\net8.0\Newtonsoft.Json.dll
+C:\Users\bryan\Documents\UCSI_PROJECT\FR_HKVision_Export\FR_HKVision_Export\FR_HKVision\FR_HKVision\bin\Debug\net8.0\Newtonsoft.Json.Bson.dll
+C:\Users\bryan\Documents\UCSI_PROJECT\FR_HKVision_Export\FR_HKVision_Export\FR_HKVision\FR_HKVision\bin\Debug\net8.0\Oracle.ManagedDataAccess.dll
+C:\Users\bryan\Documents\UCSI_PROJECT\FR_HKVision_Export\FR_HKVision_Export\FR_HKVision\FR_HKVision\bin\Debug\net8.0\QuickNV.HikvisionNetSDK.dll
+C:\Users\bryan\Documents\UCSI_PROJECT\FR_HKVision_Export\FR_HKVision_Export\FR_HKVision\FR_HKVision\bin\Debug\net8.0\System.ClientModel.dll
+C:\Users\bryan\Documents\UCSI_PROJECT\FR_HKVision_Export\FR_HKVision_Export\FR_HKVision\FR_HKVision\bin\Debug\net8.0\System.Configuration.ConfigurationManager.dll
+C:\Users\bryan\Documents\UCSI_PROJECT\FR_HKVision_Export\FR_HKVision_Export\FR_HKVision\FR_HKVision\bin\Debug\net8.0\System.Data.SqlClient.dll
+C:\Users\bryan\Documents\UCSI_PROJECT\FR_HKVision_Export\FR_HKVision_Export\FR_HKVision\FR_HKVision\bin\Debug\net8.0\System.Diagnostics.EventLog.dll
+C:\Users\bryan\Documents\UCSI_PROJECT\FR_HKVision_Export\FR_HKVision_Export\FR_HKVision\FR_HKVision\bin\Debug\net8.0\System.Diagnostics.PerformanceCounter.dll
+C:\Users\bryan\Documents\UCSI_PROJECT\FR_HKVision_Export\FR_HKVision_Export\FR_HKVision\FR_HKVision\bin\Debug\net8.0\System.DirectoryServices.dll
+C:\Users\bryan\Documents\UCSI_PROJECT\FR_HKVision_Export\FR_HKVision_Export\FR_HKVision\FR_HKVision\bin\Debug\net8.0\System.DirectoryServices.Protocols.dll
+C:\Users\bryan\Documents\UCSI_PROJECT\FR_HKVision_Export\FR_HKVision_Export\FR_HKVision\FR_HKVision\bin\Debug\net8.0\System.IdentityModel.Tokens.Jwt.dll
+C:\Users\bryan\Documents\UCSI_PROJECT\FR_HKVision_Export\FR_HKVision_Export\FR_HKVision\FR_HKVision\bin\Debug\net8.0\System.Memory.Data.dll
+C:\Users\bryan\Documents\UCSI_PROJECT\FR_HKVision_Export\FR_HKVision_Export\FR_HKVision\FR_HKVision\bin\Debug\net8.0\System.Security.Cryptography.Pkcs.dll
+C:\Users\bryan\Documents\UCSI_PROJECT\FR_HKVision_Export\FR_HKVision_Export\FR_HKVision\FR_HKVision\bin\Debug\net8.0\System.Security.Cryptography.ProtectedData.dll
+C:\Users\bryan\Documents\UCSI_PROJECT\FR_HKVision_Export\FR_HKVision_Export\FR_HKVision\FR_HKVision\bin\Debug\net8.0\System.Security.Permissions.dll
+C:\Users\bryan\Documents\UCSI_PROJECT\FR_HKVision_Export\FR_HKVision_Export\FR_HKVision\FR_HKVision\bin\Debug\net8.0\System.Windows.Extensions.dll
+C:\Users\bryan\Documents\UCSI_PROJECT\FR_HKVision_Export\FR_HKVision_Export\FR_HKVision\FR_HKVision\bin\Debug\net8.0\Swan.Lite.dll
+C:\Users\bryan\Documents\UCSI_PROJECT\FR_HKVision_Export\FR_HKVision_Export\FR_HKVision\FR_HKVision\bin\Debug\net8.0\cs\Microsoft.Data.SqlClient.resources.dll
+C:\Users\bryan\Documents\UCSI_PROJECT\FR_HKVision_Export\FR_HKVision_Export\FR_HKVision\FR_HKVision\bin\Debug\net8.0\de\Microsoft.Data.SqlClient.resources.dll
+C:\Users\bryan\Documents\UCSI_PROJECT\FR_HKVision_Export\FR_HKVision_Export\FR_HKVision\FR_HKVision\bin\Debug\net8.0\es\Microsoft.Data.SqlClient.resources.dll
+C:\Users\bryan\Documents\UCSI_PROJECT\FR_HKVision_Export\FR_HKVision_Export\FR_HKVision\FR_HKVision\bin\Debug\net8.0\fr\Microsoft.Data.SqlClient.resources.dll
+C:\Users\bryan\Documents\UCSI_PROJECT\FR_HKVision_Export\FR_HKVision_Export\FR_HKVision\FR_HKVision\bin\Debug\net8.0\it\Microsoft.Data.SqlClient.resources.dll
+C:\Users\bryan\Documents\UCSI_PROJECT\FR_HKVision_Export\FR_HKVision_Export\FR_HKVision\FR_HKVision\bin\Debug\net8.0\ja\Microsoft.Data.SqlClient.resources.dll
+C:\Users\bryan\Documents\UCSI_PROJECT\FR_HKVision_Export\FR_HKVision_Export\FR_HKVision\FR_HKVision\bin\Debug\net8.0\ko\Microsoft.Data.SqlClient.resources.dll
+C:\Users\bryan\Documents\UCSI_PROJECT\FR_HKVision_Export\FR_HKVision_Export\FR_HKVision\FR_HKVision\bin\Debug\net8.0\pl\Microsoft.Data.SqlClient.resources.dll
+C:\Users\bryan\Documents\UCSI_PROJECT\FR_HKVision_Export\FR_HKVision_Export\FR_HKVision\FR_HKVision\bin\Debug\net8.0\pt-BR\Microsoft.Data.SqlClient.resources.dll
+C:\Users\bryan\Documents\UCSI_PROJECT\FR_HKVision_Export\FR_HKVision_Export\FR_HKVision\FR_HKVision\bin\Debug\net8.0\ru\Microsoft.Data.SqlClient.resources.dll
+C:\Users\bryan\Documents\UCSI_PROJECT\FR_HKVision_Export\FR_HKVision_Export\FR_HKVision\FR_HKVision\bin\Debug\net8.0\tr\Microsoft.Data.SqlClient.resources.dll
+C:\Users\bryan\Documents\UCSI_PROJECT\FR_HKVision_Export\FR_HKVision_Export\FR_HKVision\FR_HKVision\bin\Debug\net8.0\zh-Hans\Microsoft.Data.SqlClient.resources.dll
+C:\Users\bryan\Documents\UCSI_PROJECT\FR_HKVision_Export\FR_HKVision_Export\FR_HKVision\FR_HKVision\bin\Debug\net8.0\zh-Hant\Microsoft.Data.SqlClient.resources.dll
+C:\Users\bryan\Documents\UCSI_PROJECT\FR_HKVision_Export\FR_HKVision_Export\FR_HKVision\FR_HKVision\bin\Debug\net8.0\runtimes\unix\lib\net8.0\Microsoft.Data.SqlClient.dll
+C:\Users\bryan\Documents\UCSI_PROJECT\FR_HKVision_Export\FR_HKVision_Export\FR_HKVision\FR_HKVision\bin\Debug\net8.0\runtimes\win\lib\net8.0\Microsoft.Data.SqlClient.dll
+C:\Users\bryan\Documents\UCSI_PROJECT\FR_HKVision_Export\FR_HKVision_Export\FR_HKVision\FR_HKVision\bin\Debug\net8.0\runtimes\win-arm64\native\Microsoft.Data.SqlClient.SNI.dll
+C:\Users\bryan\Documents\UCSI_PROJECT\FR_HKVision_Export\FR_HKVision_Export\FR_HKVision\FR_HKVision\bin\Debug\net8.0\runtimes\win-x64\native\Microsoft.Data.SqlClient.SNI.dll
+C:\Users\bryan\Documents\UCSI_PROJECT\FR_HKVision_Export\FR_HKVision_Export\FR_HKVision\FR_HKVision\bin\Debug\net8.0\runtimes\win-x86\native\Microsoft.Data.SqlClient.SNI.dll
+C:\Users\bryan\Documents\UCSI_PROJECT\FR_HKVision_Export\FR_HKVision_Export\FR_HKVision\FR_HKVision\bin\Debug\net8.0\runtimes\linux-arm64\native\HCNetSDKCom\libAudioIntercom.so
+C:\Users\bryan\Documents\UCSI_PROJECT\FR_HKVision_Export\FR_HKVision_Export\FR_HKVision\FR_HKVision\bin\Debug\net8.0\runtimes\linux-arm64\native\HCNetSDKCom\libHCAlarm.so
+C:\Users\bryan\Documents\UCSI_PROJECT\FR_HKVision_Export\FR_HKVision_Export\FR_HKVision\FR_HKVision\bin\Debug\net8.0\runtimes\linux-arm64\native\HCNetSDKCom\libHCCoreDevCfg.so
+C:\Users\bryan\Documents\UCSI_PROJECT\FR_HKVision_Export\FR_HKVision_Export\FR_HKVision\FR_HKVision\bin\Debug\net8.0\runtimes\linux-arm64\native\HCNetSDKCom\libHCDisplay.so
+C:\Users\bryan\Documents\UCSI_PROJECT\FR_HKVision_Export\FR_HKVision_Export\FR_HKVision\FR_HKVision\bin\Debug\net8.0\runtimes\linux-arm64\native\HCNetSDKCom\libHCGeneralCfgMgr.so
+C:\Users\bryan\Documents\UCSI_PROJECT\FR_HKVision_Export\FR_HKVision_Export\FR_HKVision\FR_HKVision\bin\Debug\net8.0\runtimes\linux-arm64\native\HCNetSDKCom\libHCIndustry.so
+C:\Users\bryan\Documents\UCSI_PROJECT\FR_HKVision_Export\FR_HKVision_Export\FR_HKVision\FR_HKVision\bin\Debug\net8.0\runtimes\linux-arm64\native\HCNetSDKCom\libHCPlayBack.so
+C:\Users\bryan\Documents\UCSI_PROJECT\FR_HKVision_Export\FR_HKVision_Export\FR_HKVision\FR_HKVision\bin\Debug\net8.0\runtimes\linux-arm64\native\HCNetSDKCom\libHCPreview.so
+C:\Users\bryan\Documents\UCSI_PROJECT\FR_HKVision_Export\FR_HKVision_Export\FR_HKVision\FR_HKVision\bin\Debug\net8.0\runtimes\linux-arm64\native\HCNetSDKCom\libHCVoiceTalk.so
+C:\Users\bryan\Documents\UCSI_PROJECT\FR_HKVision_Export\FR_HKVision_Export\FR_HKVision\FR_HKVision\bin\Debug\net8.0\runtimes\linux-arm64\native\HCNetSDKCom\libStreamTransClient.so
+C:\Users\bryan\Documents\UCSI_PROJECT\FR_HKVision_Export\FR_HKVision_Export\FR_HKVision\FR_HKVision\bin\Debug\net8.0\runtimes\linux-arm64\native\HCNetSDKCom\libSystemTransform.so
+C:\Users\bryan\Documents\UCSI_PROJECT\FR_HKVision_Export\FR_HKVision_Export\FR_HKVision\FR_HKVision\bin\Debug\net8.0\runtimes\linux-arm64\native\HCNetSDKCom\libanalyzedata.so
+C:\Users\bryan\Documents\UCSI_PROJECT\FR_HKVision_Export\FR_HKVision_Export\FR_HKVision\FR_HKVision\bin\Debug\net8.0\runtimes\linux-arm64\native\HCNetSDKCom\libiconv.so.2
+C:\Users\bryan\Documents\UCSI_PROJECT\FR_HKVision_Export\FR_HKVision_Export\FR_HKVision\FR_HKVision\bin\Debug\net8.0\runtimes\linux-arm64\native\HCNetSDK_Log_Switch.xml
+C:\Users\bryan\Documents\UCSI_PROJECT\FR_HKVision_Export\FR_HKVision_Export\FR_HKVision\FR_HKVision\bin\Debug\net8.0\runtimes\linux-arm64\native\libAudioRender.so
+C:\Users\bryan\Documents\UCSI_PROJECT\FR_HKVision_Export\FR_HKVision_Export\FR_HKVision\FR_HKVision\bin\Debug\net8.0\runtimes\linux-arm64\native\libHCCore.so
+C:\Users\bryan\Documents\UCSI_PROJECT\FR_HKVision_Export\FR_HKVision_Export\FR_HKVision\FR_HKVision\bin\Debug\net8.0\runtimes\linux-arm64\native\libPlayCtrl.so
+C:\Users\bryan\Documents\UCSI_PROJECT\FR_HKVision_Export\FR_HKVision_Export\FR_HKVision\FR_HKVision\bin\Debug\net8.0\runtimes\linux-arm64\native\libSuperRender.so
+C:\Users\bryan\Documents\UCSI_PROJECT\FR_HKVision_Export\FR_HKVision_Export\FR_HKVision\FR_HKVision\bin\Debug\net8.0\runtimes\linux-arm64\native\libcrypto.so
+C:\Users\bryan\Documents\UCSI_PROJECT\FR_HKVision_Export\FR_HKVision_Export\FR_HKVision\FR_HKVision\bin\Debug\net8.0\runtimes\linux-arm64\native\libcrypto.so.1.1
+C:\Users\bryan\Documents\UCSI_PROJECT\FR_HKVision_Export\FR_HKVision_Export\FR_HKVision\FR_HKVision\bin\Debug\net8.0\runtimes\linux-arm64\native\libhcnetsdk.so
+C:\Users\bryan\Documents\UCSI_PROJECT\FR_HKVision_Export\FR_HKVision_Export\FR_HKVision\FR_HKVision\bin\Debug\net8.0\runtimes\linux-arm64\native\libhpr.so
+C:\Users\bryan\Documents\UCSI_PROJECT\FR_HKVision_Export\FR_HKVision_Export\FR_HKVision\FR_HKVision\bin\Debug\net8.0\runtimes\linux-arm64\native\libssl.so
+C:\Users\bryan\Documents\UCSI_PROJECT\FR_HKVision_Export\FR_HKVision_Export\FR_HKVision\FR_HKVision\bin\Debug\net8.0\runtimes\linux-arm64\native\libssl.so.1.1
+C:\Users\bryan\Documents\UCSI_PROJECT\FR_HKVision_Export\FR_HKVision_Export\FR_HKVision\FR_HKVision\bin\Debug\net8.0\runtimes\linux-arm64\native\libz.so
+C:\Users\bryan\Documents\UCSI_PROJECT\FR_HKVision_Export\FR_HKVision_Export\FR_HKVision\FR_HKVision\bin\Debug\net8.0\runtimes\linux-x64\native\HCNetSDKCom\libAudioIntercom.so
+C:\Users\bryan\Documents\UCSI_PROJECT\FR_HKVision_Export\FR_HKVision_Export\FR_HKVision\FR_HKVision\bin\Debug\net8.0\runtimes\linux-x64\native\HCNetSDKCom\libHCAlarm.so
+C:\Users\bryan\Documents\UCSI_PROJECT\FR_HKVision_Export\FR_HKVision_Export\FR_HKVision\FR_HKVision\bin\Debug\net8.0\runtimes\linux-x64\native\HCNetSDKCom\libHCCoreDevCfg.so
+C:\Users\bryan\Documents\UCSI_PROJECT\FR_HKVision_Export\FR_HKVision_Export\FR_HKVision\FR_HKVision\bin\Debug\net8.0\runtimes\linux-x64\native\HCNetSDKCom\libHCDisplay.so
+C:\Users\bryan\Documents\UCSI_PROJECT\FR_HKVision_Export\FR_HKVision_Export\FR_HKVision\FR_HKVision\bin\Debug\net8.0\runtimes\linux-x64\native\HCNetSDKCom\libHCGeneralCfgMgr.so
+C:\Users\bryan\Documents\UCSI_PROJECT\FR_HKVision_Export\FR_HKVision_Export\FR_HKVision\FR_HKVision\bin\Debug\net8.0\runtimes\linux-x64\native\HCNetSDKCom\libHCIndustry.so
+C:\Users\bryan\Documents\UCSI_PROJECT\FR_HKVision_Export\FR_HKVision_Export\FR_HKVision\FR_HKVision\bin\Debug\net8.0\runtimes\linux-x64\native\HCNetSDKCom\libHCPlayBack.so
+C:\Users\bryan\Documents\UCSI_PROJECT\FR_HKVision_Export\FR_HKVision_Export\FR_HKVision\FR_HKVision\bin\Debug\net8.0\runtimes\linux-x64\native\HCNetSDKCom\libHCPreview.so
+C:\Users\bryan\Documents\UCSI_PROJECT\FR_HKVision_Export\FR_HKVision_Export\FR_HKVision\FR_HKVision\bin\Debug\net8.0\runtimes\linux-x64\native\HCNetSDKCom\libHCVoiceTalk.so
+C:\Users\bryan\Documents\UCSI_PROJECT\FR_HKVision_Export\FR_HKVision_Export\FR_HKVision\FR_HKVision\bin\Debug\net8.0\runtimes\linux-x64\native\HCNetSDKCom\libStreamTransClient.so
+C:\Users\bryan\Documents\UCSI_PROJECT\FR_HKVision_Export\FR_HKVision_Export\FR_HKVision\FR_HKVision\bin\Debug\net8.0\runtimes\linux-x64\native\HCNetSDKCom\libSystemTransform.so
+C:\Users\bryan\Documents\UCSI_PROJECT\FR_HKVision_Export\FR_HKVision_Export\FR_HKVision\FR_HKVision\bin\Debug\net8.0\runtimes\linux-x64\native\HCNetSDKCom\libanalyzedata.so
+C:\Users\bryan\Documents\UCSI_PROJECT\FR_HKVision_Export\FR_HKVision_Export\FR_HKVision\FR_HKVision\bin\Debug\net8.0\runtimes\linux-x64\native\HCNetSDKCom\libiconv2.so
+C:\Users\bryan\Documents\UCSI_PROJECT\FR_HKVision_Export\FR_HKVision_Export\FR_HKVision\FR_HKVision\bin\Debug\net8.0\runtimes\linux-x64\native\HCNetSDK_Log_Switch.xml
+C:\Users\bryan\Documents\UCSI_PROJECT\FR_HKVision_Export\FR_HKVision_Export\FR_HKVision\FR_HKVision\bin\Debug\net8.0\runtimes\linux-x64\native\libAudioRender.so
+C:\Users\bryan\Documents\UCSI_PROJECT\FR_HKVision_Export\FR_HKVision_Export\FR_HKVision\FR_HKVision\bin\Debug\net8.0\runtimes\linux-x64\native\libHCCore.so
+C:\Users\bryan\Documents\UCSI_PROJECT\FR_HKVision_Export\FR_HKVision_Export\FR_HKVision\FR_HKVision\bin\Debug\net8.0\runtimes\linux-x64\native\libNPQos.so
+C:\Users\bryan\Documents\UCSI_PROJECT\FR_HKVision_Export\FR_HKVision_Export\FR_HKVision\FR_HKVision\bin\Debug\net8.0\runtimes\linux-x64\native\libPlayCtrl.so
+C:\Users\bryan\Documents\UCSI_PROJECT\FR_HKVision_Export\FR_HKVision_Export\FR_HKVision\FR_HKVision\bin\Debug\net8.0\runtimes\linux-x64\native\libSuperRender.so
+C:\Users\bryan\Documents\UCSI_PROJECT\FR_HKVision_Export\FR_HKVision_Export\FR_HKVision\FR_HKVision\bin\Debug\net8.0\runtimes\linux-x64\native\libcrypto.so.1.1
+C:\Users\bryan\Documents\UCSI_PROJECT\FR_HKVision_Export\FR_HKVision_Export\FR_HKVision\FR_HKVision\bin\Debug\net8.0\runtimes\linux-x64\native\libhcnetsdk.so
+C:\Users\bryan\Documents\UCSI_PROJECT\FR_HKVision_Export\FR_HKVision_Export\FR_HKVision\FR_HKVision\bin\Debug\net8.0\runtimes\linux-x64\native\libhpr.so
+C:\Users\bryan\Documents\UCSI_PROJECT\FR_HKVision_Export\FR_HKVision_Export\FR_HKVision\FR_HKVision\bin\Debug\net8.0\runtimes\linux-x64\native\libopenal.so.1
+C:\Users\bryan\Documents\UCSI_PROJECT\FR_HKVision_Export\FR_HKVision_Export\FR_HKVision\FR_HKVision\bin\Debug\net8.0\runtimes\linux-x64\native\libssl.so.1.1
+C:\Users\bryan\Documents\UCSI_PROJECT\FR_HKVision_Export\FR_HKVision_Export\FR_HKVision\FR_HKVision\bin\Debug\net8.0\runtimes\linux-x64\native\libz.so
+C:\Users\bryan\Documents\UCSI_PROJECT\FR_HKVision_Export\FR_HKVision_Export\FR_HKVision\FR_HKVision\bin\Debug\net8.0\runtimes\win-x64\native\AudioRender.dll
+C:\Users\bryan\Documents\UCSI_PROJECT\FR_HKVision_Export\FR_HKVision_Export\FR_HKVision\FR_HKVision\bin\Debug\net8.0\runtimes\win-x64\native\GdiPlus.dll
+C:\Users\bryan\Documents\UCSI_PROJECT\FR_HKVision_Export\FR_HKVision_Export\FR_HKVision\FR_HKVision\bin\Debug\net8.0\runtimes\win-x64\native\HCCore.dll
+C:\Users\bryan\Documents\UCSI_PROJECT\FR_HKVision_Export\FR_HKVision_Export\FR_HKVision\FR_HKVision\bin\Debug\net8.0\runtimes\win-x64\native\HCNetSDK.dll
+C:\Users\bryan\Documents\UCSI_PROJECT\FR_HKVision_Export\FR_HKVision_Export\FR_HKVision\FR_HKVision\bin\Debug\net8.0\runtimes\win-x64\native\HCNetSDKCom\AnalyzeData.dll
+C:\Users\bryan\Documents\UCSI_PROJECT\FR_HKVision_Export\FR_HKVision_Export\FR_HKVision\FR_HKVision\bin\Debug\net8.0\runtimes\win-x64\native\HCNetSDKCom\AudioIntercom.dll
+C:\Users\bryan\Documents\UCSI_PROJECT\FR_HKVision_Export\FR_HKVision_Export\FR_HKVision\FR_HKVision\bin\Debug\net8.0\runtimes\win-x64\native\HCNetSDKCom\AudioRender.dll
+C:\Users\bryan\Documents\UCSI_PROJECT\FR_HKVision_Export\FR_HKVision_Export\FR_HKVision\FR_HKVision\bin\Debug\net8.0\runtimes\win-x64\native\HCNetSDKCom\HCAlarm.dll
+C:\Users\bryan\Documents\UCSI_PROJECT\FR_HKVision_Export\FR_HKVision_Export\FR_HKVision\FR_HKVision\bin\Debug\net8.0\runtimes\win-x64\native\HCNetSDKCom\HCCoreDevCfg.dll
+C:\Users\bryan\Documents\UCSI_PROJECT\FR_HKVision_Export\FR_HKVision_Export\FR_HKVision\FR_HKVision\bin\Debug\net8.0\runtimes\win-x64\native\HCNetSDKCom\HCDisplay.dll
+C:\Users\bryan\Documents\UCSI_PROJECT\FR_HKVision_Export\FR_HKVision_Export\FR_HKVision\FR_HKVision\bin\Debug\net8.0\runtimes\win-x64\native\HCNetSDKCom\HCGeneralCfgMgr.dll
+C:\Users\bryan\Documents\UCSI_PROJECT\FR_HKVision_Export\FR_HKVision_Export\FR_HKVision\FR_HKVision\bin\Debug\net8.0\runtimes\win-x64\native\HCNetSDKCom\HCIndustry.dll
+C:\Users\bryan\Documents\UCSI_PROJECT\FR_HKVision_Export\FR_HKVision_Export\FR_HKVision\FR_HKVision\bin\Debug\net8.0\runtimes\win-x64\native\HCNetSDKCom\HCPlayBack.dll
+C:\Users\bryan\Documents\UCSI_PROJECT\FR_HKVision_Export\FR_HKVision_Export\FR_HKVision\FR_HKVision\bin\Debug\net8.0\runtimes\win-x64\native\HCNetSDKCom\HCPreview.dll
+C:\Users\bryan\Documents\UCSI_PROJECT\FR_HKVision_Export\FR_HKVision_Export\FR_HKVision\FR_HKVision\bin\Debug\net8.0\runtimes\win-x64\native\HCNetSDKCom\HCVoiceTalk.dll
+C:\Users\bryan\Documents\UCSI_PROJECT\FR_HKVision_Export\FR_HKVision_Export\FR_HKVision\FR_HKVision\bin\Debug\net8.0\runtimes\win-x64\native\HCNetSDKCom\OpenAL32.dll
+C:\Users\bryan\Documents\UCSI_PROJECT\FR_HKVision_Export\FR_HKVision_Export\FR_HKVision\FR_HKVision\bin\Debug\net8.0\runtimes\win-x64\native\HCNetSDKCom\StreamTransClient.dll
+C:\Users\bryan\Documents\UCSI_PROJECT\FR_HKVision_Export\FR_HKVision_Export\FR_HKVision\FR_HKVision\bin\Debug\net8.0\runtimes\win-x64\native\HCNetSDKCom\SystemTransform.dll
+C:\Users\bryan\Documents\UCSI_PROJECT\FR_HKVision_Export\FR_HKVision_Export\FR_HKVision\FR_HKVision\bin\Debug\net8.0\runtimes\win-x64\native\HCNetSDKCom\libiconv2.dll
+C:\Users\bryan\Documents\UCSI_PROJECT\FR_HKVision_Export\FR_HKVision_Export\FR_HKVision\FR_HKVision\bin\Debug\net8.0\runtimes\win-x64\native\HXVA.dll
+C:\Users\bryan\Documents\UCSI_PROJECT\FR_HKVision_Export\FR_HKVision_Export\FR_HKVision\FR_HKVision\bin\Debug\net8.0\runtimes\win-x64\native\HmMerge.dll
+C:\Users\bryan\Documents\UCSI_PROJECT\FR_HKVision_Export\FR_HKVision_Export\FR_HKVision\FR_HKVision\bin\Debug\net8.0\runtimes\win-x64\native\LocalSensorAdd.dat
+C:\Users\bryan\Documents\UCSI_PROJECT\FR_HKVision_Export\FR_HKVision_Export\FR_HKVision\FR_HKVision\bin\Debug\net8.0\runtimes\win-x64\native\LocalXml.zip
+C:\Users\bryan\Documents\UCSI_PROJECT\FR_HKVision_Export\FR_HKVision_Export\FR_HKVision\FR_HKVision\bin\Debug\net8.0\runtimes\win-x64\native\MP_Render.dll
+C:\Users\bryan\Documents\UCSI_PROJECT\FR_HKVision_Export\FR_HKVision_Export\FR_HKVision\FR_HKVision\bin\Debug\net8.0\runtimes\win-x64\native\NPQos.dll
+C:\Users\bryan\Documents\UCSI_PROJECT\FR_HKVision_Export\FR_HKVision_Export\FR_HKVision\FR_HKVision\bin\Debug\net8.0\runtimes\win-x64\native\OpenAL32.dll
+C:\Users\bryan\Documents\UCSI_PROJECT\FR_HKVision_Export\FR_HKVision_Export\FR_HKVision\FR_HKVision\bin\Debug\net8.0\runtimes\win-x64\native\PlayCtrl.dll
+C:\Users\bryan\Documents\UCSI_PROJECT\FR_HKVision_Export\FR_HKVision_Export\FR_HKVision\FR_HKVision\bin\Debug\net8.0\runtimes\win-x64\native\SuperRender.dll
+C:\Users\bryan\Documents\UCSI_PROJECT\FR_HKVision_Export\FR_HKVision_Export\FR_HKVision\FR_HKVision\bin\Debug\net8.0\runtimes\win-x64\native\YUVProcess.dll
+C:\Users\bryan\Documents\UCSI_PROJECT\FR_HKVision_Export\FR_HKVision_Export\FR_HKVision\FR_HKVision\bin\Debug\net8.0\runtimes\win-x64\native\hlog.dll
+C:\Users\bryan\Documents\UCSI_PROJECT\FR_HKVision_Export\FR_HKVision_Export\FR_HKVision\FR_HKVision\bin\Debug\net8.0\runtimes\win-x64\native\hpr.dll
+C:\Users\bryan\Documents\UCSI_PROJECT\FR_HKVision_Export\FR_HKVision_Export\FR_HKVision\FR_HKVision\bin\Debug\net8.0\runtimes\win-x64\native\libcrypto-1_1-x64.dll
+C:\Users\bryan\Documents\UCSI_PROJECT\FR_HKVision_Export\FR_HKVision_Export\FR_HKVision\FR_HKVision\bin\Debug\net8.0\runtimes\win-x64\native\libmmd.dll
+C:\Users\bryan\Documents\UCSI_PROJECT\FR_HKVision_Export\FR_HKVision_Export\FR_HKVision\FR_HKVision\bin\Debug\net8.0\runtimes\win-x64\native\libssl-1_1-x64.dll
+C:\Users\bryan\Documents\UCSI_PROJECT\FR_HKVision_Export\FR_HKVision_Export\FR_HKVision\FR_HKVision\bin\Debug\net8.0\runtimes\win-x64\native\zlib1.dll
+C:\Users\bryan\Documents\UCSI_PROJECT\FR_HKVision_Export\FR_HKVision_Export\FR_HKVision\FR_HKVision\bin\Debug\net8.0\runtimes\win-arm64\native\sni.dll
+C:\Users\bryan\Documents\UCSI_PROJECT\FR_HKVision_Export\FR_HKVision_Export\FR_HKVision\FR_HKVision\bin\Debug\net8.0\runtimes\win-x64\native\sni.dll
+C:\Users\bryan\Documents\UCSI_PROJECT\FR_HKVision_Export\FR_HKVision_Export\FR_HKVision\FR_HKVision\bin\Debug\net8.0\runtimes\win-x86\native\sni.dll
+C:\Users\bryan\Documents\UCSI_PROJECT\FR_HKVision_Export\FR_HKVision_Export\FR_HKVision\FR_HKVision\bin\Debug\net8.0\runtimes\unix\lib\net8.0\System.Data.SqlClient.dll
+C:\Users\bryan\Documents\UCSI_PROJECT\FR_HKVision_Export\FR_HKVision_Export\FR_HKVision\FR_HKVision\bin\Debug\net8.0\runtimes\win\lib\net8.0\System.Data.SqlClient.dll
+C:\Users\bryan\Documents\UCSI_PROJECT\FR_HKVision_Export\FR_HKVision_Export\FR_HKVision\FR_HKVision\bin\Debug\net8.0\runtimes\win\lib\net8.0\System.Diagnostics.EventLog.dll
+C:\Users\bryan\Documents\UCSI_PROJECT\FR_HKVision_Export\FR_HKVision_Export\FR_HKVision\FR_HKVision\bin\Debug\net8.0\runtimes\win\lib\net8.0\System.Diagnostics.PerformanceCounter.dll
+C:\Users\bryan\Documents\UCSI_PROJECT\FR_HKVision_Export\FR_HKVision_Export\FR_HKVision\FR_HKVision\bin\Debug\net8.0\runtimes\win\lib\net8.0\System.DirectoryServices.dll
+C:\Users\bryan\Documents\UCSI_PROJECT\FR_HKVision_Export\FR_HKVision_Export\FR_HKVision\FR_HKVision\bin\Debug\net8.0\runtimes\linux\lib\net8.0\System.DirectoryServices.Protocols.dll
+C:\Users\bryan\Documents\UCSI_PROJECT\FR_HKVision_Export\FR_HKVision_Export\FR_HKVision\FR_HKVision\bin\Debug\net8.0\runtimes\osx\lib\net8.0\System.DirectoryServices.Protocols.dll
+C:\Users\bryan\Documents\UCSI_PROJECT\FR_HKVision_Export\FR_HKVision_Export\FR_HKVision\FR_HKVision\bin\Debug\net8.0\runtimes\win\lib\net8.0\System.DirectoryServices.Protocols.dll
+C:\Users\bryan\Documents\UCSI_PROJECT\FR_HKVision_Export\FR_HKVision_Export\FR_HKVision\FR_HKVision\bin\Debug\net8.0\runtimes\win\lib\net8.0\System.Security.Cryptography.Pkcs.dll
+C:\Users\bryan\Documents\UCSI_PROJECT\FR_HKVision_Export\FR_HKVision_Export\FR_HKVision\FR_HKVision\bin\Debug\net8.0\runtimes\win\lib\net8.0\System.Windows.Extensions.dll
+C:\Users\bryan\Documents\UCSI_PROJECT\FR_HKVision_Export\FR_HKVision_Export\FR_HKVision\FR_HKVision\obj\Debug\net8.0\FR_HKVision.csproj.AssemblyReference.cache
+C:\Users\bryan\Documents\UCSI_PROJECT\FR_HKVision_Export\FR_HKVision_Export\FR_HKVision\FR_HKVision\obj\Debug\net8.0\rpswa.dswa.cache.json
+C:\Users\bryan\Documents\UCSI_PROJECT\FR_HKVision_Export\FR_HKVision_Export\FR_HKVision\FR_HKVision\obj\Debug\net8.0\FR_HKVision.GeneratedMSBuildEditorConfig.editorconfig
+C:\Users\bryan\Documents\UCSI_PROJECT\FR_HKVision_Export\FR_HKVision_Export\FR_HKVision\FR_HKVision\obj\Debug\net8.0\FR_HKVision.AssemblyInfoInputs.cache
+C:\Users\bryan\Documents\UCSI_PROJECT\FR_HKVision_Export\FR_HKVision_Export\FR_HKVision\FR_HKVision\obj\Debug\net8.0\FR_HKVision.AssemblyInfo.cs
+C:\Users\bryan\Documents\UCSI_PROJECT\FR_HKVision_Export\FR_HKVision_Export\FR_HKVision\FR_HKVision\obj\Debug\net8.0\FR_HKVision.csproj.CoreCompileInputs.cache
+C:\Users\bryan\Documents\UCSI_PROJECT\FR_HKVision_Export\FR_HKVision_Export\FR_HKVision\FR_HKVision\obj\Debug\net8.0\FR_HKVision.MvcApplicationPartsAssemblyInfo.cache
+C:\Users\bryan\Documents\UCSI_PROJECT\FR_HKVision_Export\FR_HKVision_Export\FR_HKVision\FR_HKVision\obj\Debug\net8.0\FR_HKVision.RazorAssemblyInfo.cache
+C:\Users\bryan\Documents\UCSI_PROJECT\FR_HKVision_Export\FR_HKVision_Export\FR_HKVision\FR_HKVision\obj\Debug\net8.0\FR_HKVision.RazorAssemblyInfo.cs
+C:\Users\bryan\Documents\UCSI_PROJECT\FR_HKVision_Export\FR_HKVision_Export\FR_HKVision\FR_HKVision\obj\Debug\net8.0\rjimswa.dswa.cache.json
+C:\Users\bryan\Documents\UCSI_PROJECT\FR_HKVision_Export\FR_HKVision_Export\FR_HKVision\FR_HKVision\obj\Debug\net8.0\rjsmrazor.dswa.cache.json
+C:\Users\bryan\Documents\UCSI_PROJECT\FR_HKVision_Export\FR_HKVision_Export\FR_HKVision\FR_HKVision\obj\Debug\net8.0\rjsmcshtml.dswa.cache.json
+C:\Users\bryan\Documents\UCSI_PROJECT\FR_HKVision_Export\FR_HKVision_Export\FR_HKVision\FR_HKVision\obj\Debug\net8.0\scopedcss\Views\Shared\_Layout.cshtml.rz.scp.css
+C:\Users\bryan\Documents\UCSI_PROJECT\FR_HKVision_Export\FR_HKVision_Export\FR_HKVision\FR_HKVision\obj\Debug\net8.0\scopedcss\bundle\FR_HKVision.styles.css
+C:\Users\bryan\Documents\UCSI_PROJECT\FR_HKVision_Export\FR_HKVision_Export\FR_HKVision\FR_HKVision\obj\Debug\net8.0\scopedcss\projectbundle\FR_HKVision.bundle.scp.css
+C:\Users\bryan\Documents\UCSI_PROJECT\FR_HKVision_Export\FR_HKVision_Export\FR_HKVision\FR_HKVision\obj\Debug\net8.0\staticwebassets.build.json
+C:\Users\bryan\Documents\UCSI_PROJECT\FR_HKVision_Export\FR_HKVision_Export\FR_HKVision\FR_HKVision\obj\Debug\net8.0\staticwebassets.build.json.cache
+C:\Users\bryan\Documents\UCSI_PROJECT\FR_HKVision_Export\FR_HKVision_Export\FR_HKVision\FR_HKVision\obj\Debug\net8.0\staticwebassets.development.json
+C:\Users\bryan\Documents\UCSI_PROJECT\FR_HKVision_Export\FR_HKVision_Export\FR_HKVision\FR_HKVision\obj\Debug\net8.0\staticwebassets.build.endpoints.json
+C:\Users\bryan\Documents\UCSI_PROJECT\FR_HKVision_Export\FR_HKVision_Export\FR_HKVision\FR_HKVision\obj\Debug\net8.0\FR_HKVis.AC21A2B9.Up2Date
+C:\Users\bryan\Documents\UCSI_PROJECT\FR_HKVision_Export\FR_HKVision_Export\FR_HKVision\FR_HKVision\obj\Debug\net8.0\FR_HKVision.dll
+C:\Users\bryan\Documents\UCSI_PROJECT\FR_HKVision_Export\FR_HKVision_Export\FR_HKVision\FR_HKVision\obj\Debug\net8.0\refint\FR_HKVision.dll
+C:\Users\bryan\Documents\UCSI_PROJECT\FR_HKVision_Export\FR_HKVision_Export\FR_HKVision\FR_HKVision\obj\Debug\net8.0\FR_HKVision.pdb
+C:\Users\bryan\Documents\UCSI_PROJECT\FR_HKVision_Export\FR_HKVision_Export\FR_HKVision\FR_HKVision\obj\Debug\net8.0\FR_HKVision.genruntimeconfig.cache
+C:\Users\bryan\Documents\UCSI_PROJECT\FR_HKVision_Export\FR_HKVision_Export\FR_HKVision\FR_HKVision\obj\Debug\net8.0\ref\FR_HKVision.dll

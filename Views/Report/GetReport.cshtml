@@ -1,0 +1,838 @@
+@model ReportViewModel
+@{
+    ViewData["Title"] = "Attendance Report";
+    var courseCodes = ViewData["CourseCodes"] as List<ProgramInfo> ?? new List<ProgramInfo>();
+    var classrooms = ViewData["Classrooms"] as List<string> ?? new List<string>();
+    var timeSlots = ViewData["TimeSlots"] as List<string> ?? new List<string>();
+    var availableDates = ViewData["AvailableDates"] as List<string> ?? new List<string>();
+    var reportData = ViewData["ReportData"] as List<ReportViewModel> ?? new List<ReportViewModel>();
+    var selectedCourseCode = ViewData["SelectedCourseCode"] as string ?? "";
+    var selectedClassroom = ViewData["SelectedClassroom"] as string ?? "";
+    var selectedDate = ViewData["SelectedDate"] as string ?? "Not Selected";
+    var selectedTime = ViewData["SelectedTime"] as string ?? "Not Selected";
+}
+
+<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+<!-- Add jsPDF and html2canvas for PDF export -->
+<script src="https://cdnjs.cloudflare.com/ajax/libs/jspdf/2.5.1/jspdf.umd.min.js"></script>
+<script src="https://cdnjs.cloudflare.com/ajax/libs/html2canvas/1.4.1/html2canvas.min.js"></script>
+<script src="https://cdnjs.cloudflare.com/ajax/libs/jspdf-autotable/3.5.28/jspdf.plugin.autotable.min.js"></script>
+
+<style>
+    .main-container {
+        max-width: 1200px;
+        margin: 0 auto;
+        padding: 2rem;
+    }
+    
+    .card {
+        border: none;
+        border-radius: 10px;
+        box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+        margin-bottom: 2rem;
+    }
+    
+    .card-header {
+        background-color: #f8f9fa;
+        border-bottom: none;
+        padding: 1.5rem;
+        border-radius: 10px 10px 0 0 !important;
+    }
+    
+    .form-control {
+        border-radius: 8px;
+        padding: 0.75rem;
+        border: 1px solid #ced4da;
+        transition: border-color 0.15s ease-in-out, box-shadow 0.15s ease-in-out;
+    }
+    
+    .form-control:focus {
+        border-color: #80bdff;
+        box-shadow: 0 0 0 0.2rem rgba(0, 123, 255, 0.25);
+    }
+    
+    .btn {
+        border-radius: 8px;
+        padding: 0.75rem 1.5rem;
+        font-weight: 500;
+        transition: all 0.3s ease;
+    }
+    
+    .btn-primary {
+        background-color: #0d6efd;
+        border: none;
+    }
+    
+    .btn-primary:hover {
+        background-color: #0b5ed7;
+        transform: translateY(-2px);
+    }
+    
+    .btn-secondary {
+        background-color: #6c757d;
+        border: none;
+    }
+    
+    .btn-secondary:hover {
+        background-color: #5a6268;
+        transform: translateY(-2px);
+    }
+    
+    .export-btn {
+        padding: 0.5rem 1rem;
+        font-size: 0.875rem;
+        margin-left: 0.5rem;
+    }
+    
+    .search-container {
+        position: relative;
+        margin-bottom: 1.5rem;
+    }
+    
+    .search-container i {
+        position: absolute;
+        right: 10px;
+        top: 38px;
+        color: #6c757d;
+    }
+    
+    .form-label {
+        font-weight: 500;
+        color: #495057;
+        margin-bottom: 0.5rem;
+    }
+    
+    .report-header {
+        text-align: center;
+        margin-bottom: 2rem;
+        padding: 2rem;
+        background-color: #f8f9fa;
+        border-radius: 10px;
+    }
+    
+    .report-header h2 {
+        color: #212529;
+        margin-bottom: 1rem;
+    }
+    
+    .report-header p {
+        color: #6c757d;
+        margin-bottom: 0;
+    }
+    
+    .table {
+        margin-bottom: 0;
+    }
+    
+    .table th {
+        background-color: #f8f9fa;
+        border-top: none;
+        font-weight: 600;
+    }
+    
+    .table td {
+        vertical-align: middle;
+    }
+    
+    .alert {
+        border-radius: 10px;
+        margin-bottom: 2rem;
+    }
+    
+    .selection-summary {
+        background-color: #f8f9fa;
+        padding: 1rem;
+        border-radius: 10px;
+        margin-bottom: 2rem;
+    }
+    
+    .selection-summary p {
+        margin-bottom: 0.5rem;
+    }
+    
+    .selection-summary strong {
+        color: #495057;
+    }
+    
+    .card-header-actions {
+        display: flex;
+        justify-content: space-between;
+        align-items: center;
+    }
+</style>
+
+<div class="main-container">
+    <div class="report-header">
+        <h2><i class="fas fa-chart-bar me-2"></i>Classroom Report</h2>
+        <p>Generate detailed attendance reports for your courses</p>
+    </div>
+
+    <div class="card">
+        <div class="card-header">
+            <h5 class="mb-0"><i class="fas fa-filter me-2"></i>Report Filters</h5>
+        </div>
+        <div class="card-body">
+            <form id="reportForm" method="get">
+                <div class="search-container">
+                    <label for="courseCodeSearch" class="form-label">Search Course Code:</label>
+                    <input type="text" id="courseCodeSearch" class="form-control" placeholder="Type to search course code or name...">
+                    <i class="fas fa-search"></i>
+                </div>
+
+                <div class="mb-3">
+                    <label for="courseCodeDropdown" class="form-label">Select Course Code:</label>
+                    <select id="courseCodeDropdown" name="selectedCourseCode" class="form-control">
+                        <option value="">-- Select Course Code --</option>
+                        @foreach (var course in courseCodes)
+                        {
+                            <option value="@course.COURSECODE" selected="@(selectedCourseCode == course.COURSECODE)" data-name="@course.COURSENAME.ToLower()">
+                                @course.COURSECODE - @course.COURSENAME
+                            </option>
+                        }
+                    </select>
+                </div>
+
+                <div class="mb-3">
+                    <label for="classroomDropdown" class="form-label">Select Classroom:</label>
+                    <select id="classroomDropdown" name="selectedClassroom" class="form-control" disabled="@string.IsNullOrEmpty(selectedCourseCode)">
+                        <option value="">-- Select Classroom --</option>
+                        @foreach (var classroom in classrooms)
+                        {
+                            <option value="@classroom" selected="@(selectedClassroom == classroom)">@classroom</option>
+                        }
+                    </select>
+                </div>
+
+                <div class="mb-3">
+                    <label for="dateDropdown" class="form-label">Select Date:</label>
+                    <select id="dateDropdown" name="selectedDate" class="form-control" disabled="@string.IsNullOrEmpty(selectedClassroom)">
+                        <option value="">-- Select Date --</option>
+                        @foreach (var date in availableDates.Where(d => !string.IsNullOrEmpty(d)))
+                        {
+                            <option value="@date" selected="@(selectedDate == date)">@date</option>
+                        }
+                    </select>
+                </div>
+
+                <div class="mb-3">
+                    <label for="timeDropdown" class="form-label">Select Time:</label>
+                    <select id="timeDropdown" name="selectedTime" class="form-control" disabled="@string.IsNullOrEmpty(selectedDate)">
+                        <option value="">-- Select Time --</option>
+                        @foreach (var time in timeSlots.Where(t => !string.IsNullOrEmpty(t)))
+                        {
+                            <option value="@time" selected="@(selectedTime == time)">@time</option>
+                        }
+                    </select>
+                </div>
+
+                <div class="d-flex gap-2">
+                    <button type="button" id="generateReportBtn" class="btn btn-primary">
+                        <i class="fas fa-file-alt me-2"></i>Generate Report
+                    </button>
+                    <button type="button" id="resetBtn" class="btn btn-secondary">
+                        <i class="fas fa-redo me-2"></i>Reset
+                    </button>
+                </div>
+            </form>
+        </div>
+    </div>
+
+    @if (!string.IsNullOrEmpty(selectedCourseCode) && !string.IsNullOrEmpty(selectedClassroom) && !string.IsNullOrEmpty(selectedDate) && !string.IsNullOrEmpty(selectedTime))
+    {
+        <div class="selection-summary">
+            <p><strong>Selected Course:</strong> @selectedCourseCode</p>
+            <p><strong>Classroom:</strong> @selectedClassroom</p>
+            <p><strong>Date:</strong> @selectedDate</p>
+            <p><strong>Time:</strong> @selectedTime</p>
+        </div>
+
+        @if (reportData.Any())
+        {
+            <div class="card">
+                <div class="card-header">
+                    <div class="card-header-actions">
+                        <h5 class="mb-0"><i class="fas fa-table me-2"></i>Report Results</h5>
+                        <div>
+                            <button type="button" id="exportPdfBtn" class="btn btn-danger export-btn">
+                                <i class="fas fa-file-pdf me-2"></i>Export PDF
+                            </button>
+                            
+                            <button type="button" id="exportCsvBtn" class="btn btn-success export-btn">
+                                <i class="fas fa-file-csv me-2"></i>Export CSV
+                            </button>
+                            
+                        </div>
+                    </div>
+                </div>
+                <div class="card-body">
+                    <div class="table-responsive">
+                        <table class="table" id="reportTable">
+                            <thead>
+                                <tr>
+                                    <th>Count</th>
+                                    <th>Course Code</th>
+                                    <th>Student Name</th>
+                                    <th>Student ID</th>
+                                    <th>Attendance</th>
+                                    <th>Finance Statement</th>
+                                </tr>
+                            </thead>
+                            <tbody>
+                                @if (reportData.Any())
+                                {
+                                    var count = 1;
+                                    @foreach (var record in reportData)
+                                    {
+                                        <tr>
+                                            <td>@(count++)</td>
+                                            <td>@record.CourseCode</td>
+                                            <td>@record.StudentName</td>
+                                            <td>@record.StudentNumber</td>
+                                            <td>
+                                                @if(record.Attendance == "1")
+                                                {
+                                                    <span class="badge bg-success">Present</span>
+                                                }
+                                                else
+                                                {
+                                                    <span class="badge bg-danger">Absent</span>
+                                                }
+                                            </td>
+                                            <td>
+                                                @if(record.FeeDue == "1")
+                                                {
+                                                    <span class="badge bg-danger">Debtor</span>
+                                                }
+                                                else
+                                                {
+                                                    <span class="badge bg-success">N/A</span>
+                                                }
+                                            </td>
+                                        </tr>
+                                    }
+                                }
+                                else
+                                {
+                                    <tr>
+                                        <td colspan="6" class="text-center">No data available. Please select Course Code, Classroom, Date, and Time.</td>
+                                    </tr>
+                                }
+                            </tbody>
+                        </table>
+                    </div>
+                </div>
+            </div>
+        }
+        else
+        {
+            <div class="alert alert-info">
+                <i class="fas fa-info-circle me-2"></i>
+                No attendance records found for the selected criteria.
+            </div>
+        }
+    }
+</div>
+
+<script src="https://code.jquery.com/jquery-3.6.0.min.js"></script>
+<script>
+    $(document).ready(function () {
+        // Highlight rows with matching course code and hide others
+        function filterTableByCourseCode() {
+            var selectedCourseCode = $("#courseCodeDropdown").val();
+            
+            if (selectedCourseCode) {
+                $("#reportTable tbody tr").each(function() {
+                    var rowCourseCode = $(this).find("td:eq(1)").text().trim();
+                    
+                    // If course code cell is empty, use the selected course code
+                    if (rowCourseCode === "") {
+                        $(this).find("td:eq(1)").text(selectedCourseCode);
+                        $(this).show();
+                    } 
+                    // If course code matches the selected one, show the row
+                    else if (rowCourseCode.toLowerCase() === selectedCourseCode.toLowerCase()) {
+                        $(this).show();
+                    } 
+                    // Otherwise hide the row as it belongs to a different course
+                    else {
+                        $(this).hide();
+                    }
+                });
+            }
+        }
+        
+        // Apply filter when the page loads
+        filterTableByCourseCode();
+        
+        // Course code search and filtering functionality
+        $("#courseCodeSearch").on("keyup", function(e) {
+            var searchText = $(this).val().toLowerCase();
+            var options = $("#courseCodeDropdown option");
+            var visibleOptionsCount = 0;
+            
+            // Show/hide options based on search text
+            options.each(function() {
+                var option = $(this);
+                if (option.val() === "") return; // Skip the default option
+                
+                var text = option.text().toLowerCase();
+                var value = option.val().toLowerCase();
+                var dataName = option.data("name") || "";
+                
+                if (text.includes(searchText) || value.includes(searchText) || dataName.includes(searchText)) {
+                    option.show();
+                    visibleOptionsCount++;
+                } else {
+                    option.hide();
+                }
+            });
+            
+            // Display a message if no options match
+            if (visibleOptionsCount === 0 && searchText !== "") {
+                if ($("#no-results-message").length === 0) {
+                    $("#courseCodeDropdown").after('<p id="no-results-message" class="text-danger mt-1">No courses match your search</p>');
+                }
+            } else {
+                $("#no-results-message").remove();
+            }
+            
+            // If Enter is pressed and there's only one visible option (excluding the default option)
+            if (e.keyCode === 13) {
+                var visibleOptions = $("#courseCodeDropdown option:visible").not(":first");
+                if (visibleOptions.length === 1) {
+                    visibleOptions.prop("selected", true);
+                    $("#courseCodeDropdown").trigger("change");
+                }
+            }
+        });
+        
+        // Clear search when dropdown changes
+        $("#courseCodeDropdown").change(function() {
+            $("#courseCodeSearch").val("");
+            $("#courseCodeDropdown option").show();
+            
+            // Load classrooms if a course is selected
+            var selectedCourseCode = $(this).val();
+            if (selectedCourseCode) {
+                loadClassroomsByCourseCode(selectedCourseCode);
+            }
+        });
+        
+        // Initialize dropdowns if there are URL parameters
+        if (window.location.search) {
+            initializeDropdowns();
+        }
+
+        $("#generateReportBtn").click(function() {
+            if (!validateSelections()) {
+                alert("Please complete all selections before generating the report.");
+                return;
+            }
+            
+            var selectedCourseCode = $("#courseCodeDropdown").val();
+            var selectedClassroom = $("#classroomDropdown").val();
+            var selectedDate = $("#dateDropdown").val();
+            var selectedTime = $("#timeDropdown").val();
+            
+            var url = '/Report/GetReport?selectedCourseCode=' + encodeURIComponent(selectedCourseCode) + 
+                      '&selectedClassroom=' + encodeURIComponent(selectedClassroom) + 
+                      '&selectedDate=' + encodeURIComponent(selectedDate) + 
+                      '&selectedTime=' + encodeURIComponent(selectedTime);
+            
+            window.location.href = url;
+        });
+        
+        $("#resetBtn").click(function() {
+            resetAllDropdowns();
+        });
+        
+        // Export to PDF functionality
+        $("#exportPdfBtn").click(function() {
+            exportToPdf();
+        });
+        
+        // Server-side PDF export
+        $("#serverPdfBtn").click(function() {
+            useServerSidePdfGeneration();
+        });
+        
+        // Export to CSV functionality
+        $("#exportCsvBtn").click(function() {
+            exportToCsv();
+        });
+        
+        // Client-side CSV export
+        $("#clientCsvBtn").click(function() {
+            generateClientSideCsv();
+        });
+        
+        function validateSelections() {
+            var courseCode = $("#courseCodeDropdown").val();
+            var classroom = $("#classroomDropdown").val();
+            var date = $("#dateDropdown").val();
+            var time = $("#timeDropdown").val();
+            
+            return courseCode && classroom && date && time;
+        }
+        
+        function resetAllDropdowns() {
+            $("#courseCodeSearch").val("");
+            $("#courseCodeDropdown").val("");
+            $("#courseCodeDropdown option").show();
+            $("#classroomDropdown").empty().append('<option value="">-- Select Classroom --</option>').prop("disabled", true);
+            $("#dateDropdown").empty().append('<option value="">-- Select Date --</option>').prop("disabled", true);
+            $("#timeDropdown").empty().append('<option value="">-- Select Time --</option>').prop("disabled", true);
+        }
+
+        function initializeDropdowns() {
+            var selectedCourseCode = "@selectedCourseCode";
+            var selectedClassroom = "@selectedClassroom";
+            var selectedDate = "@selectedDate";
+            var selectedTime = "@selectedTime";
+            
+            if (@reportData.Count > 0) {
+                resetAllDropdowns();
+                $(".alert-info").show();
+            } 
+            else if (selectedCourseCode && selectedClassroom) {
+                if (selectedCourseCode && $("#classroomDropdown option").length <= 1) {
+                    loadClassroomsByCourseCode(selectedCourseCode, selectedClassroom);
+                }
+                
+                if (selectedClassroom && $("#dateDropdown option").length <= 1) {
+                    loadDatesByClassroom(selectedClassroom, selectedDate);
+                }
+                
+                if (selectedClassroom && selectedDate && $("#timeDropdown option").length <= 1) {
+                    loadTimesByDate(selectedClassroom, selectedDate, selectedTime);
+                }
+            }
+        }
+
+        // Function to load classrooms by course code
+        function loadClassroomsByCourseCode(courseCode, selectedClassroom = null) {
+            $.ajax({
+                url: '/Report/GetClassroomsByCourseCode',
+                type: 'GET',
+                data: { courseCode: courseCode },
+                success: function (response) {
+                    console.log("Classroom Response:", response);
+
+                    // Reset and populate classroom dropdown
+                    $("#classroomDropdown").empty().append('<option value="">-- Select Classroom --</option>');
+                    
+                    if (response.classrooms.length > 0) {
+                        $.each(response.classrooms, function (index, classroom) {
+                            var selected = (classroom === selectedClassroom) ? 'selected' : '';
+                            $("#classroomDropdown").append('<option value="' + classroom + '" ' + selected + '>' + classroom + '</option>');
+                        });
+                        $("#classroomDropdown").prop("disabled", false);
+                        
+                        // If a classroom was previously selected, trigger the change event
+                        if (selectedClassroom) {
+                            $("#classroomDropdown").trigger('change');
+                        }
+                    } else {
+                        console.warn("No classrooms available for course code:", courseCode);
+                        // Disable subsequent dropdowns since no classrooms are available
+                        $("#dateDropdown").empty().append('<option value="">-- Select Date --</option>').prop("disabled", true);
+                        $("#timeDropdown").empty().append('<option value="">-- Select Time --</option>').prop("disabled", true);
+                    }
+                },
+                error: function () {
+                    alert("Error retrieving classrooms. Please try again.");
+                }
+            });
+        }
+
+        // Function to load dates by classroom
+        function loadDatesByClassroom(classroom, selectedDate = null) {
+            var selectedCourseCode = $("#courseCodeDropdown").val();
+            
+            $.ajax({
+                url: '/Report/GetFilteredTimeAndDate',
+                type: 'GET',
+                data: { 
+                    classroom: classroom,
+                    courseCode: selectedCourseCode
+                },
+                success: function (response) {
+                    console.log("Date Response:", response);
+
+                    // Reset and populate date dropdown
+                    $("#dateDropdown").empty().append('<option value="">-- Select Date --</option>');
+                    
+                    if (response.dates.length > 0) {
+                        $.each(response.dates, function (index, date) {
+                            var selected = (date === selectedDate) ? 'selected' : '';
+                            $("#dateDropdown").append('<option value="' + date + '" ' + selected + '>' + date + '</option>');
+                        });
+                        $("#dateDropdown").prop("disabled", false);
+                        
+                        // If a date was previously selected, trigger the change event
+                        if (selectedDate) {
+                            $("#dateDropdown").trigger('change');
+                        }
+                    } else {
+                        console.warn("No dates available for:", classroom);
+                        // Disable time dropdown if no dates are available
+                        $("#timeDropdown").empty().append('<option value="">-- Select Time --</option>').prop("disabled", true);
+                    }
+                },
+                error: function () {
+                    alert("Error retrieving dates. Please try again.");
+                }
+            });
+        }
+
+        // Function to load times by classroom and date
+        function loadTimesByDate(classroom, date, selectedTime = null) {
+            var selectedCourseCode = $("#courseCodeDropdown").val();
+            
+            $.ajax({
+                url: '/Report/GetFilteredTimes',
+                type: 'GET',
+                data: { 
+                    classroom: classroom, 
+                    date: date,
+                    courseCode: selectedCourseCode
+                },
+                success: function (response) {
+                    console.log("Time Response:", response);
+
+                    // Reset and populate time dropdown
+                    $("#timeDropdown").empty().append('<option value="">-- Select Time --</option>');
+                    
+                    if (response.times.length > 0) {
+                        $.each(response.times, function (index, time) {
+                            var selected = (time === selectedTime) ? 'selected' : '';
+                            $("#timeDropdown").append('<option value="' + time + '" ' + selected + '>' + time + '</option>');
+                        });
+                        $("#timeDropdown").prop("disabled", false);
+                    } else {
+                        console.warn("No times available for:", classroom, date);
+                    }
+                },
+                error: function () {
+                    alert("Error retrieving times. Please try again.");
+                }
+            });
+        }
+
+        // Handle Course Code Selection
+        $("#courseCodeDropdown").change(function () {
+            var selectedCourseCode = $(this).val();
+            
+            // Reset dependent dropdowns
+            $("#classroomDropdown").empty().append('<option value="">-- Select Classroom --</option>').prop("disabled", true);
+            $("#dateDropdown").empty().append('<option value="">-- Select Date --</option>').prop("disabled", true);
+            $("#timeDropdown").empty().append('<option value="">-- Select Time --</option>').prop("disabled", true);
+
+            if (selectedCourseCode) {
+                loadClassroomsByCourseCode(selectedCourseCode);
+            }
+        });
+
+        // Handle Classroom Selection
+        $("#classroomDropdown").change(function () {
+            var selectedClassroom = $(this).val();
+            
+            // Reset dependent dropdowns
+            $("#dateDropdown").empty().append('<option value="">-- Select Date --</option>').prop("disabled", true);
+            $("#timeDropdown").empty().append('<option value="">-- Select Time --</option>').prop("disabled", true);
+
+            if (selectedClassroom) {
+                loadDatesByClassroom(selectedClassroom);
+            }
+        });
+
+        // Handle Date Selection
+        $("#dateDropdown").change(function () {
+            var selectedClassroom = $("#classroomDropdown").val();
+            var selectedDate = $(this).val();
+
+            // Reset Time Dropdown
+            $("#timeDropdown").empty().append('<option value="">-- Select Time --</option>').prop("disabled", true);
+
+            if (selectedClassroom && selectedDate) {
+                loadTimesByDate(selectedClassroom, selectedDate, "@selectedTime");
+            }
+        });
+        
+        // Function to export table data to PDF
+        function exportToPdf() {
+            try {
+                // Initialize jsPDF
+                const { jsPDF } = window.jspdf;
+                const doc = new jsPDF();
+                
+                // Add report title
+                doc.setFontSize(18);
+                doc.text('Attendance Report', 14, 20);
+                
+                // Add report information
+                doc.setFontSize(11);
+                
+                // Get the selected course text
+                const selectedCourseText = $("#courseCodeDropdown option:selected").text();
+                const selectedClassroom = $("#classroomDropdown").val();
+                const selectedDate = $("#dateDropdown").val();
+                const selectedTime = $("#timeDropdown").val();
+                
+                doc.text(`Course: ${selectedCourseText}`, 14, 30);
+                doc.text(`Classroom: ${selectedClassroom}`, 14, 37);
+                doc.text(`Date: ${selectedDate}`, 14, 44);
+                doc.text(`Time: ${selectedTime}`, 14, 51);
+                doc.text(`Generated: ${new Date().toLocaleString()}`, 14, 58);
+                
+                // Prepare table data
+                const tableData = [];
+                const selectedCourseCode = $("#courseCodeDropdown").val().toLowerCase();
+                
+                // Add table rows
+                $("#reportTable tbody tr").each(function() {
+                    // Skip hidden rows (filtered out by course code)
+                    if ($(this).is(":hidden")) return;
+                    
+                    const rowData = [];
+                    $(this).find('td').each(function(index) {
+                        if (index === 4 || index === 5) {
+                            // For attendance and finance columns, get the text of the badge
+                            rowData.push($(this).find('span').text());
+                        } else if (index === 1 && $(this).text().trim() === "") {
+                            // If course code is empty, use the selected course code
+                            rowData.push($("#courseCodeDropdown").val());
+                        } else {
+                            rowData.push($(this).text());
+                        }
+                    });
+                    tableData.push(rowData);
+                });
+                
+                // Create the table in the PDF using autoTable plugin
+                doc.autoTable({
+                    startY: 65,
+                    head: [['Count', 'Course Code', 'Student Name', 'Student ID', 'Attendance', 'Finance']],
+                    body: tableData,
+                    theme: 'grid',
+                    styles: { fontSize: 9 },
+                    headStyles: { fillColor: [41, 128, 185], textColor: 255 },
+                    alternateRowStyles: { fillColor: [240, 240, 240] }
+                });
+                
+                // Save the PDF
+                const courseCode = $("#courseCodeDropdown").val();
+                const filename = `Attendance_Report_${courseCode}_${selectedDate}.pdf`;
+                doc.save(filename);
+            } catch (error) {
+                console.error("Error generating PDF on client side:", error);
+                // Use server-side PDF generation as fallback
+                useServerSidePdfGeneration();
+            }
+        }
+        
+        // Function to use server-side PDF generation
+        function useServerSidePdfGeneration() {
+            // Get the selected filter values
+            var selectedCourseCode = $("#courseCodeDropdown").val();
+            var selectedClassroom = $("#classroomDropdown").val();
+            var selectedDate = $("#dateDropdown").val();
+            var selectedTime = $("#timeDropdown").val();
+            
+            // Open a new window with the server-side PDF generation endpoint
+            window.open(`/Report/ExportToPdf?selectedCourseCode=${encodeURIComponent(selectedCourseCode)}&selectedClassroom=${encodeURIComponent(selectedClassroom)}&selectedDate=${encodeURIComponent(selectedDate)}&selectedTime=${encodeURIComponent(selectedTime)}`, '_blank');
+        }
+        
+        // Function to export table data to CSV
+        function exportToCsv() {
+            try {
+                // Try client-side CSV generation first
+                generateClientSideCsv();
+            } catch (error) {
+                console.error("Error generating CSV on client side:", error);
+                // Fall back to server-side CSV generation
+                useServerSideCsvGeneration();
+            }
+        }
+        
+        // Function to generate CSV on the client side
+        function generateClientSideCsv() {
+            const rows = [];
+            const selectedCourseCode = $("#courseCodeDropdown").val().toLowerCase();
+            
+            // Add headers
+            const headers = [];
+            $("#reportTable thead th").each(function() {
+                headers.push($(this).text());
+            });
+            rows.push(headers.join(','));
+            
+            // Add data rows
+            $("#reportTable tbody tr").each(function() {
+                // Skip hidden rows (filtered out by course code)
+                if ($(this).is(":hidden")) return;
+                
+                const rowData = [];
+                $(this).find('td').each(function(index) {
+                    let cellText = "";
+                    
+                    if (index === 4 || index === 5) {
+                        // For attendance and finance columns, get the text of the badge
+                        cellText = $(this).find('span').text();
+                    } else if (index === 1 && $(this).text().trim() === "") {
+                        // If course code is empty, use the selected course code
+                        cellText = $("#courseCodeDropdown").val();
+                    } else {
+                        cellText = $(this).text().trim();
+                    }
+                    
+                    // Escape commas and quotes
+                    if (cellText.includes(',') || cellText.includes('"')) {
+                        cellText = '"' + cellText.replace(/"/g, '""') + '"';
+                    }
+                    
+                    rowData.push(cellText);
+                });
+                rows.push(rowData.join(','));
+            });
+            
+            // Create CSV content
+            const csvContent = rows.join('\n');
+            
+            // Create a Blob with the CSV data
+            const blob = new Blob([csvContent], { type: 'text/csv;charset=utf-8;' });
+            
+            // Create a temporary link element to download the CSV
+            const link = document.createElement('a');
+            
+            // Create a URL for the Blob
+            const url = URL.createObjectURL(blob);
+            
+            // Set link properties
+            link.href = url;
+            link.setAttribute('download', `Attendance_Report_${$("#courseCodeDropdown").val()}_${$("#dateDropdown").val()}.csv`);
+            
+            // Append link to the document
+            document.body.appendChild(link);
+            
+            // Trigger click event to download the file
+            link.click();
+            
+            // Clean up
+            document.body.removeChild(link);
+            URL.revokeObjectURL(url);
+        }
+        
+        // Function to use server-side CSV generation
+        function useServerSideCsvGeneration() {
+            // Get the selected filter values
+            var selectedCourseCode = $("#courseCodeDropdown").val();
+            var selectedClassroom = $("#classroomDropdown").val();
+            var selectedDate = $("#dateDropdown").val();
+            var selectedTime = $("#timeDropdown").val();
+            
+            // Use server-side CSV generation for better compatibility and handling of large datasets
+            window.location.href = `/Report/ExportToCsv?selectedCourseCode=${encodeURIComponent(selectedCourseCode)}&selectedClassroom=${encodeURIComponent(selectedClassroom)}&selectedDate=${encodeURIComponent(selectedDate)}&selectedTime=${encodeURIComponent(selectedTime)}`;
+        }
+    });
+</script>

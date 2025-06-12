@@ -1,0 +1,27 @@
+﻿<Project Sdk="Microsoft.NET.Sdk.Web">
+
+  <PropertyGroup>
+    <TargetFramework>net8.0</TargetFramework>
+    <Nullable>enable</Nullable>
+    <ImplicitUsings>enable</ImplicitUsings>
+	<ErrorOnDuplicatePublishOutputFiles>false</ErrorOnDuplicatePublishOutputFiles>
+    <UserSecretsId>ea802b42-c882-4247-95b6-a2a7b35aa16f</UserSecretsId>
+  </PropertyGroup>
+
+  <ItemGroup>
+    <PackageReference Include="HikVision" Version="1.0.0" />
+    <PackageReference Include="hikvision-openapi-client" Version="1.2.0" />
+    <PackageReference Include="Microsoft.AspNetCore.Mvc.NewtonsoftJson" Version="8.0.0" />
+    <PackageReference Include="Microsoft.Data.SqlClient" Version="6.0.1" />
+    <PackageReference Include="newtonsoft.json" Version="13.0.3" />
+    <PackageReference Include="Oracle.ManagedDataAccess.Core" Version="23.7.0" />
+    <PackageReference Include="QuickNV.HikvisionNetSDK" Version="1.0.4" />
+    <PackageReference Include="QuickNV.HikvisionNetSDK.Native" Version="1.0.3" />
+    <PackageReference Include="System.Data.SqlClient" Version="4.9.0" />
+    <PackageReference Include="System.DirectoryServices" Version="9.0.2" />
+    <PackageReference Include="system.security.permissions" Version="9.0.2" />
+	<PackageReference Include="Microsoft.AspNetCore.DataProtection" Version="8.0.0" />
+  </ItemGroup>
+
+
+</Project>
