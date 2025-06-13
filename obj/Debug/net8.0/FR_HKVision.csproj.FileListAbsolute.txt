@@ -763,3 +763,4 @@ C:\Users\bryan\Documents\UCSI_PROJECT\FR_HKVision_Export\FR_HKVision_Export\FR_H
 C:\Users\bryan\Documents\UCSI_PROJECT\FR_HKVision_Export\FR_HKVision_Export\FR_HKVision\FR_HKVision\obj\Debug\net8.0\FR_HKVision.pdb
 C:\Users\bryan\Documents\UCSI_PROJECT\FR_HKVision_Export\FR_HKVision_Export\FR_HKVision\FR_HKVision\obj\Debug\net8.0\FR_HKVision.genruntimeconfig.cache
 C:\Users\bryan\Documents\UCSI_PROJECT\FR_HKVision_Export\FR_HKVision_Export\FR_HKVision\FR_HKVision\obj\Debug\net8.0\ref\FR_HKVision.dll
+C:\Users\bryan\Documents\UCSI_PROJECT\FR_HKVision_Export\FR_HKVision_Export\FR_HKVision\FR_HKVision\obj\Debug\net8.0\FR_HKVision.sourcelink.json

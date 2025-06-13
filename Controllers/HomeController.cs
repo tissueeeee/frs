@@ -21,6 +21,7 @@ namespace FR_HKVision.Controllers
         private readonly ILogger<HomeController> _logger;
         private readonly IConfiguration _configuration;
         private readonly IEmailService _emailService;
+        private int newRecordsCount;
 
         public HomeController(ILogger<HomeController> logger, IConfiguration configuration, IEmailService emailService)
         {
@@ -118,10 +119,11 @@ namespace FR_HKVision.Controllers
             foreach (var student in studentList)
             {
                 int attendanceStatus = OracleConnectionClass.StudentAttendanceIsExist(OracelDBUserId, OracelDBPassword, OracelDBDataSource, student.StudentNumber, TransactionId);
-                
+
                 // Check if student exists in attendance table, if not create record with absent status
-                if (attendanceStatus == 0)
+                if (attendanceStatus == -1) // Use -1 or another value to indicate "no record exists"
                 {
+                    // Insert new record as absent
                     StudentAttendance studentAttendance = new StudentAttendance
                     {
                         StudentNumber = student.StudentNumber,
@@ -132,6 +134,18 @@ namespace FR_HKVision.Controllers
                         CreateDate = DateTime.Now.ToString("yyyy-MM-dd HH:mm:ss")
                     };
                     OracleConnectionClass.insertStudentAttendance(OracelDBUserId, OracelDBPassword, OracelDBDataSource, studentAttendance);
+                }
+                else
+                {
+                    // Always update the attendance status, even if it's absent
+                    OracleConnectionClass.updateStudentAttendanceStatus(
+                        OracelDBUserId,
+                        OracelDBPassword,
+                        OracelDBDataSource,
+                        student.StudentNumber,
+                        TransactionId,
+                        0 // or 1 for present, depending on your logic
+                    );
                 }
 
                 // Get updated attendance status
@@ -260,26 +274,38 @@ namespace FR_HKVision.Controllers
             foreach (var student in studentList)
             {
                 int attendanceStatus = OracleConnectionClass.StudentAttendanceIsExist(OracelDBUserId, OracelDBPassword, OracelDBDataSource, student.StudentNumber, TransactionId);
-                
-                // Check if student exists in attendance table, if not create record with absent status
-                if (attendanceStatus == 0)
+
+                // Check if student exists in attendance table
+                if (attendanceStatus == -1) // No record exists
                 {
+                    _logger.LogInformation($"Creating attendance record for student: {student.StudentNumber}");
+                    // Only insert if no record exists
                     StudentAttendance studentAttendance = new StudentAttendance
                     {
                         StudentNumber = student.StudentNumber,
                         StudentName = student.StudentName,
                         TransactionId = TransactionId,
-                        Attendance = 0, // Initialize as absent (0)
-                        FeeDue = 0,
+                        Attendance = 0, // Default to absent
+                        FeeDue = student.ProfileStatus == "Debtor" ? 1 : 0,
                         CreateDate = DateTime.Now.ToString("yyyy-MM-dd HH:mm:ss")
                     };
                     OracleConnectionClass.insertStudentAttendance(OracelDBUserId, OracelDBPassword, OracelDBDataSource, studentAttendance);
+                    newRecordsCount++;
+                }
+                else
+                {
+                    // Update existing record if needed (e.g., ensure FeeDue is correct)
+                    if (student.ProfileStatus == "Debtor")
+                    {
+                        OracleConnectionClass.updateStudentFeeStatus(OracelDBUserId, OracelDBPassword, OracelDBDataSource, student.StudentNumber, TransactionId);
+                        _logger.LogInformation($"Attendance record already exists for student: {student.StudentNumber}, updated FeeDue if necessary");
+                    }
                 }
 
                 // Get updated attendance status
                 attendanceStatus = OracleConnectionClass.StudentAttendanceIsExist(OracelDBUserId, OracelDBPassword, OracelDBDataSource, student.StudentNumber, TransactionId);
 
-                // Only move student to attendance list if they have been marked as present
+                // Move student to appropriate list based on attendance status
                 if (attendanceStatus == 1)
                 {
                     var studentToMove = model.StudentListAbsent.FirstOrDefault(s => s.StudentNumber == student.StudentNumber);

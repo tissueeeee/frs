@@ -439,50 +439,58 @@
             });
 
             // Handle save button click
-            $('#saveOverwrite').on('click', function() {
-                console.log('Save button clicked');
-                
-                const studentNumber = $('#studentSelect').val();
-                const attendanceStatus = $('#attendanceStatus').val() === 'Present' ? 1 : 0;
-                
-                console.log('Student Number:', studentNumber);
-                console.log('Attendance Status:', attendanceStatus);
+$('#saveOverwrite').on('click', function() {
+    console.log('Save button clicked');
+    
+    const studentNumber = $('#studentSelect').val();
+    const attendanceStatus = $('#attendanceStatus').val() === 'Present' ? 1 : 0;
+    
+    console.log('Student Number:', studentNumber);
+    console.log('Attendance Status:', attendanceStatus);
 
-                if (!studentNumber) {
-                    alert('Please select a student');
-                    return;
-                }
+    if (!studentNumber) {
+        alert('Please select a student');
+        return;
+    }
 
-                // Send AJAX request
-                $.ajax({
-                    url: '@Url.Action("UpdateAttendanceStatus", "Home")',
-                    type: 'POST',
-                    contentType: 'application/json',
-                    data: JSON.stringify({
-                        studentNumber: studentNumber,
-                        attendanceStatus: attendanceStatus
-                    }),
-                    beforeSend: function() {
-                        $('#saveOverwrite').prop('disabled', true).text('Saving...');
-                    },
-                    success: function(response) {
-                        console.log('Response:', response);
-                        if (response.success) {
-                            alert('Attendance updated successfully!');
-                            location.reload();
-                        } else {
-                            alert('Failed to update attendance: ' + response.message);
-                        }
-                    },
-                    error: function(xhr, status, error) {
-                        console.error('Error:', error);
-                        alert('Error updating attendance. Please try again.');
-                    },
-                    complete: function() {
-                        $('#saveOverwrite').prop('disabled', false).text('Save Changes');
-                    }
-                });
-            });
+    const token = $('input[name="__RequestVerificationToken"]').val();
+
+    $.ajax({
+        url: '/Home/UpdateAttendanceStatus',
+        type: 'POST',
+        headers: {
+            'RequestVerificationToken': token
+        },
+        contentType: 'application/json',
+        data: JSON.stringify({
+            studentNumber: studentNumber,
+            attendanceStatus: attendanceStatus
+        }),
+        beforeSend: function() {
+            $('#saveOverwrite').prop('disabled', true).text('Saving...');
+        },
+        success: function(response) {
+            console.log('Response:', response);
+            if (response.success) {
+                alert('Attendance updated successfully!');
+                $('#overwriteModal').modal('hide');
+                setTimeout(function() {
+                    location.reload();
+                }, 500);
+            } else {
+                alert('Failed to update attendance: ' + (response.message || 'Unknown error'));
+            }
+        },
+        error: function(xhr, status, error) {
+            console.error('Error:', error);
+            console.error('Response:', xhr.responseText);
+            alert('Error updating attendance. Please try again.');
+        },
+        complete: function() {
+            $('#saveOverwrite').prop('disabled', false).text('Save Changes');
+        }
+    });
+});
 
             // Handle student row click
             $('.student-row').click(function() {

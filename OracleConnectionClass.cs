@@ -376,34 +376,39 @@ public class OracleConnectionClass
     {
         string connectionString = "User Id=" + OracelDBUserId + ";Password=" + OracelDBPassword + ";Data Source=" + OracelDBDataSource;
 
-
         using (OracleConnection conn = new OracleConnection(connectionString))
         {
             conn.Open();
 
             string sql = "SELECT CASE WHEN EXISTS (" +
-               "SELECT 1 FROM FR_TRANSACTION " +
-               "WHERE UPPER(COURSE_CODE) = UPPER(:CourseCode) " +
-               "AND UPPER(ROOM) = UPPER(:Room) " +
-               "AND TRANSACTION_DATE = :todayDate )" +
-               "THEN " +
-               "(SELECT TRANSACTION_ID FROM FR_TRANSACTION WHERE UPPER(COURSE_CODE) = UPPER(:CourseCode) AND UPPER(ROOM) = UPPER(:Room) AND TRANSACTION_DATE = :todayDate FETCH FIRST 1 ROWS ONLY) " +
-               "ELSE 0 END AS ISEXIST " +
-               "FROM DUAL";
+                        "SELECT 1 FROM FR_TRANSACTION " +
+                        "WHERE TRIM(UPPER(COURSE_CODE)) = TRIM(UPPER(:CourseCode)) " +
+                        "AND TRIM(UPPER(ROOM)) = TRIM(UPPER(:Room)) " +
+                        "AND TRANSACTION_DATE = :todayDate)" +
+                        "THEN " +
+                        "(SELECT TRANSACTION_ID FROM FR_TRANSACTION WHERE TRIM(UPPER(COURSE_CODE)) = TRIM(UPPER(:CourseCode)) AND TRIM(UPPER(ROOM)) = TRIM(UPPER(:Room)) AND TRANSACTION_DATE = :todayDate FETCH FIRST 1 ROW ONLY) " +
+                        "ELSE 0 END AS ISEXIST " +
+                        "FROM DUAL";
 
             using (OracleCommand cmd = new OracleCommand(sql, conn))
             {
-                cmd.Parameters.Add(new OracleParameter("CourseCode", CourseCode)); // Replace with actual variable
-                cmd.Parameters.Add(new OracleParameter("Room", Room)); // Replace with actual variable
-                cmd.Parameters.Add(new OracleParameter("todayDate", todayDate)); // Replace with actual variable
+                cmd.Parameters.Add(new OracleParameter("CourseCode", CourseCode?.Trim()));
+                cmd.Parameters.Add(new OracleParameter("Room", Room?.Trim()));
+                cmd.Parameters.Add(new OracleParameter("todayDate", todayDate?.Trim()));
 
-                int exists = Convert.ToInt32(cmd.ExecuteScalar()); // Execute the query
-                return exists;
+                try
+                {
+                    int exists = Convert.ToInt32(cmd.ExecuteScalar());
+                    return exists;
+                }
+                catch (Exception ex)
+                {
+                    Console.WriteLine($"Error checking transaction existence: {ex.Message}");
+                    return 0;
+                }
             }
         }
-
     }
-
 
     public static int insertTransaction(string OracelDBUserId, string OracelDBPassword, string OracelDBDataSource, Transactions transactions)
     {
@@ -471,7 +476,7 @@ public class OracleConnectionClass
         }
         return TransactionId;
     }
-    
+
 
     public static int updateStudentAttendanceStatus(string OracelDBUserId, string OracelDBPassword, string OracelDBDataSource, string StudentNumber, int TransactionId, int AttendanceStatus)
     {
@@ -486,21 +491,20 @@ public class OracleConnectionClass
                 Console.WriteLine($"Attempting to update attendance - Student: {StudentNumber}, Transaction: {TransactionId}, Status: {AttendanceStatus}");
 
                 string sql = @"UPDATE FR_TRANSACTION_STUDENT 
-                             SET ATTENDANCE = :AttendanceStatus 
-                             WHERE STUDENT_NUMBER = :StudentNumber 
-                             AND TRANSACTION_ID = :TransactionId";
+                         SET ATTENDANCE = :AttendanceStatus 
+                         WHERE STUDENT_NUMBER = :StudentNumber 
+                         AND TRANSACTION_ID = :TransactionId";
 
                 using (OracleCommand cmd = new OracleCommand(sql, conn))
                 {
-                    // Add parameters
-                    cmd.Parameters.Add(new OracleParameter("AttendanceStatus", OracleDbType.Int32)).Value = AttendanceStatus;
-                    cmd.Parameters.Add(new OracleParameter("StudentNumber", OracleDbType.Varchar2)).Value = StudentNumber;
-                    cmd.Parameters.Add(new OracleParameter("TransactionId", OracleDbType.Int32)).Value = TransactionId;
+                    cmd.Parameters.Add(new OracleParameter("AttendanceStatus", AttendanceStatus));
+                    cmd.Parameters.Add(new OracleParameter("StudentNumber", StudentNumber));
+                    cmd.Parameters.Add(new OracleParameter("TransactionId", TransactionId));
 
                     try
                     {
                         int rowsAffected = cmd.ExecuteNonQuery();
-                        Console.WriteLine($"Rows affected by update: {rowsAffected}");
+                        Console.WriteLine($"Rows affected: {rowsAffected}");
 
                         if (rowsAffected > 0)
                         {
@@ -509,55 +513,13 @@ public class OracleConnectionClass
                         }
                         else
                         {
-                            Console.WriteLine($"No records were updated for student {StudentNumber}. Checking if record exists...");
-                            
-                            // Check if the record exists
-                            string checkSql = @"SELECT COUNT(*) FROM FR_TRANSACTION_STUDENT 
-                                              WHERE STUDENT_NUMBER = :StudentNumber 
-                                              AND TRANSACTION_ID = :TransactionId";
-                            
-                            using (OracleCommand checkCmd = new OracleCommand(checkSql, conn))
-                            {
-                                checkCmd.Parameters.Add(new OracleParameter("StudentNumber", StudentNumber));
-                                checkCmd.Parameters.Add(new OracleParameter("TransactionId", TransactionId));
-                                
-                                int recordCount = Convert.ToInt32(checkCmd.ExecuteScalar());
-                                if (recordCount == 0)
-                                {
-                                    Console.WriteLine("Record does not exist. Inserting new record...");
-                                    // Insert new record
-                                    string insertSql = @"INSERT INTO FR_TRANSACTION_STUDENT 
-                                                       (STUDENT_NUMBER, TRANSACTION_ID, ATTENDANCE, CREATE_DATE) 
-                                                       VALUES 
-                                                       (:StudentNumber, :TransactionId, :AttendanceStatus, SYSDATE)";
-                                    
-                                    using (OracleCommand insertCmd = new OracleCommand(insertSql, conn))
-                                    {
-                                        insertCmd.Parameters.Add(new OracleParameter("StudentNumber", StudentNumber));
-                                        insertCmd.Parameters.Add(new OracleParameter("TransactionId", TransactionId));
-                                        insertCmd.Parameters.Add(new OracleParameter("AttendanceStatus", AttendanceStatus));
-                                        
-                                        int insertedRows = insertCmd.ExecuteNonQuery();
-                                        if (insertedRows > 0)
-                                        {
-                                            Console.WriteLine("Successfully inserted new attendance record");
-                                            result = 0; // Success
-                                        }
-                                    }
-                                }
-                                else
-                                {
-                                    Console.WriteLine("Record exists but update failed. Possible data issue.");
-                                    result = -2; // Record exists but update failed
-                                }
-                            }
+                            Console.WriteLine($"No records found for student {StudentNumber} with transaction {TransactionId}");
+                            result = -2; // No record found
                         }
                     }
                     catch (OracleException ex)
                     {
-                        Console.WriteLine($"Oracle Error: {ex.Message}");
-                        Console.WriteLine($"Error Code: {ex.Number}");
-                        Console.WriteLine($"SQL: {sql}");
+                        Console.WriteLine($"Oracle Error: {ex.Message}, Error Code: {ex.Number}");
                         result = -3; // Database error
                     }
                 }
@@ -565,7 +527,6 @@ public class OracleConnectionClass
             catch (Exception ex)
             {
                 Console.WriteLine($"General Error: {ex.Message}");
-                Console.WriteLine($"Stack Trace: {ex.StackTrace}");
                 result = -4; // General error
             }
         }
